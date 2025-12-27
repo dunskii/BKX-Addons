@@ -1,0 +1,637 @@
+/**
+ * BookingX Add-on SDK Admin Styles
+ *
+ * Shared styles for all BookingX add-ons.
+ *
+ * @package BookingX\AddonSDK
+ * @since   1.0.0
+ */
+
+/* ==========================================================================
+   CSS Variables
+   ========================================================================== */
+
+:root {
+    --bkx-primary: #2271b1;
+    --bkx-primary-hover: #135e96;
+    --bkx-success: #00a32a;
+    --bkx-success-light: #d7f4dc;
+    --bkx-warning: #dba617;
+    --bkx-warning-light: #fcf0c5;
+    --bkx-error: #d63638;
+    --bkx-error-light: #facfd2;
+    --bkx-info: #72aee6;
+    --bkx-info-light: #e7f3fa;
+    --bkx-border: #c3c4c7;
+    --bkx-border-light: #dcdcde;
+    --bkx-bg-light: #f6f7f7;
+    --bkx-text: #1d2327;
+    --bkx-text-light: #50575e;
+    --bkx-radius: 4px;
+    --bkx-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   Settings Page
+   ========================================================================== */
+
+.bkx-settings-page {
+    max-width: 1200px;
+}
+
+.bkx-settings-page h1 {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--bkx-border-light);
+}
+
+.bkx-settings-page .form-table {
+    margin-top: 0;
+}
+
+.bkx-settings-page .form-table th {
+    width: 250px;
+    vertical-align: top;
+    padding-top: 15px;
+}
+
+.bkx-settings-page .form-table td {
+    vertical-align: top;
+    padding: 10px;
+}
+
+/* ==========================================================================
+   Field Styles
+   ========================================================================== */
+
+.bkx-field {
+    margin-bottom: 10px;
+}
+
+.bkx-field input[type="text"],
+.bkx-field input[type="email"],
+.bkx-field input[type="url"],
+.bkx-field input[type="number"],
+.bkx-field input[type="password"],
+.bkx-field textarea,
+.bkx-field select {
+    width: 100%;
+    max-width: 400px;
+}
+
+.bkx-field .description {
+    margin-top: 5px;
+    font-style: italic;
+    color: var(--bkx-text-light);
+}
+
+.bkx-field-toggle label {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bkx-field-toggle input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.bkx-toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+    background-color: var(--bkx-border);
+    border-radius: 12px;
+    transition: background-color 0.2s;
+    margin-right: 10px;
+}
+
+.bkx-toggle-switch::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.2s;
+    box-shadow: var(--bkx-shadow);
+}
+
+.bkx-field-toggle input[type="checkbox"]:checked + .bkx-toggle-switch {
+    background-color: var(--bkx-success);
+}
+
+.bkx-field-toggle input[type="checkbox"]:checked + .bkx-toggle-switch::after {
+    transform: translateX(24px);
+}
+
+.bkx-field-toggle input[type="checkbox"]:focus + .bkx-toggle-switch {
+    box-shadow: 0 0 0 2px var(--bkx-primary);
+}
+
+/* ==========================================================================
+   Meta Box Styles
+   ========================================================================== */
+
+.bkx-meta-box-fields {
+    padding: 10px 0;
+}
+
+.bkx-meta-field {
+    margin-bottom: 15px;
+}
+
+.bkx-meta-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.bkx-meta-field .description {
+    margin-top: 5px;
+    font-size: 12px;
+    color: var(--bkx-text-light);
+}
+
+/* ==========================================================================
+   Notice Styles
+   ========================================================================== */
+
+.bkx-admin-notice {
+    border-left-width: 4px;
+    padding: 12px;
+}
+
+.bkx-admin-notice.notice-success {
+    border-left-color: var(--bkx-success);
+    background-color: var(--bkx-success-light);
+}
+
+.bkx-admin-notice.notice-warning {
+    border-left-color: var(--bkx-warning);
+    background-color: var(--bkx-warning-light);
+}
+
+.bkx-admin-notice.notice-error {
+    border-left-color: var(--bkx-error);
+    background-color: var(--bkx-error-light);
+}
+
+.bkx-admin-notice.notice-info {
+    border-left-color: var(--bkx-info);
+    background-color: var(--bkx-info-light);
+}
+
+/* ==========================================================================
+   Card Components
+   ========================================================================== */
+
+.bkx-card {
+    background: #fff;
+    border: 1px solid var(--bkx-border-light);
+    border-radius: var(--bkx-radius);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: var(--bkx-shadow);
+}
+
+.bkx-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--bkx-border-light);
+}
+
+.bkx-card-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.bkx-card-body {
+    /* Card content area */
+}
+
+.bkx-card-footer {
+    padding-top: 15px;
+    margin-top: 15px;
+    border-top: 1px solid var(--bkx-border-light);
+    text-align: right;
+}
+
+/* ==========================================================================
+   Table Styles
+   ========================================================================== */
+
+.bkx-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+.bkx-table th,
+.bkx-table td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--bkx-border-light);
+}
+
+.bkx-table th {
+    background-color: var(--bkx-bg-light);
+    font-weight: 600;
+}
+
+.bkx-table tbody tr:hover {
+    background-color: var(--bkx-bg-light);
+}
+
+.bkx-table .actions {
+    white-space: nowrap;
+    text-align: right;
+}
+
+/* ==========================================================================
+   Status Badges
+   ========================================================================== */
+
+.bkx-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.4;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.bkx-badge-success {
+    background-color: var(--bkx-success-light);
+    color: var(--bkx-success);
+}
+
+.bkx-badge-warning {
+    background-color: var(--bkx-warning-light);
+    color: #996800;
+}
+
+.bkx-badge-error {
+    background-color: var(--bkx-error-light);
+    color: var(--bkx-error);
+}
+
+.bkx-badge-info {
+    background-color: var(--bkx-info-light);
+    color: var(--bkx-primary);
+}
+
+.bkx-badge-neutral {
+    background-color: var(--bkx-bg-light);
+    color: var(--bkx-text-light);
+}
+
+/* ==========================================================================
+   Button Styles
+   ========================================================================== */
+
+.bkx-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+    border: 1px solid transparent;
+    border-radius: var(--bkx-radius);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.bkx-btn-primary {
+    background-color: var(--bkx-primary);
+    color: #fff;
+}
+
+.bkx-btn-primary:hover {
+    background-color: var(--bkx-primary-hover);
+    color: #fff;
+}
+
+.bkx-btn-secondary {
+    background-color: #fff;
+    border-color: var(--bkx-border);
+    color: var(--bkx-text);
+}
+
+.bkx-btn-secondary:hover {
+    background-color: var(--bkx-bg-light);
+    color: var(--bkx-text);
+}
+
+.bkx-btn-danger {
+    background-color: var(--bkx-error);
+    color: #fff;
+}
+
+.bkx-btn-danger:hover {
+    background-color: #b32d2e;
+    color: #fff;
+}
+
+.bkx-btn-sm {
+    padding: 4px 10px;
+    font-size: 12px;
+}
+
+.bkx-btn-lg {
+    padding: 12px 24px;
+    font-size: 15px;
+}
+
+.bkx-btn:disabled,
+.bkx-btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ==========================================================================
+   License Box
+   ========================================================================== */
+
+.bkx-license-box {
+    background: var(--bkx-bg-light);
+    border: 1px solid var(--bkx-border-light);
+    border-radius: var(--bkx-radius);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.bkx-license-box.is-active {
+    border-color: var(--bkx-success);
+    background: var(--bkx-success-light);
+}
+
+.bkx-license-box.is-expired {
+    border-color: var(--bkx-warning);
+    background: var(--bkx-warning-light);
+}
+
+.bkx-license-box.is-invalid {
+    border-color: var(--bkx-error);
+    background: var(--bkx-error-light);
+}
+
+.bkx-license-status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.bkx-license-status-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bkx-license-status-icon.active {
+    background: var(--bkx-success);
+    color: #fff;
+}
+
+.bkx-license-status-icon.inactive {
+    background: var(--bkx-border);
+    color: #fff;
+}
+
+.bkx-license-key-input {
+    display: flex;
+    gap: 10px;
+    max-width: 500px;
+}
+
+.bkx-license-key-input input {
+    flex: 1;
+}
+
+/* ==========================================================================
+   Loader / Spinner
+   ========================================================================== */
+
+.bkx-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--bkx-border-light);
+    border-top-color: var(--bkx-primary);
+    border-radius: 50%;
+    animation: bkx-spin 0.8s linear infinite;
+}
+
+.bkx-spinner-lg {
+    width: 32px;
+    height: 32px;
+    border-width: 3px;
+}
+
+@keyframes bkx-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.bkx-loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+/* ==========================================================================
+   Tabs
+   ========================================================================== */
+
+.bkx-tabs {
+    margin: 20px 0;
+}
+
+.bkx-tab-nav {
+    display: flex;
+    border-bottom: 1px solid var(--bkx-border-light);
+    margin-bottom: 20px;
+}
+
+.bkx-tab-nav-item {
+    padding: 10px 20px;
+    margin-bottom: -1px;
+    border: 1px solid transparent;
+    border-bottom: none;
+    background: transparent;
+    cursor: pointer;
+    color: var(--bkx-text-light);
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.bkx-tab-nav-item:hover {
+    color: var(--bkx-text);
+}
+
+.bkx-tab-nav-item.active {
+    background: #fff;
+    border-color: var(--bkx-border-light);
+    border-radius: var(--bkx-radius) var(--bkx-radius) 0 0;
+    color: var(--bkx-primary);
+}
+
+.bkx-tab-content {
+    display: none;
+}
+
+.bkx-tab-content.active {
+    display: block;
+}
+
+/* ==========================================================================
+   Modal
+   ========================================================================== */
+
+.bkx-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.bkx-modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.bkx-modal {
+    background: #fff;
+    border-radius: var(--bkx-radius);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+    max-height: 90vh;
+    overflow: auto;
+    transform: scale(0.9);
+    transition: transform 0.3s;
+}
+
+.bkx-modal-overlay.active .bkx-modal {
+    transform: scale(1);
+}
+
+.bkx-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--bkx-border-light);
+}
+
+.bkx-modal-title {
+    margin: 0;
+    font-size: 18px;
+}
+
+.bkx-modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--bkx-text-light);
+    padding: 0;
+    line-height: 1;
+}
+
+.bkx-modal-close:hover {
+    color: var(--bkx-text);
+}
+
+.bkx-modal-body {
+    padding: 20px;
+}
+
+.bkx-modal-footer {
+    padding: 15px 20px;
+    border-top: 1px solid var(--bkx-border-light);
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* ==========================================================================
+   Color Picker
+   ========================================================================== */
+
+.bkx-color-picker-wrap {
+    display: inline-block;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media screen and (max-width: 782px) {
+    .bkx-settings-page .form-table th {
+        width: 100%;
+        display: block;
+        padding-bottom: 5px;
+    }
+
+    .bkx-settings-page .form-table td {
+        display: block;
+        padding-left: 0;
+    }
+
+    .bkx-field input[type="text"],
+    .bkx-field input[type="email"],
+    .bkx-field input[type="url"],
+    .bkx-field input[type="number"],
+    .bkx-field input[type="password"],
+    .bkx-field textarea,
+    .bkx-field select {
+        max-width: 100%;
+    }
+
+    .bkx-license-key-input {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .bkx-tab-nav {
+        flex-wrap: wrap;
+    }
+
+    .bkx-modal {
+        width: 95%;
+    }
+}

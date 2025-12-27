@@ -1,0 +1,88 @@
+/**
+ * Admin Styles
+ *
+ * @package BookingX\StripePayments
+ * @since   1.0.0
+ */
+
+.bkx-stripe-settings-wrap {
+	max-width: 1200px;
+}
+
+.bkx-stripe-settings-wrap h2 {
+	margin-bottom: 20px;
+}
+
+.bkx-stripe-webhook-info {
+	background: #f0f0f1;
+	border: 1px solid #c3c4c7;
+	padding: 20px;
+	margin: 20px 0;
+	border-radius: 4px;
+}
+
+.bkx-stripe-webhook-info h3 {
+	margin-top: 0;
+}
+
+.bkx-stripe-webhook-info code {
+	display: block;
+	background: #fff;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	word-wrap: break-word;
+}
+
+.bkx-stripe-settings-wrap .form-table th {
+	width: 250px;
+	font-weight: 600;
+}
+
+.bkx-stripe-settings-wrap .form-table td {
+	padding: 15px 10px;
+}
+
+.bkx-stripe-settings-wrap .form-table input[type="text"],
+.bkx-stripe-settings-wrap .form-table input[type="password"] {
+	width: 100%;
+	max-width: 400px;
+}
+
+.bkx-stripe-settings-wrap .description {
+	font-style: italic;
+	color: #646970;
+}
+
+/* Meta Box Styles */
+#bkx_stripe_payment_details .inside {
+	margin: 0;
+	padding: 0;
+}
+
+#bkx_stripe_payment_details table {
+	width: 100%;
+}
+
+#bkx_stripe_payment_details table th {
+	text-align: left;
+	padding: 8px;
+	background: #f6f7f7;
+	font-weight: 600;
+}
+
+#bkx_stripe_payment_details table td {
+	padding: 8px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+#bkx_stripe_payment_details table tr:last-child td {
+	border-bottom: none;
+}
+
+#bkx_stripe_payment_details .button {
+	margin-top: 10px;
+	width: 100%;
+	text-align: center;
+}

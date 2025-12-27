@@ -1,0 +1,105 @@
+/**
+ * Stripe Checkout Styles
+ *
+ * @package BookingX\StripePayments
+ * @since   1.0.0
+ */
+
+.bkx-stripe-payment-form {
+	max-width: 500px;
+	margin: 20px auto;
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #e1e1e1;
+	border-radius: 4px;
+}
+
+.bkx-stripe-test-notice {
+	background: #fff3cd;
+	border: 1px solid #ffc107;
+	border-radius: 4px;
+	padding: 12px;
+	margin-bottom: 20px;
+}
+
+.bkx-stripe-test-notice p {
+	margin: 0;
+	color: #856404;
+	font-size: 14px;
+}
+
+#bkx-stripe-payment-element {
+	margin-bottom: 20px;
+	min-height: 100px;
+}
+
+.bkx-stripe-error {
+	background: #f8d7da;
+	border: 1px solid #f5c6cb;
+	color: #721c24;
+	padding: 12px;
+	margin: 10px 0;
+	border-radius: 4px;
+}
+
+.bkx-stripe-error.success {
+	background: #d4edda;
+	border: 1px solid #c3e6cb;
+	color: #155724;
+}
+
+#bkx-stripe-submit-button {
+	width: 100%;
+	padding: 12px 24px;
+	background: #0570de;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background 0.3s ease;
+}
+
+#bkx-stripe-submit-button:hover:not(:disabled) {
+	background: #0259b8;
+}
+
+#bkx-stripe-submit-button:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+.bkx-spinner {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #fff;
+	border-top-color: transparent;
+	border-radius: 50%;
+	animation: bkx-spin 0.6s linear infinite;
+}
+
+@keyframes bkx-spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+#bkx-stripe-payment-request-button {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #e1e1e1;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+	.bkx-stripe-payment-form {
+		padding: 15px;
+	}
+
+	#bkx-stripe-submit-button {
+		font-size: 14px;
+		padding: 10px 20px;
+	}
+}

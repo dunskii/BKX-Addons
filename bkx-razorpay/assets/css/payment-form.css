@@ -1,0 +1,274 @@
+/**
+ * BookingX Razorpay Payment Form Styles
+ *
+ * @package BookingX\Razorpay
+ * @since   1.0.0
+ */
+
+/* Container */
+.bkx-razorpay-form {
+	max-width: 400px;
+	margin: 0 auto;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.bkx-razorpay-payment-container {
+	background: #ffffff;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	padding: 24px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Amount Display */
+.bkx-razorpay-amount-display {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px;
+	background: #f8f9fa;
+	border-radius: 6px;
+	margin-bottom: 20px;
+}
+
+.bkx-razorpay-label {
+	font-size: 14px;
+	color: #666;
+}
+
+.bkx-razorpay-amount {
+	font-size: 24px;
+	font-weight: 600;
+	color: #1a1a1a;
+}
+
+/* Payment Methods */
+.bkx-razorpay-methods {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.bkx-razorpay-methods-label {
+	display: block;
+	font-size: 13px;
+	color: #888;
+	margin-bottom: 10px;
+}
+
+.bkx-razorpay-method-icons {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+
+.bkx-razorpay-method {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 48px;
+	height: 48px;
+	background: #f8f9fa;
+	border-radius: 8px;
+	color: #666;
+	transition: all 0.2s ease;
+}
+
+.bkx-razorpay-method:hover {
+	background: #e8f4fc;
+	color: #3399cc;
+}
+
+.bkx-razorpay-method svg {
+	width: 24px;
+	height: 24px;
+}
+
+/* Pay Button */
+.bkx-razorpay-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	width: 100%;
+	padding: 16px 24px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #ffffff;
+	background: linear-gradient(135deg, #3399cc 0%, #2d87b5 100%);
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	margin-bottom: 16px;
+}
+
+.bkx-razorpay-button:hover:not(:disabled) {
+	background: linear-gradient(135deg, #2d87b5 0%, #26759c 100%);
+	transform: translateY(-1px);
+	box-shadow: 0 4px 12px rgba(51, 153, 204, 0.3);
+}
+
+.bkx-razorpay-button:active:not(:disabled) {
+	transform: translateY(0);
+}
+
+.bkx-razorpay-button:disabled {
+	opacity: 0.7;
+	cursor: not-allowed;
+}
+
+.bkx-razorpay-button.bkx-processing {
+	background: #6b9bb9;
+}
+
+.bkx-razorpay-button-spinner {
+	display: inline-flex;
+	align-items: center;
+}
+
+.bkx-spinner {
+	animation: bkx-spin 1s linear infinite;
+}
+
+@keyframes bkx-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* Error/Success Messages */
+.bkx-razorpay-error,
+.bkx-razorpay-success {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 12px 16px;
+	border-radius: 6px;
+	font-size: 14px;
+	margin-bottom: 16px;
+}
+
+.bkx-razorpay-error {
+	background: #fef2f2;
+	color: #dc2626;
+	border: 1px solid #fecaca;
+}
+
+.bkx-razorpay-success {
+	background: #f0fdf4;
+	color: #16a34a;
+	border: 1px solid #bbf7d0;
+}
+
+.bkx-razorpay-error-icon,
+.bkx-razorpay-success-icon {
+	font-size: 16px;
+}
+
+/* Secure Badge */
+.bkx-razorpay-secure-badge {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	font-size: 12px;
+	color: #888;
+}
+
+.bkx-razorpay-secure-badge svg {
+	color: #16a34a;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+	.bkx-razorpay-payment-container {
+		padding: 16px;
+	}
+
+	.bkx-razorpay-amount {
+		font-size: 20px;
+	}
+
+	.bkx-razorpay-button {
+		padding: 14px 20px;
+		font-size: 15px;
+	}
+}
+
+/* Admin Styles */
+.bkx-razorpay-admin-notice {
+	padding: 12px 16px;
+	margin: 16px 0;
+	border-left: 4px solid #3399cc;
+	background: #f0f8ff;
+}
+
+.bkx-razorpay-webhook-url {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin: 8px 0;
+}
+
+.bkx-razorpay-webhook-url input {
+	flex: 1;
+	padding: 8px 12px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-family: monospace;
+	font-size: 13px;
+	background: #f8f9fa;
+}
+
+.bkx-razorpay-copy-webhook {
+	padding: 8px 16px;
+	background: #3399cc;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+
+.bkx-razorpay-copy-webhook:hover {
+	background: #2d87b5;
+}
+
+.bkx-razorpay-copy-webhook.bkx-copy-success {
+	background: #16a34a;
+}
+
+.bkx-razorpay-copy-webhook.bkx-copy-error {
+	background: #dc2626;
+}
+
+.bkx-razorpay-mode-indicator {
+	display: inline-block;
+	padding: 4px 12px;
+	border-radius: 4px;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.bkx-razorpay-mode-test {
+	background: #fef3c7;
+	color: #b45309;
+}
+
+.bkx-razorpay-mode-live {
+	background: #dcfce7;
+	color: #16a34a;
+}
+
+.bkx-verify-success {
+	color: #16a34a;
+}
+
+.bkx-verify-error {
+	color: #dc2626;
+}

@@ -1,0 +1,51 @@
+{
+    "name": "bookingx/addon-sdk",
+    "description": "SDK for building BookingX add-ons",
+    "version": "1.0.0",
+    "type": "library",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Booking X",
+            "email": "dev@bookingx.com",
+            "homepage": "https://bookingx.com"
+        }
+    ],
+    "homepage": "https://bookingx.com/addons",
+    "support": {
+        "docs": "https://docs.bookingx.com/addon-sdk",
+        "issues": "https://github.com/bookingx/addon-sdk/issues"
+    },
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "squizlabs/php_codesniffer": "^3.7",
+        "wp-coding-standards/wpcs": "^2.3",
+        "phpstan/phpstan": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BookingX\\AddonSDK\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BookingX\\AddonSDK\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "phpcs": "phpcs --standard=WordPress src/",
+        "phpcbf": "phpcbf --standard=WordPress src/",
+        "phpstan": "phpstan analyse src/ --level=6"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

@@ -1,0 +1,53 @@
+<?php
+/**
+ * PSR-4 Autoloader for Square Payments Add-on
+ *
+ * @package BookingX\SquarePayments
+ */
+
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+// Require Composer autoloader if available.
+if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
+	require_once __DIR__ . '/vendor/autoload.php';
+}
+
+// PSR-4 autoloader for add-on classes.
+spl_autoload_register(
+	function ( $class ) {
+		// Project-specific namespace prefix.
+		$prefix = 'BookingX\\SquarePayments\\';
+
+		// Base directory for the namespace prefix.
+		$base_dir = __DIR__ . '/src/';
+
+		// Does the class use the namespace prefix?
+		$len = strlen( $prefix );
+		if ( strncmp( $prefix, $class, $len ) !== 0 ) {
+			// No, move to the next registered autoloader.
+			return;
+		}
+
+		// Get the relative class name.
+		$relative_class = substr( $class, $len );
+
+		// Replace the namespace prefix with the base directory, replace namespace
+		// separators with directory separators in the relative class name, append
+		// with .php.
+		$file = $base_dir . str_replace( '\\', '/', $relative_class ) . '.php';
+
+		// If the file exists, require it.
+		if ( file_exists( $file ) ) {
+			require $file;
+		}
+	}
+);
+
+// Load SDK autoloader.
+$sdk_autoloader = dirname( __DIR__ ) . '/_shared/bkx-addon-sdk/autoload.php';
+if ( file_exists( $sdk_autoloader ) ) {
+	require_once $sdk_autoloader;
+}

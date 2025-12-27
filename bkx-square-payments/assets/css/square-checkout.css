@@ -1,0 +1,167 @@
+/**
+ * Square Checkout Styles
+ *
+ * @package BookingX\SquarePayments
+ */
+
+.bkx-square-payment-form {
+	max-width: 500px;
+	margin: 20px auto;
+	padding: 30px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bkx-square-payment-header {
+	margin-bottom: 24px;
+	text-align: center;
+}
+
+.bkx-square-payment-header h3 {
+	margin: 0 0 8px;
+	font-size: 24px;
+	font-weight: 600;
+	color: #333;
+}
+
+.bkx-square-payment-header .description {
+	margin: 0;
+	color: #666;
+	font-size: 14px;
+}
+
+.bkx-square-payment-methods {
+	margin-bottom: 24px;
+}
+
+.bkx-payment-method {
+	margin-bottom: 16px;
+}
+
+/* Card Fields */
+.bkx-square-card-field {
+	margin-bottom: 12px;
+	padding: 12px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	background: #fafafa;
+	transition: border-color 0.3s ease;
+}
+
+.bkx-square-card-field:focus-within {
+	border-color: #0073aa;
+	background: #fff;
+}
+
+.bkx-square-card-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 12px;
+}
+
+.bkx-square-card-row .bkx-square-card-field {
+	margin-bottom: 12px;
+}
+
+/* Digital Wallet Buttons */
+.bkx-digital-wallet {
+	min-height: 48px;
+	margin-bottom: 12px;
+}
+
+/* Messages */
+.bkx-square-messages {
+	margin-bottom: 20px;
+}
+
+.bkx-error-message {
+	padding: 12px 16px;
+	background: #f8d7da;
+	border: 1px solid #f5c6cb;
+	border-radius: 4px;
+	color: #721c24;
+	font-size: 14px;
+}
+
+.bkx-success-message {
+	padding: 12px 16px;
+	background: #d4edda;
+	border: 1px solid #c3e6cb;
+	border-radius: 4px;
+	color: #155724;
+	font-size: 14px;
+}
+
+/* Payment Actions */
+.bkx-square-payment-actions {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.bkx-pay-button {
+	width: 100%;
+	padding: 14px 24px;
+	font-size: 16px;
+	font-weight: 600;
+	background: #0073aa;
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.bkx-pay-button:hover {
+	background: #005177;
+}
+
+.bkx-pay-button:disabled {
+	background: #ccc;
+	cursor: not-allowed;
+}
+
+.bkx-square-processing {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	color: #666;
+	font-size: 14px;
+}
+
+.bkx-square-processing .spinner {
+	float: none;
+	margin: 0;
+}
+
+/* Security Badge */
+.bkx-square-security-badge {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	padding-top: 16px;
+	border-top: 1px solid #eee;
+	color: #666;
+	font-size: 13px;
+}
+
+.bkx-square-security-badge .dashicons {
+	width: 18px;
+	height: 18px;
+	font-size: 18px;
+	color: #4CAF50;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+	.bkx-square-payment-form {
+		padding: 20px;
+		margin: 10px;
+	}
+
+	.bkx-square-card-row {
+		grid-template-columns: 1fr;
+	}
+}
