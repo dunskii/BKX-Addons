@@ -1,0 +1,110 @@
+/**
+ * BookingX Booking Reminders Admin Styles
+ *
+ * @package BookingX\BookingReminders
+ * @since   1.0.0
+ */
+
+/* Settings Page */
+.bkx-reminders-settings h2 {
+	margin-top: 30px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.bkx-reminders-settings h2:first-of-type {
+	margin-top: 0;
+}
+
+.bkx-reminders-settings .form-table th {
+	width: 200px;
+}
+
+.bkx-reminders-settings .form-table input[type="number"] {
+	margin: 0 8px;
+}
+
+/* Reminder Meta Box */
+.bkx-reminder-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.bkx-reminder-list li {
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	background: #f9f9f9;
+	border-left: 3px solid #ccc;
+}
+
+.bkx-reminder-list li.bkx-reminder-pending {
+	border-left-color: #ffb900;
+	background: #fff8e5;
+}
+
+.bkx-reminder-list li.bkx-reminder-sent {
+	border-left-color: #46b450;
+	background: #ecf7ed;
+}
+
+.bkx-reminder-list li.bkx-reminder-failed {
+	border-left-color: #dc3232;
+	background: #fbeaea;
+}
+
+.bkx-reminder-list li.bkx-reminder-cancelled {
+	border-left-color: #999;
+	background: #f5f5f5;
+}
+
+.bkx-reminder-list small {
+	color: #666;
+}
+
+.bkx-reminder-list .button-small {
+	margin-top: 5px;
+}
+
+/* Test Results */
+#bkx-test-email-result,
+#bkx-test-sms-result {
+	display: inline-block;
+	margin-left: 10px;
+	font-weight: 500;
+}
+
+/* Status Badges */
+.bkx-status-pending {
+	color: #996b00;
+}
+
+.bkx-status-sent {
+	color: #357a38;
+}
+
+.bkx-status-failed {
+	color: #b71c1c;
+}
+
+.bkx-status-cancelled {
+	color: #666;
+}
+
+/* Template Variables */
+.bkx-template-vars {
+	background: #f5f5f5;
+	padding: 15px;
+	border-radius: 4px;
+	margin-top: 10px;
+}
+
+.bkx-template-vars code {
+	background: #fff;
+	padding: 2px 6px;
+	margin: 2px;
+	display: inline-block;
+	border-radius: 3px;
+	font-size: 12px;
+}

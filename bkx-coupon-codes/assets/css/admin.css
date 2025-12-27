@@ -1,0 +1,255 @@
+/**
+ * BookingX Coupon Codes Admin Styles
+ *
+ * @package BookingX\CouponCodes
+ * @since   1.0.0
+ */
+
+/* Settings Page */
+.bkx-coupon-settings h2 {
+	margin-top: 30px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.bkx-coupon-settings h2:first-of-type {
+	margin-top: 0;
+}
+
+.bkx-coupon-settings .form-table th {
+	width: 200px;
+}
+
+/* Coupon List Table */
+.bkx-status {
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.bkx-status-active {
+	background: #e7f5ea;
+	color: #1e7e34;
+}
+
+.bkx-status-inactive {
+	background: #f5f5f5;
+	color: #666;
+}
+
+/* Coupon Form */
+.bkx-coupon-form {
+	max-width: 800px;
+}
+
+.bkx-coupon-form .form-table th {
+	width: 180px;
+}
+
+.bkx-coupon-form input[type="text"],
+.bkx-coupon-form input[type="number"],
+.bkx-coupon-form select,
+.bkx-coupon-form textarea {
+	width: 100%;
+	max-width: 400px;
+}
+
+.bkx-coupon-form input[type="number"].small-text {
+	width: 80px;
+}
+
+.bkx-coupon-form .bkx-code-field {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.bkx-coupon-form .bkx-code-field input {
+	text-transform: uppercase;
+	font-family: monospace;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+.bkx-coupon-form .description {
+	color: #666;
+	font-style: italic;
+	margin-top: 5px;
+}
+
+/* Form Sections */
+.bkx-form-section {
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.bkx-form-section h3 {
+	margin-top: 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+}
+
+/* Multi-select */
+.bkx-multi-select {
+	min-height: 100px;
+	max-height: 200px;
+}
+
+/* Date Range */
+.bkx-date-range {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.bkx-date-range input {
+	width: 150px !important;
+}
+
+/* Usage Stats Card */
+.bkx-usage-stats {
+	display: flex;
+	gap: 20px;
+	padding: 15px;
+	background: #f5f5f5;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+.bkx-stat-item {
+	text-align: center;
+}
+
+.bkx-stat-value {
+	font-size: 24px;
+	font-weight: 600;
+	color: #23282d;
+}
+
+.bkx-stat-label {
+	font-size: 12px;
+	color: #666;
+	margin-top: 5px;
+}
+
+/* Quick Actions */
+.bkx-quick-actions {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+/* Validation Errors */
+.bkx-validation-error {
+	border-color: #dc3232 !important;
+}
+
+.bkx-error-message {
+	color: #dc3232;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+/* Code Preview */
+.bkx-code-preview {
+	display: inline-block;
+	padding: 8px 12px;
+	background: #f1f1f1;
+	border: 1px dashed #ccc;
+	border-radius: 4px;
+	font-family: monospace;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+
+/* Restriction Pills */
+.bkx-restriction-pills {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	margin-top: 10px;
+}
+
+.bkx-restriction-pill {
+	display: inline-flex;
+	align-items: center;
+	padding: 4px 10px;
+	background: #e5e5e5;
+	border-radius: 20px;
+	font-size: 12px;
+}
+
+.bkx-restriction-pill .remove {
+	margin-left: 5px;
+	cursor: pointer;
+	color: #999;
+}
+
+.bkx-restriction-pill .remove:hover {
+	color: #dc3232;
+}
+
+/* Toggle Switch */
+.bkx-toggle {
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 26px;
+}
+
+.bkx-toggle input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.bkx-toggle-slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	transition: 0.3s;
+	border-radius: 26px;
+}
+
+.bkx-toggle-slider:before {
+	position: absolute;
+	content: "";
+	height: 20px;
+	width: 20px;
+	left: 3px;
+	bottom: 3px;
+	background-color: white;
+	transition: 0.3s;
+	border-radius: 50%;
+}
+
+.bkx-toggle input:checked + .bkx-toggle-slider {
+	background-color: #2196F3;
+}
+
+.bkx-toggle input:checked + .bkx-toggle-slider:before {
+	transform: translateX(24px);
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+	.bkx-coupon-form .form-table th {
+		width: 100%;
+	}
+
+	.bkx-usage-stats {
+		flex-wrap: wrap;
+	}
+
+	.bkx-stat-item {
+		flex: 1 1 45%;
+	}
+}

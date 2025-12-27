@@ -1,0 +1,225 @@
+/**
+ * BookingX Google Calendar Admin Styles
+ *
+ * @package BookingX\GoogleCalendar
+ * @since   1.0.0
+ */
+
+/* Connection Status Card */
+.bkx-connection-status {
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	border-radius: 4px;
+	padding: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.bkx-connection-status.connected {
+	border-left: 4px solid #46b450;
+}
+
+.bkx-connection-status.disconnected {
+	border-left: 4px solid #ffb900;
+}
+
+.bkx-connection-info {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.bkx-connection-info .dashicons {
+	font-size: 32px;
+	width: 32px;
+	height: 32px;
+}
+
+.bkx-connection-status.connected .dashicons {
+	color: #46b450;
+}
+
+.bkx-connection-status.disconnected .dashicons {
+	color: #ffb900;
+}
+
+.bkx-connection-details {
+	flex: 1;
+}
+
+.bkx-connection-details strong {
+	display: block;
+	font-size: 16px;
+}
+
+.bkx-connection-details .bkx-email {
+	color: #666;
+	font-size: 13px;
+}
+
+.bkx-connection-actions {
+	display: flex;
+	gap: 10px;
+}
+
+/* Settings Page */
+.bkx-google-calendar-settings h2 {
+	margin-top: 30px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.bkx-google-calendar-settings h2:first-of-type {
+	margin-top: 0;
+}
+
+.bkx-google-calendar-settings .form-table th {
+	width: 200px;
+}
+
+.bkx-google-calendar-settings .suffix {
+	margin-left: 5px;
+	color: #666;
+}
+
+/* Setup Instructions */
+.bkx-setup-instructions {
+	background: #f5f5f5;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 20px;
+	margin-top: 30px;
+}
+
+.bkx-setup-instructions h2 {
+	margin-top: 0 !important;
+	border: none !important;
+}
+
+.bkx-setup-instructions ol {
+	margin-left: 20px;
+}
+
+.bkx-setup-instructions li {
+	margin-bottom: 10px;
+}
+
+.bkx-setup-instructions code {
+	background: #fff;
+	padding: 4px 8px;
+	border-radius: 3px;
+	display: inline-block;
+	margin-top: 5px;
+}
+
+/* Staff Meta Box */
+.bkx-staff-calendar-meta {
+	padding: 10px 0;
+}
+
+.bkx-staff-calendar-meta p {
+	margin: 0 0 10px;
+}
+
+.bkx-staff-calendar-meta .bkx-connected {
+	color: #46b450;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.bkx-staff-calendar-meta .bkx-connected .dashicons {
+	font-size: 18px;
+	width: 18px;
+	height: 18px;
+}
+
+.bkx-staff-calendar-meta .bkx-not-connected {
+	color: #666;
+	font-style: italic;
+}
+
+.bkx-staff-calendar-meta .description {
+	font-size: 11px;
+	color: #999;
+	word-break: break-all;
+}
+
+/* Sync Status */
+.bkx-sync-status {
+	display: flex;
+	gap: 20px;
+	padding: 15px;
+	background: #f9f9f9;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+.bkx-sync-status-item {
+	text-align: center;
+}
+
+.bkx-sync-status-value {
+	font-size: 24px;
+	font-weight: 600;
+	color: #23282d;
+}
+
+.bkx-sync-status-label {
+	font-size: 12px;
+	color: #666;
+}
+
+/* Color Preview */
+.bkx-color-preview {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-radius: 2px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+/* Calendar List */
+.bkx-calendar-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.bkx-calendar-list li {
+	padding: 8px 0;
+	border-bottom: 1px solid #eee;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.bkx-calendar-list li:last-child {
+	border-bottom: none;
+}
+
+.bkx-calendar-color {
+	width: 12px;
+	height: 12px;
+	border-radius: 2px;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+	.bkx-connection-info {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.bkx-connection-actions {
+		margin-top: 10px;
+	}
+
+	.bkx-google-calendar-settings .form-table th {
+		width: 100%;
+	}
+}

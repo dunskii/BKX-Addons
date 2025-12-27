@@ -1,0 +1,270 @@
+/**
+ * BookingX Coupon Codes Frontend Styles
+ *
+ * @package BookingX\CouponCodes
+ * @since   1.0.0
+ */
+
+/* Coupon Field Container */
+.bkx-coupon-field {
+	margin: 20px 0;
+	padding: 15px;
+	background: #f9f9f9;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+}
+
+.bkx-coupon-field label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: 500;
+	color: #333;
+}
+
+/* Input Area */
+.bkx-coupon-input-area {
+	display: flex;
+	gap: 10px;
+}
+
+.bkx-coupon-input {
+	flex: 1;
+	padding: 10px 12px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.bkx-coupon-input:focus {
+	border-color: #0073aa;
+	outline: none;
+	box-shadow: 0 0 0 1px #0073aa;
+}
+
+.bkx-apply-coupon {
+	padding: 10px 20px;
+	background: #0073aa;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	font-size: 14px;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+
+.bkx-apply-coupon:hover {
+	background: #005a87;
+}
+
+.bkx-apply-coupon:disabled {
+	background: #ccc;
+	cursor: not-allowed;
+}
+
+/* Applied State */
+.bkx-coupon-applied {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 15px;
+	background: #e7f5ea;
+	border: 1px solid #4caf50;
+	border-radius: 4px;
+}
+
+.bkx-coupon-code-badge {
+	display: inline-block;
+	padding: 4px 10px;
+	background: #4caf50;
+	color: #fff;
+	border-radius: 3px;
+	font-family: monospace;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.bkx-coupon-discount-text {
+	flex: 1;
+	color: #2e7d32;
+	font-weight: 500;
+}
+
+.bkx-remove-coupon {
+	width: 24px;
+	height: 24px;
+	padding: 0;
+	background: none;
+	border: none;
+	font-size: 18px;
+	color: #999;
+	cursor: pointer;
+	line-height: 1;
+}
+
+.bkx-remove-coupon:hover {
+	color: #dc3232;
+}
+
+/* Savings Message */
+.bkx-coupon-savings {
+	margin-top: 10px;
+	padding: 8px 12px;
+	background: #fff3cd;
+	border-left: 4px solid #ffc107;
+	color: #856404;
+	font-size: 13px;
+}
+
+/* Messages */
+.bkx-coupon-message {
+	display: none;
+	margin-top: 10px;
+	padding: 8px 12px;
+	border-radius: 4px;
+	font-size: 13px;
+}
+
+.bkx-message-success {
+	background: #e7f5ea;
+	color: #2e7d32;
+	border: 1px solid #c3e6cb;
+}
+
+.bkx-message-error {
+	background: #fbeaea;
+	color: #c62828;
+	border: 1px solid #f5c6cb;
+}
+
+.bkx-message-info {
+	background: #e3f2fd;
+	color: #1565c0;
+	border: 1px solid #90caf9;
+}
+
+/* Price Breakdown Discount Row */
+.bkx-discount-row {
+	color: #2e7d32;
+}
+
+.bkx-discount-row td {
+	font-weight: 500;
+}
+
+.bkx-discount-amount {
+	color: #2e7d32;
+}
+
+/* Collapsible Coupon Field */
+.bkx-coupon-toggle {
+	display: block;
+	margin-bottom: 10px;
+	color: #0073aa;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.bkx-coupon-toggle:before {
+	content: "+";
+	margin-right: 5px;
+	font-weight: bold;
+}
+
+.bkx-coupon-toggle.active:before {
+	content: "-";
+}
+
+.bkx-coupon-content {
+	display: none;
+}
+
+.bkx-coupon-content.active {
+	display: block;
+}
+
+/* Loading State */
+.bkx-coupon-loading {
+	position: relative;
+	pointer-events: none;
+}
+
+.bkx-coupon-loading:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.7);
+}
+
+.bkx-coupon-loading .bkx-spinner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Expiry Warning */
+.bkx-coupon-expiry-warning {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-top: 8px;
+	padding: 6px 10px;
+	background: #fff3e0;
+	border-radius: 3px;
+	font-size: 12px;
+	color: #e65100;
+}
+
+.bkx-coupon-expiry-warning svg {
+	flex-shrink: 0;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 600px) {
+	.bkx-coupon-input-area {
+		flex-direction: column;
+	}
+
+	.bkx-apply-coupon {
+		width: 100%;
+	}
+
+	.bkx-coupon-applied {
+		flex-wrap: wrap;
+	}
+
+	.bkx-coupon-discount-text {
+		flex: 1 1 100%;
+		order: 2;
+		margin-top: 5px;
+	}
+}
+
+/* Dark Theme Support */
+@media (prefers-color-scheme: dark) {
+	.bkx-coupon-field {
+		background: #2d2d2d;
+		border-color: #444;
+	}
+
+	.bkx-coupon-field label {
+		color: #e0e0e0;
+	}
+
+	.bkx-coupon-input {
+		background: #3d3d3d;
+		border-color: #555;
+		color: #e0e0e0;
+	}
+
+	.bkx-coupon-applied {
+		background: #1b3b1f;
+		border-color: #388e3c;
+	}
+}

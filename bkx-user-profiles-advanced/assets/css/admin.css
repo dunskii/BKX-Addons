@@ -1,0 +1,37 @@
+/**
+ * User Profiles Advanced Admin Styles
+ *
+ * @package BookingX\UserProfilesAdvanced
+ * @since   1.0.0
+ */
+
+/* Settings Page */
+.bkx-user-profiles-settings .nav-tab-wrapper {
+    margin-bottom: 20px;
+}
+
+.bkx-user-profiles-settings .bkx-card {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.bkx-user-profiles-settings .bkx-card h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Shortcodes Table */
+.bkx-user-profiles-settings .widefat code {
+    background: #f0f0f0;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+/* Customer List */
+.bkx-user-profiles-settings .wp-list-table a {
+    font-weight: 500;
+}
