@@ -1,0 +1,42 @@
+/**
+ * Mailchimp Pro Admin Styles
+ *
+ * @package BookingX\MailchimpPro
+ * @since   1.0.0
+ */
+
+.bkx-mailchimp-pro-settings {}
+
+.bkx-mailchimp-pro-settings #connection-status {
+	margin-left: 10px;
+}
+
+.bkx-mailchimp-pro-settings #connection-status.success {
+	color: #46b450;
+}
+
+.bkx-mailchimp-pro-settings #connection-status.error {
+	color: #dc3232;
+}
+
+.bkx-mailchimp-pro-settings #sync-status {
+	margin-top: 15px;
+	padding: 10px;
+	background: #f0f0f1;
+	border-left: 4px solid #2271b1;
+	display: none;
+}
+
+.bkx-mailchimp-pro-settings #sync-status.show {
+	display: block;
+}
+
+.bkx-mailchimp-pro-settings #sync-status.success {
+	border-left-color: #46b450;
+	background: #ecf7ed;
+}
+
+.bkx-mailchimp-pro-settings #sync-status.error {
+	border-left-color: #dc3232;
+	background: #fcf0f1;
+}

@@ -1,0 +1,77 @@
+/**
+ * ActiveCampaign Admin Styles
+ *
+ * @package BookingX\ActiveCampaign
+ * @since   1.0.0
+ */
+
+/* Settings Page */
+.bkx-activecampaign-settings {
+	max-width: 1200px;
+}
+
+.bkx-activecampaign-settings .nav-tab-wrapper {
+	margin-bottom: 20px;
+}
+
+.bkx-tab-content {
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #c3c4c7;
+	border-top: none;
+}
+
+/* Connection Status */
+.bkx-connection-status {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 10px 15px;
+	border-radius: 6px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.bkx-connected {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-disconnected {
+	background: #e2e3e5;
+	color: #383d41;
+}
+
+/* License Status */
+.bkx-license-status {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	padding: 5px 10px;
+	border-radius: 4px;
+	font-weight: 500;
+}
+
+.bkx-license-active {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-license-expired {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.bkx-license-inactive {
+	background: #e2e3e5;
+	color: #383d41;
+}
+
+/* Form Table */
+.bkx-activecampaign-settings .form-table th {
+	width: 200px;
+}
+
+.bkx-activecampaign-settings .form-table select {
+	min-width: 250px;
+}

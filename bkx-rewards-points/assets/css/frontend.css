@@ -1,0 +1,328 @@
+/**
+ * Rewards Points Frontend Styles
+ *
+ * @package BookingX\RewardsPoints
+ * @since   1.0.0
+ */
+
+/* My Points Dashboard */
+.bkx-my-points {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.bkx-points-header {
+	display: flex;
+	gap: 30px;
+	margin-bottom: 30px;
+}
+
+.bkx-points-balance-card {
+	flex: 1;
+	padding: 30px;
+	background: linear-gradient(135deg, #0073aa 0%, #00a0d2 100%);
+	color: #fff;
+	border-radius: 12px;
+	text-align: center;
+}
+
+.bkx-points-balance-value {
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 10px;
+}
+
+.bkx-points-balance-label {
+	font-size: 16px;
+	opacity: 0.9;
+	margin-bottom: 15px;
+}
+
+.bkx-points-value {
+	font-size: 14px;
+	opacity: 0.8;
+}
+
+.bkx-points-stats {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.bkx-stat-item {
+	padding: 20px;
+	background: #f9f9f9;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.bkx-stat-value {
+	font-size: 24px;
+	font-weight: 600;
+	color: #333;
+}
+
+.bkx-stat-label {
+	font-size: 13px;
+	color: #666;
+}
+
+/* Points History */
+.bkx-points-history,
+.bkx-points-history-full {
+	margin-bottom: 30px;
+}
+
+.bkx-points-history h3 {
+	margin-bottom: 15px;
+}
+
+.bkx-history-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.bkx-history-table th,
+.bkx-history-table td {
+	padding: 12px;
+	text-align: left;
+	border-bottom: 1px solid #eee;
+}
+
+.bkx-history-table th {
+	background: #f9f9f9;
+	font-weight: 600;
+}
+
+.bkx-points-positive {
+	color: #28a745;
+	font-weight: 600;
+}
+
+.bkx-points-negative {
+	color: #dc3545;
+	font-weight: 600;
+}
+
+.bkx-type-badge {
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 4px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.bkx-type-booking {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-type-redemption {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.bkx-type-signup {
+	background: #cce5ff;
+	color: #004085;
+}
+
+.bkx-type-manual {
+	background: #e2e3e5;
+	color: #383d41;
+}
+
+.bkx-type-expired {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+.bkx-type-refund {
+	background: #d4edda;
+	color: #155724;
+}
+
+/* Points Info */
+.bkx-points-info {
+	padding: 20px;
+	background: #f0f7fc;
+	border: 1px solid #cce5ff;
+	border-radius: 8px;
+}
+
+.bkx-points-info h3 {
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.bkx-points-info ul {
+	margin: 0;
+	padding-left: 20px;
+}
+
+.bkx-points-info li {
+	margin-bottom: 8px;
+}
+
+/* Points Selector (Booking Form) */
+.bkx-points-selector {
+	margin: 20px 0;
+	padding: 20px;
+	background: #fff;
+	border: 2px solid #0073aa;
+	border-radius: 12px;
+}
+
+.bkx-points-selector-header {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 15px;
+}
+
+.bkx-points-icon {
+	color: #0073aa;
+	font-size: 24px;
+}
+
+.bkx-points-title {
+	font-size: 16px;
+	font-weight: 600;
+	flex: 1;
+}
+
+.bkx-points-available {
+	font-size: 14px;
+	color: #666;
+}
+
+.bkx-points-input-group {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.bkx-points-input-group label {
+	font-weight: 500;
+}
+
+.bkx-points-input {
+	width: 120px;
+	padding: 8px 12px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	font-size: 16px;
+}
+
+.bkx-apply-points {
+	padding: 8px 20px;
+}
+
+.bkx-points-quick-select {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 15px;
+}
+
+.bkx-quick-points {
+	padding: 8px 16px;
+	background: #f0f0f1;
+	border: 1px solid #ddd;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 13px;
+	transition: all 0.2s;
+}
+
+.bkx-quick-points:hover {
+	background: #e5e5e5;
+}
+
+.bkx-quick-points.bkx-use-all {
+	background: #0073aa;
+	color: #fff;
+	border-color: #0073aa;
+}
+
+.bkx-quick-points.bkx-use-all:hover {
+	background: #005177;
+}
+
+.bkx-points-discount-preview {
+	padding: 10px 15px;
+	background: #f9f9f9;
+	border-radius: 6px;
+	font-size: 16px;
+}
+
+.bkx-discount-label {
+	color: #666;
+}
+
+.bkx-discount-value {
+	font-weight: 600;
+	color: #28a745;
+}
+
+.bkx-points-applied {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 15px;
+	background: #d4edda;
+	border-radius: 8px;
+}
+
+.bkx-points-applied .dashicons {
+	color: #28a745;
+	font-size: 24px;
+}
+
+.bkx-applied-text {
+	flex: 1;
+	font-weight: 500;
+}
+
+.bkx-remove-points {
+	padding: 5px 15px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+/* Points Balance Badge */
+.bkx-points-balance {
+	display: inline-flex;
+	align-items: center;
+	padding: 5px 12px;
+	background: #0073aa;
+	color: #fff;
+	border-radius: 15px;
+	font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.bkx-points-header {
+		flex-direction: column;
+	}
+
+	.bkx-points-stats {
+		flex-direction: row;
+	}
+
+	.bkx-stat-item {
+		flex: 1;
+	}
+
+	.bkx-points-input-group {
+		flex-wrap: wrap;
+	}
+
+	.bkx-points-quick-select {
+		flex-wrap: wrap;
+	}
+}

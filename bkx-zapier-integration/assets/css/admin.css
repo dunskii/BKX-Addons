@@ -1,0 +1,155 @@
+/**
+ * Zapier Integration Admin Styles
+ *
+ * @package BookingX\ZapierIntegration
+ * @since   1.0.0
+ */
+
+/* Settings Page */
+.bkx-zapier-settings {
+	max-width: 1200px;
+}
+
+.bkx-zapier-settings .nav-tab-wrapper {
+	margin-bottom: 20px;
+}
+
+.bkx-tab-content {
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #c3c4c7;
+	border-top: none;
+}
+
+/* Setup Steps */
+.bkx-setup-steps {
+	display: flex;
+	gap: 20px;
+	margin: 30px 0;
+}
+
+.bkx-step {
+	flex: 1;
+	display: flex;
+	gap: 15px;
+	padding: 20px;
+	background: #f0f0f1;
+	border-radius: 8px;
+}
+
+.bkx-step-number {
+	width: 40px;
+	height: 40px;
+	background: #0073aa;
+	color: #fff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	font-weight: 600;
+	flex-shrink: 0;
+}
+
+.bkx-step-content h3 {
+	margin: 0 0 10px;
+	font-size: 16px;
+}
+
+.bkx-step-content p {
+	margin: 0;
+	color: #666;
+}
+
+/* API Credentials */
+.bkx-api-credentials {
+	margin: 30px 0;
+	padding: 20px;
+	background: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+}
+
+.bkx-api-credentials h3 {
+	margin-top: 0;
+}
+
+.bkx-copy-field {
+	display: inline-block;
+	padding: 8px 12px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-family: monospace;
+	max-width: 400px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.bkx-api-key {
+	letter-spacing: 1px;
+}
+
+.bkx-copy-btn {
+	margin-left: 10px !important;
+}
+
+/* Triggers/Actions Tables */
+.bkx-available-triggers,
+.bkx-available-actions {
+	margin: 30px 0;
+}
+
+.bkx-available-triggers h3,
+.bkx-available-actions h3 {
+	margin-bottom: 15px;
+}
+
+.bkx-available-triggers code,
+.bkx-available-actions code {
+	background: #e5e5e5;
+	padding: 3px 6px;
+	border-radius: 3px;
+}
+
+/* Subscriptions */
+.bkx-subscriptions h2 {
+	margin-bottom: 20px;
+}
+
+/* License Status */
+.bkx-license-status {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	padding: 5px 10px;
+	border-radius: 4px;
+	font-weight: 500;
+}
+
+.bkx-license-active {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-license-expired {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.bkx-license-inactive {
+	background: #e2e3e5;
+	color: #383d41;
+}
+
+/* Responsive */
+@media (max-width: 782px) {
+	.bkx-setup-steps {
+		flex-direction: column;
+	}
+
+	.bkx-copy-field {
+		max-width: 200px;
+	}
+}
