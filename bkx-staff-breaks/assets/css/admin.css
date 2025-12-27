@@ -1,0 +1,157 @@
+/**
+ * Staff Breaks Admin Styles
+ *
+ * @package BookingX\StaffBreaks
+ * @since   1.0.0
+ */
+
+/* Settings Page */
+.bkx-staff-breaks-settings {
+	max-width: 1200px;
+}
+
+.bkx-staff-breaks-settings .nav-tab-wrapper {
+	margin-bottom: 20px;
+}
+
+.bkx-tab-content {
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #c3c4c7;
+	border-top: none;
+}
+
+/* Time Off Header */
+.bkx-timeoff-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.bkx-filter-form {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+/* Pending Badge */
+.bkx-pending-badge {
+	display: inline-block;
+	background: #d63638;
+	color: #fff;
+	font-size: 11px;
+	font-weight: 600;
+	padding: 2px 6px;
+	border-radius: 10px;
+	margin-left: 5px;
+}
+
+/* Recurring Badge */
+.bkx-recurring-badge {
+	display: inline-block;
+	background: #2271b1;
+	color: #fff;
+	font-size: 11px;
+	padding: 2px 6px;
+	border-radius: 3px;
+}
+
+/* License Status */
+.bkx-license-active {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	padding: 5px 10px;
+	background: #d4edda;
+	color: #155724;
+	border-radius: 4px;
+	font-weight: 500;
+	margin-left: 10px;
+}
+
+/* Modal */
+.bkx-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bkx-modal-content {
+	background: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	max-width: 600px;
+	width: 100%;
+	max-height: 80vh;
+	overflow-y: auto;
+}
+
+.bkx-modal-content h2,
+.bkx-modal-content h3 {
+	margin-top: 0;
+}
+
+/* Breaks Table */
+.bkx-breaks-table {
+	margin-top: 15px;
+}
+
+.bkx-no-breaks {
+	color: #666;
+	font-style: italic;
+}
+
+/* Add Holiday Form */
+.bkx-add-holiday-form {
+	background: #f9f9f9;
+	padding: 15px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+/* Table Actions */
+.widefat td button + button {
+	margin-left: 5px;
+}
+
+/* Form Layout in Metabox */
+#bkx_staff_breaks .form-table th {
+	width: 120px;
+	padding: 10px 0;
+}
+
+#bkx_staff_breaks .form-table td {
+	padding: 10px 0;
+}
+
+/* Time Row Toggle */
+.bkx-time-row {
+	transition: opacity 0.2s;
+}
+
+.bkx-time-row.hidden {
+	display: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+	.bkx-timeoff-header {
+		flex-direction: column;
+		gap: 15px;
+		align-items: flex-start;
+	}
+
+	.bkx-modal-content {
+		margin: 20px;
+		max-height: calc(100vh - 40px);
+	}
+}

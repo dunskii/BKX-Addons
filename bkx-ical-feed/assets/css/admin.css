@@ -1,0 +1,86 @@
+/**
+ * iCal Feed Admin Styles
+ *
+ * @package BookingX\ICalFeed
+ * @since   1.0.0
+ */
+
+/* Settings Page */
+.bkx-ical-settings {
+	max-width: 1000px;
+}
+
+.bkx-ical-settings .nav-tab-wrapper {
+	margin-bottom: 20px;
+}
+
+.bkx-tab-content {
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #c3c4c7;
+	border-top: none;
+}
+
+/* Feed URL Box */
+.bkx-feed-url-box {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.bkx-feed-url-box .bkx-feed-url {
+	flex: 1;
+	font-family: monospace;
+	font-size: 13px;
+}
+
+.bkx-feed-url {
+	font-family: monospace;
+	font-size: 12px;
+}
+
+/* License Status */
+.bkx-license-status {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	padding: 5px 10px;
+	border-radius: 4px;
+	font-weight: 500;
+	margin-left: 10px;
+}
+
+.bkx-license-active {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-license-inactive {
+	background: #e2e3e5;
+	color: #383d41;
+}
+
+/* Table Styles */
+.bkx-ical-settings table.widefat {
+	margin-top: 15px;
+}
+
+.bkx-ical-settings table.widefat td input {
+	width: 100%;
+}
+
+/* List Styles */
+.ul-disc {
+	list-style-type: disc;
+	margin-left: 20px;
+}
+
+.ul-disc li {
+	margin-bottom: 5px;
+}
+
+/* Copy Button */
+.bkx-copy-url {
+	min-width: 80px;
+}

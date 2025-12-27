@@ -1,0 +1,86 @@
+/**
+ * Waiting Lists Admin Styles
+ *
+ * @package BookingX\WaitingLists
+ * @since   1.0.0
+ */
+
+/* Settings Page */
+.bkx-waiting-lists-settings {
+	max-width: 1200px;
+}
+
+.bkx-waiting-lists-settings .nav-tab-wrapper {
+	margin-bottom: 20px;
+}
+
+.bkx-tab-content {
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #c3c4c7;
+	border-top: none;
+}
+
+/* Entries Header */
+.bkx-entries-header {
+	margin-bottom: 20px;
+}
+
+.bkx-filter-form {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+/* Status Badges */
+.bkx-status-badge {
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.bkx-status-waiting {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.bkx-status-offered {
+	background: #cce5ff;
+	color: #004085;
+}
+
+.bkx-status-accepted {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-status-declined,
+.bkx-status-cancelled {
+	background: #e2e3e5;
+	color: #383d41;
+}
+
+.bkx-status-expired {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+/* License Status */
+.bkx-license-active {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	padding: 5px 10px;
+	background: #d4edda;
+	color: #155724;
+	border-radius: 4px;
+	font-weight: 500;
+	margin-left: 10px;
+}
+
+/* Table */
+.bkx-waiting-lists-settings table.widefat td {
+	vertical-align: middle;
+}

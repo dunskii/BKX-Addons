@@ -1,0 +1,87 @@
+/**
+ * Outlook Calendar Admin Styles
+ *
+ * @package BookingX\OutlookCalendar
+ * @since   1.0.0
+ */
+
+/* Settings Page */
+.bkx-outlook-settings {
+	max-width: 1200px;
+}
+
+.bkx-outlook-settings .nav-tab-wrapper {
+	margin-bottom: 20px;
+}
+
+.bkx-tab-content {
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #c3c4c7;
+	border-top: none;
+}
+
+/* Setup Instructions */
+.bkx-setup-instructions {
+	padding: 15px 20px;
+	background: #f0f7fc;
+	border: 1px solid #cce5ff;
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+
+.bkx-setup-instructions ol {
+	margin: 10px 0 0 20px;
+}
+
+.bkx-setup-instructions li {
+	margin-bottom: 8px;
+}
+
+.bkx-setup-instructions code {
+	background: #fff;
+	padding: 3px 8px;
+	border-radius: 4px;
+}
+
+/* Connection Status */
+.bkx-connection-status {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 10px 15px;
+	border-radius: 6px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.bkx-connected {
+	background: #d4edda;
+	color: #155724;
+}
+
+/* License Status */
+.bkx-license-status {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	padding: 5px 10px;
+	border-radius: 4px;
+	font-weight: 500;
+}
+
+.bkx-license-active {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-license-inactive {
+	background: #e2e3e5;
+	color: #383d41;
+}
+
+/* Connect Button */
+.button-hero {
+	padding: 15px 30px !important;
+	font-size: 16px !important;
+}
