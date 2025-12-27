@@ -1,0 +1,444 @@
+/**
+ * Recurring Bookings Admin Styles
+ *
+ * @package BookingX\RecurringBookings
+ * @since   1.0.0
+ */
+
+/* Settings Page */
+.bkx-recurring-settings {
+	max-width: 1200px;
+}
+
+.bkx-recurring-settings .nav-tab-wrapper {
+	margin-bottom: 20px;
+}
+
+/* Series List Table */
+.bkx-series-list {
+	margin-top: 20px;
+}
+
+.bkx-series-list h2 {
+	margin-bottom: 15px;
+}
+
+.bkx-series-list .wp-list-table {
+	margin-top: 10px;
+}
+
+.bkx-series-list .wp-list-table th,
+.bkx-series-list .wp-list-table td {
+	vertical-align: middle;
+}
+
+/* Badges */
+.bkx-recurring-badge,
+.bkx-single-badge {
+	display: inline-block;
+	padding: 4px 10px;
+	border-radius: 12px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.bkx-recurring-badge {
+	background: #e5f0f7;
+	color: #0073aa;
+}
+
+.bkx-recurring-badge small {
+	opacity: 0.8;
+}
+
+.bkx-single-badge {
+	background: #f0f0f1;
+	color: #50575e;
+}
+
+/* Status Badges */
+.bkx-status-badge {
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.bkx-status-active {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-status-cancelled {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+.bkx-status-completed {
+	background: #cce5ff;
+	color: #004085;
+}
+
+.bkx-status-paused {
+	background: #fff3cd;
+	color: #856404;
+}
+
+/* Action Buttons */
+.bkx-series-list .button-small {
+	margin-right: 5px;
+}
+
+/* Series Details Modal */
+.bkx-series-modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 100000;
+	align-items: center;
+	justify-content: center;
+}
+
+.bkx-series-modal.is-open {
+	display: flex;
+}
+
+.bkx-modal-content {
+	background: #fff;
+	border-radius: 8px;
+	max-width: 800px;
+	width: 90%;
+	max-height: 80vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.bkx-modal-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+	border-bottom: 1px solid #ddd;
+}
+
+.bkx-modal-header h3 {
+	margin: 0;
+}
+
+.bkx-modal-close {
+	background: none;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+	color: #666;
+	padding: 0;
+	line-height: 1;
+}
+
+.bkx-modal-close:hover {
+	color: #333;
+}
+
+.bkx-modal-body {
+	padding: 20px;
+	overflow-y: auto;
+	flex: 1;
+}
+
+.bkx-modal-footer {
+	padding: 15px 20px;
+	border-top: 1px solid #ddd;
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+}
+
+/* Instances List in Modal */
+.bkx-instances-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.bkx-instance-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px 15px;
+	background: #f9f9f9;
+	border-radius: 4px;
+	margin-bottom: 8px;
+}
+
+.bkx-instance-row:hover {
+	background: #f0f0f1;
+}
+
+.bkx-instance-info {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.bkx-instance-number {
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #0073aa;
+	color: #fff;
+	border-radius: 50%;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.bkx-instance-date {
+	font-weight: 500;
+}
+
+.bkx-instance-time {
+	color: #666;
+	font-size: 13px;
+}
+
+.bkx-instance-status {
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 500;
+}
+
+.bkx-instance-status.scheduled {
+	background: #e5f0f7;
+	color: #0073aa;
+}
+
+.bkx-instance-status.booked {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-instance-status.completed {
+	background: #cce5ff;
+	color: #004085;
+}
+
+.bkx-instance-status.skipped {
+	background: #e2e3e5;
+	color: #383d41;
+}
+
+.bkx-instance-status.cancelled {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+.bkx-instance-actions {
+	display: flex;
+	gap: 5px;
+}
+
+.bkx-instance-actions .button {
+	padding: 2px 8px;
+	font-size: 11px;
+}
+
+/* Statistics Cards */
+.bkx-stats-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 15px;
+	margin-bottom: 20px;
+}
+
+.bkx-stat-card {
+	padding: 15px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	text-align: center;
+}
+
+.bkx-stat-value {
+	font-size: 28px;
+	font-weight: 600;
+	color: #0073aa;
+	line-height: 1.2;
+}
+
+.bkx-stat-label {
+	font-size: 12px;
+	color: #666;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-top: 5px;
+}
+
+/* Settings Form Enhancements */
+.bkx-recurring-settings .form-table th {
+	width: 250px;
+}
+
+.bkx-recurring-settings .form-table td fieldset label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+/* Pattern Disabled Checkboxes */
+.bkx-recurring-settings fieldset label {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 8px;
+}
+
+/* Loading State */
+.bkx-loading {
+	position: relative;
+	min-height: 100px;
+}
+
+.bkx-loading::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 30px;
+	height: 30px;
+	margin: -15px 0 0 -15px;
+	border: 3px solid #ddd;
+	border-top-color: #0073aa;
+	border-radius: 50%;
+	animation: bkx-spin 0.8s linear infinite;
+}
+
+@keyframes bkx-spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* Meta Box Styles */
+.bkx-recurring-meta-box {
+	padding: 10px 0;
+}
+
+.bkx-recurring-info-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.bkx-recurring-info-table th,
+.bkx-recurring-info-table td {
+	padding: 8px 5px;
+	text-align: left;
+	border-bottom: 1px solid #f0f0f1;
+}
+
+.bkx-recurring-info-table th {
+	width: 40%;
+	font-weight: 600;
+	color: #50575e;
+}
+
+/* Admin Column Icons */
+.column-recurring {
+	width: 100px;
+}
+
+/* Calendar Integration */
+.bkx-recurring-calendar {
+	margin-top: 20px;
+}
+
+.bkx-calendar-legend {
+	display: flex;
+	gap: 15px;
+	margin-bottom: 15px;
+	font-size: 13px;
+}
+
+.bkx-legend-item {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.bkx-legend-dot {
+	width: 12px;
+	height: 12px;
+	border-radius: 3px;
+}
+
+.bkx-legend-dot.scheduled {
+	background: #0073aa;
+}
+
+.bkx-legend-dot.completed {
+	background: #46b450;
+}
+
+.bkx-legend-dot.skipped {
+	background: #dc3545;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 782px) {
+	.bkx-recurring-settings .form-table th {
+		width: auto;
+	}
+
+	.bkx-modal-content {
+		width: 95%;
+		max-height: 90vh;
+	}
+
+	.bkx-instance-row {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 10px;
+	}
+
+	.bkx-instance-actions {
+		width: 100%;
+		justify-content: flex-end;
+	}
+
+	.bkx-stats-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+/* Dark Mode Support (WP Admin) */
+@media (prefers-color-scheme: dark) {
+	.bkx-modal-content {
+		background: #1d2327;
+		color: #f0f0f1;
+	}
+
+	.bkx-modal-header,
+	.bkx-modal-footer {
+		border-color: #3c434a;
+	}
+
+	.bkx-instance-row {
+		background: #2c3338;
+	}
+
+	.bkx-instance-row:hover {
+		background: #3c434a;
+	}
+
+	.bkx-stat-card {
+		background: #2c3338;
+		border-color: #3c434a;
+	}
+}

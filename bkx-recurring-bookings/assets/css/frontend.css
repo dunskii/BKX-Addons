@@ -1,0 +1,529 @@
+/**
+ * Recurring Bookings Frontend Styles
+ *
+ * @package BookingX\RecurringBookings
+ * @since   1.0.0
+ */
+
+/* Recurring Options Container */
+.bkx-recurring-options {
+	margin: 20px 0;
+	padding: 20px;
+	background: #f9f9f9;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+}
+
+.bkx-recurring-options h4 {
+	margin: 0 0 15px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #333;
+}
+
+/* Pattern Selector */
+.bkx-recurring-pattern {
+	margin-bottom: 20px;
+}
+
+.bkx-recurring-pattern label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: 500;
+	color: #555;
+}
+
+.bkx-recurring-pattern select {
+	width: 100%;
+	max-width: 300px;
+	padding: 10px 12px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+	background: #fff;
+}
+
+.bkx-recurring-pattern select:focus {
+	border-color: #0073aa;
+	outline: none;
+	box-shadow: 0 0 0 2px rgba(0, 115, 170, 0.1);
+}
+
+/* Configuration Panel */
+.bkx-recurring-config {
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	border-radius: 6px;
+	margin-bottom: 20px;
+}
+
+/* Day Selector */
+.bkx-day-selector {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-top: 12px;
+}
+
+.bkx-day-checkbox {
+	cursor: pointer;
+	user-select: none;
+}
+
+.bkx-day-checkbox input[type="checkbox"] {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.bkx-day-checkbox span {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #ddd;
+	border-radius: 50%;
+	font-size: 13px;
+	font-weight: 600;
+	color: #666;
+	background: #fff;
+	transition: all 0.2s ease;
+}
+
+.bkx-day-checkbox:hover span {
+	border-color: #0073aa;
+	color: #0073aa;
+}
+
+.bkx-day-checkbox input:checked + span {
+	background: #0073aa;
+	border-color: #0073aa;
+	color: #fff;
+}
+
+/* Monthly Options */
+.bkx-monthly-type {
+	margin-bottom: 12px;
+	padding: 10px;
+	background: #f9f9f9;
+	border-radius: 4px;
+}
+
+.bkx-monthly-type label {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.bkx-monthly-type input[type="radio"] {
+	margin-right: 4px;
+}
+
+.bkx-monthly-type select {
+	padding: 6px 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 13px;
+}
+
+/* Custom Interval */
+.bkx-custom-interval {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.bkx-custom-interval input[type="number"] {
+	width: 70px;
+	padding: 8px 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+	text-align: center;
+}
+
+.bkx-custom-interval select {
+	padding: 8px 12px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+/* End Options */
+.bkx-recurring-end {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #e5e5e5;
+}
+
+.bkx-recurring-end > label {
+	display: block;
+	margin-bottom: 12px;
+	font-weight: 500;
+	color: #555;
+}
+
+.bkx-end-options label {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin: 12px 0;
+	padding: 10px;
+	background: #f9f9f9;
+	border-radius: 4px;
+}
+
+.bkx-end-options input[type="number"],
+.bkx-end-options input[type="date"] {
+	padding: 8px 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+.bkx-end-options input[type="number"] {
+	width: 70px;
+	text-align: center;
+}
+
+.bkx-end-options input[type="date"] {
+	min-width: 150px;
+}
+
+/* Preview Panel */
+.bkx-recurring-preview {
+	margin-top: 20px;
+	padding: 20px;
+	background: linear-gradient(135deg, #f0f7fc 0%, #fff 100%);
+	border: 1px solid #0073aa;
+	border-radius: 8px;
+}
+
+.bkx-recurring-preview h5 {
+	margin: 0 0 12px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #0073aa;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.bkx-preview-description {
+	margin: 0 0 15px;
+	font-style: italic;
+	color: #555;
+	font-size: 14px;
+}
+
+.bkx-preview-dates {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.bkx-preview-dates li {
+	display: flex;
+	align-items: center;
+	padding: 8px 12px;
+	margin-bottom: 6px;
+	background: #fff;
+	border-radius: 4px;
+	font-size: 14px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.bkx-preview-dates li::before {
+	content: "";
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background: #0073aa;
+	border-radius: 50%;
+	margin-right: 12px;
+}
+
+.bkx-preview-dates .bkx-date-day {
+	color: #333;
+	font-weight: 500;
+	min-width: 100px;
+}
+
+.bkx-preview-dates .bkx-date-full {
+	color: #666;
+}
+
+.bkx-preview-more {
+	margin-top: 12px;
+	padding: 8px 12px;
+	background: #e5f0f6;
+	border-radius: 4px;
+	font-size: 13px;
+	color: #0073aa;
+	text-align: center;
+}
+
+/* Loading State */
+.bkx-recurring-preview.is-loading {
+	position: relative;
+	min-height: 100px;
+}
+
+.bkx-recurring-preview.is-loading::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 24px;
+	height: 24px;
+	margin: -12px 0 0 -12px;
+	border: 3px solid #e5e5e5;
+	border-top-color: #0073aa;
+	border-radius: 50%;
+	animation: bkx-spin 0.8s linear infinite;
+}
+
+@keyframes bkx-spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* Error State */
+.bkx-recurring-preview.has-error {
+	border-color: #dc3545;
+	background: #fff5f5;
+}
+
+.bkx-preview-error {
+	color: #dc3545;
+	font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+	.bkx-recurring-options {
+		padding: 15px;
+	}
+
+	.bkx-recurring-config {
+		padding: 15px;
+	}
+
+	.bkx-day-checkbox span {
+		width: 36px;
+		height: 36px;
+		font-size: 12px;
+	}
+
+	.bkx-custom-interval {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.bkx-end-options label {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.bkx-monthly-type label {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+/* Customer Dashboard - Recurring Series */
+.bkx-recurring-series {
+	margin: 20px 0;
+}
+
+.bkx-series-card {
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	margin-bottom: 15px;
+}
+
+.bkx-series-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 15px;
+}
+
+.bkx-series-title {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.bkx-series-badge {
+	padding: 4px 10px;
+	border-radius: 12px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.bkx-series-badge.active {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-series-badge.paused {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.bkx-series-badge.cancelled {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+.bkx-series-info {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 15px;
+	margin-bottom: 15px;
+}
+
+.bkx-series-info-item {
+	font-size: 14px;
+}
+
+.bkx-series-info-item strong {
+	display: block;
+	color: #555;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-bottom: 4px;
+}
+
+.bkx-series-progress {
+	margin-bottom: 15px;
+}
+
+.bkx-progress-bar {
+	height: 8px;
+	background: #e5e5e5;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.bkx-progress-fill {
+	height: 100%;
+	background: #0073aa;
+	border-radius: 4px;
+	transition: width 0.3s ease;
+}
+
+.bkx-progress-text {
+	margin-top: 6px;
+	font-size: 12px;
+	color: #666;
+}
+
+.bkx-series-actions {
+	display: flex;
+	gap: 10px;
+	padding-top: 15px;
+	border-top: 1px solid #e5e5e5;
+}
+
+.bkx-series-actions button {
+	padding: 8px 16px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	background: #fff;
+	font-size: 13px;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.bkx-series-actions button:hover {
+	border-color: #0073aa;
+	color: #0073aa;
+}
+
+.bkx-series-actions button.bkx-btn-danger:hover {
+	border-color: #dc3545;
+	color: #dc3545;
+}
+
+/* Upcoming Instances List */
+.bkx-upcoming-instances {
+	margin-top: 20px;
+}
+
+.bkx-instance-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px 15px;
+	background: #f9f9f9;
+	border-radius: 4px;
+	margin-bottom: 8px;
+}
+
+.bkx-instance-date {
+	font-weight: 500;
+}
+
+.bkx-instance-time {
+	color: #666;
+	font-size: 14px;
+}
+
+.bkx-instance-status {
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+.bkx-instance-status.scheduled {
+	background: #cce5ff;
+	color: #004085;
+}
+
+.bkx-instance-status.booked {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-instance-status.skipped {
+	background: #e2e3e5;
+	color: #383d41;
+}
+
+.bkx-instance-actions button {
+	padding: 4px 8px;
+	font-size: 12px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-left: 5px;
+}
+
+.bkx-instance-actions .bkx-skip-btn {
+	background: #e2e3e5;
+	color: #383d41;
+}
+
+.bkx-instance-actions .bkx-skip-btn:hover {
+	background: #ced4da;
+}
+
+.bkx-instance-actions .bkx-reschedule-btn {
+	background: #cce5ff;
+	color: #004085;
+}
+
+.bkx-instance-actions .bkx-reschedule-btn:hover {
+	background: #b8daff;
+}

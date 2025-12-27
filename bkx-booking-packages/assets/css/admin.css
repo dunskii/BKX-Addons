@@ -1,0 +1,118 @@
+/**
+ * Booking Packages Admin Styles
+ *
+ * @package BookingX\BookingPackages
+ * @since   1.0.0
+ */
+
+/* Settings Page */
+.bkx-packages-settings {
+	max-width: 1200px;
+}
+
+.bkx-packages-settings .nav-tab-wrapper {
+	margin-bottom: 20px;
+}
+
+/* Customer Packages Table */
+.bkx-customer-packages {
+	margin-top: 20px;
+}
+
+.bkx-customer-packages .wp-list-table {
+	margin-top: 10px;
+}
+
+/* Status Badges */
+.bkx-status-active {
+	color: #28a745;
+}
+
+.bkx-status-expired {
+	color: #dc3545;
+}
+
+.bkx-status-exhausted {
+	color: #6c757d;
+}
+
+/* Package Edit Meta Boxes */
+#bkx-package-details .form-table th {
+	width: 150px;
+}
+
+#bkx-package-details input[type="number"] {
+	width: 100px;
+}
+
+#bkx-package-details .regular-text {
+	width: 150px;
+}
+
+/* Services Meta Box */
+#bkx-package-services .bkx-services-list {
+	max-height: 200px;
+	overflow-y: auto;
+	padding: 10px;
+	background: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+/* License Settings */
+.bkx-license-settings {
+	max-width: 800px;
+}
+
+.bkx-license-status {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	padding: 5px 10px;
+	border-radius: 4px;
+	font-weight: 500;
+}
+
+.bkx-license-active {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-license-expired {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.bkx-license-inactive {
+	background: #e2e3e5;
+	color: #383d41;
+}
+
+/* Stats Cards */
+.bkx-stats-row {
+	display: flex;
+	gap: 20px;
+	margin-bottom: 20px;
+}
+
+.bkx-stat-box {
+	flex: 1;
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.bkx-stat-box .stat-value {
+	font-size: 32px;
+	font-weight: 700;
+	color: #0073aa;
+}
+
+.bkx-stat-box .stat-label {
+	font-size: 13px;
+	color: #666;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}

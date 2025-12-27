@@ -1,0 +1,44 @@
+{
+  "name": "bookingx/deposits-payments",
+  "description": "Deposit and partial payment system for BookingX",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "BookingX Team",
+      "email": "support@bookingx.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0",
+    "wp-coding-standards/wpcs": "^3.0",
+    "phpstan/phpstan": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "BookingX\\DepositsPayments\\": "src/",
+      "BookingX\\AddonSDK\\": "../_shared/bkx-addon-sdk/src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "BookingX\\DepositsPayments\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit",
+    "phpcs": "phpcs --standard=WordPress src/",
+    "phpstan": "phpstan analyse src/ --level=5"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}

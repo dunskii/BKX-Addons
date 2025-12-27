@@ -1,0 +1,128 @@
+/**
+ * Frontend Styles for Multiple Services
+ *
+ * @package BookingX\MultipleServices
+ * @since   1.0.0
+ */
+
+.bkx-multiple-services-selector {
+	margin: 20px 0;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	background: #f9f9f9;
+}
+
+.bkx-multiple-services-selector h3 {
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-size: 18px;
+	color: #333;
+}
+
+/* Checkbox Display Mode */
+.bkx-service-checkboxes {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.bkx-service-option {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 12px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	background: #fff;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.bkx-service-option:hover {
+	border-color: #0073aa;
+	box-shadow: 0 2px 4px rgba(0, 115, 170, 0.1);
+}
+
+.bkx-service-option input[type="checkbox"] {
+	margin: 0;
+}
+
+.bkx-service-option .service-title {
+	flex: 1;
+	font-weight: 500;
+}
+
+.bkx-service-option .service-price {
+	color: #0073aa;
+	font-weight: 600;
+}
+
+.bkx-service-option .service-duration {
+	color: #666;
+	font-size: 14px;
+}
+
+/* Dropdown Display Mode */
+.bkx-service-dropdown {
+	width: 100%;
+	min-height: 120px;
+	padding: 8px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+/* Bundle Summary */
+.bkx-bundle-summary {
+	margin-top: 20px;
+	padding: 15px;
+	background: #fff;
+	border: 2px solid #0073aa;
+	border-radius: 4px;
+}
+
+.bkx-bundle-summary p {
+	margin: 8px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bkx-bundle-summary .price-amount {
+	font-size: 20px;
+	color: #0073aa;
+	font-weight: 700;
+}
+
+.bkx-bundle-summary .duration-amount {
+	font-size: 16px;
+	color: #333;
+	font-weight: 600;
+}
+
+/* Disabled State */
+.bkx-service-option.disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.bkx-service-option.disabled:hover {
+	border-color: #ddd;
+	box-shadow: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.bkx-service-option {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 6px;
+	}
+
+	.bkx-bundle-summary p {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 4px;
+	}
+}

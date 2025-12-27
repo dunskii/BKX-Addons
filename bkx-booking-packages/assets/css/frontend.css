@@ -1,0 +1,356 @@
+/**
+ * Booking Packages Frontend Styles
+ *
+ * @package BookingX\BookingPackages
+ * @since   1.0.0
+ */
+
+/* Packages Grid */
+.bkx-packages-grid {
+	display: grid;
+	gap: 25px;
+	margin: 20px 0;
+}
+
+.bkx-packages-grid.bkx-columns-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.bkx-packages-grid.bkx-columns-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.bkx-packages-grid.bkx-columns-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+/* Package Card */
+.bkx-package-card {
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 12px;
+	overflow: hidden;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.bkx-package-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.bkx-package-image {
+	position: relative;
+	height: 180px;
+	overflow: hidden;
+}
+
+.bkx-package-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.bkx-package-content {
+	padding: 20px;
+}
+
+.bkx-package-title {
+	margin: 0 0 10px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #333;
+}
+
+.bkx-package-excerpt {
+	margin: 0 0 15px;
+	color: #666;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.bkx-package-meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-bottom: 15px;
+}
+
+.bkx-package-uses,
+.bkx-package-validity {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	padding: 5px 10px;
+	background: #f0f0f1;
+	border-radius: 4px;
+	font-size: 13px;
+	color: #555;
+}
+
+.bkx-package-uses strong {
+	color: #0073aa;
+}
+
+.bkx-package-validity.bkx-no-expiry {
+	background: #d4edda;
+	color: #155724;
+}
+
+/* Pricing */
+.bkx-package-pricing {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-bottom: 15px;
+}
+
+.bkx-package-regular-price {
+	text-decoration: line-through;
+	color: #999;
+	font-size: 14px;
+}
+
+.bkx-package-savings {
+	padding: 3px 8px;
+	background: #d4edda;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 600;
+	color: #155724;
+}
+
+.bkx-package-price {
+	font-size: 24px;
+	font-weight: 700;
+	color: #0073aa;
+}
+
+/* Actions */
+.bkx-package-actions {
+	display: flex;
+	gap: 10px;
+}
+
+.bkx-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 6px;
+	font-size: 14px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.2s;
+	text-decoration: none;
+}
+
+.bkx-btn-primary {
+	background: #0073aa;
+	color: #fff;
+}
+
+.bkx-btn-primary:hover {
+	background: #005177;
+	color: #fff;
+}
+
+.bkx-btn-secondary {
+	background: #f0f0f1;
+	color: #333;
+}
+
+.bkx-btn-secondary:hover {
+	background: #e5e5e5;
+}
+
+/* My Packages */
+.bkx-my-packages {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.bkx-my-packages h3 {
+	margin-bottom: 20px;
+	font-size: 24px;
+}
+
+.bkx-packages-list {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.bkx-package-item {
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+}
+
+.bkx-package-item.bkx-package-inactive {
+	opacity: 0.6;
+}
+
+.bkx-package-item.bkx-package-expiring {
+	border-color: #ffc107;
+	background: #fffbf0;
+}
+
+.bkx-package-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.bkx-package-header h4 {
+	margin: 0;
+	font-size: 18px;
+}
+
+.bkx-package-status {
+	padding: 4px 10px;
+	border-radius: 12px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.bkx-status-active {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-status-expired {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+.bkx-status-exhausted {
+	background: #e2e3e5;
+	color: #383d41;
+}
+
+/* Package Details */
+.bkx-package-details {
+	margin-bottom: 15px;
+}
+
+.bkx-detail-row {
+	display: flex;
+	justify-content: space-between;
+	padding: 8px 0;
+	border-bottom: 1px solid #f0f0f1;
+}
+
+.bkx-detail-row:last-child {
+	border-bottom: none;
+}
+
+.bkx-detail-label {
+	color: #666;
+}
+
+.bkx-detail-value {
+	font-weight: 500;
+}
+
+.bkx-detail-value.bkx-no-expiry {
+	color: #28a745;
+}
+
+.bkx-expiring-warning .bkx-detail-value {
+	color: #dc3545;
+}
+
+.bkx-expiry-notice {
+	font-size: 12px;
+	font-weight: 600;
+}
+
+/* Uses Progress Bar */
+.bkx-uses-bar {
+	height: 8px;
+	background: #e5e5e5;
+	border-radius: 4px;
+	overflow: hidden;
+	margin: 10px 0;
+}
+
+.bkx-uses-progress {
+	height: 100%;
+	background: linear-gradient(90deg, #0073aa, #00a0d2);
+	border-radius: 4px;
+	transition: width 0.3s ease;
+}
+
+/* No Packages */
+.bkx-no-packages {
+	text-align: center;
+	padding: 40px 20px;
+	background: #f9f9f9;
+	border-radius: 8px;
+}
+
+.bkx-no-packages p {
+	margin-bottom: 20px;
+	color: #666;
+}
+
+/* Package Selector on Booking Form */
+.bkx-package-selector {
+	margin: 20px 0;
+	padding: 15px;
+	background: #f0f7fc;
+	border: 1px solid #cce5ff;
+	border-radius: 8px;
+}
+
+.bkx-package-selector label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+
+.bkx-package-selector select {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+.bkx-package-applied {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px;
+	background: #d4edda;
+	border-radius: 4px;
+	margin-top: 10px;
+}
+
+.bkx-package-applied .dashicons {
+	color: #28a745;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.bkx-packages-grid.bkx-columns-3,
+	.bkx-packages-grid.bkx-columns-4 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.bkx-package-actions {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 480px) {
+	.bkx-packages-grid.bkx-columns-2,
+	.bkx-packages-grid.bkx-columns-3,
+	.bkx-packages-grid.bkx-columns-4 {
+		grid-template-columns: 1fr;
+	}
+}
