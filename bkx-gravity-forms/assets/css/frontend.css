@@ -1,0 +1,495 @@
+/**
+ * BookingX Gravity Forms Frontend Styles
+ *
+ * @package BookingX\GravityForms
+ * @since   1.0.0
+ */
+
+/* ==========================================================================
+   Service Selector Field
+   ========================================================================== */
+
+.bkx-gf-service-field .bkx-service-select {
+	width: 100%;
+	padding: 12px 15px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 16px;
+	background: #fff;
+}
+
+.bkx-gf-service-field .bkx-service-radio-list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.bkx-gf-service-field .bkx-service-radio-item {
+	display: flex;
+	align-items: center;
+	padding: 15px;
+	border: 2px solid #e0e0e0;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.bkx-gf-service-field .bkx-service-radio-item:hover {
+	border-color: #0073aa;
+	background: #f9f9f9;
+}
+
+.bkx-gf-service-field .bkx-service-radio-item input:checked + .service-info {
+	color: #0073aa;
+}
+
+.bkx-gf-service-field .bkx-service-radio-item input {
+	margin-right: 12px;
+}
+
+.bkx-gf-service-field .service-info {
+	flex: 1;
+}
+
+.bkx-gf-service-field .service-name {
+	font-weight: 600;
+	display: block;
+	margin-bottom: 4px;
+}
+
+.bkx-gf-service-field .service-meta {
+	font-size: 14px;
+	color: #666;
+}
+
+.bkx-gf-service-field .service-price {
+	color: #0073aa;
+	font-weight: 500;
+	margin-right: 10px;
+}
+
+.bkx-gf-service-field .service-duration {
+	color: #888;
+}
+
+/* Service Cards */
+.bkx-gf-service-field .bkx-service-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+	gap: 20px;
+}
+
+.bkx-gf-service-field .bkx-service-card {
+	padding: 20px;
+	border: 2px solid #e0e0e0;
+	border-radius: 8px;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.bkx-gf-service-field .bkx-service-card:hover {
+	border-color: #0073aa;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bkx-gf-service-field .bkx-service-card.active {
+	border-color: #0073aa;
+	background: rgba(0, 115, 170, 0.05);
+}
+
+.bkx-gf-service-field .bkx-service-card .card-image {
+	margin-bottom: 15px;
+}
+
+.bkx-gf-service-field .bkx-service-card .card-image img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.bkx-gf-service-field .bkx-service-card .card-title {
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0 0 8px;
+}
+
+.bkx-gf-service-field .bkx-service-card .card-price {
+	color: #0073aa;
+	font-weight: 600;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.bkx-gf-service-field .bkx-service-card .card-duration {
+	font-size: 13px;
+	color: #666;
+}
+
+/* ==========================================================================
+   Seat Selector Field
+   ========================================================================== */
+
+.bkx-gf-seat-field .bkx-seat-select {
+	width: 100%;
+	padding: 12px 15px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 16px;
+	background: #fff;
+}
+
+.bkx-gf-seat-field .bkx-seat-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	gap: 15px;
+}
+
+.bkx-gf-seat-field .bkx-seat-card {
+	padding: 15px;
+	border: 2px solid #e0e0e0;
+	border-radius: 8px;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.bkx-gf-seat-field .bkx-seat-card:hover {
+	border-color: #0073aa;
+}
+
+.bkx-gf-seat-field .bkx-seat-card.active {
+	border-color: #0073aa;
+	background: rgba(0, 115, 170, 0.05);
+}
+
+.bkx-gf-seat-field .bkx-seat-card .card-image img {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+
+.bkx-gf-seat-field .bkx-seat-card .card-name {
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0 0 5px;
+}
+
+.bkx-gf-seat-field .bkx-seat-card .card-title {
+	font-size: 12px;
+	color: #666;
+}
+
+/* ==========================================================================
+   Date Picker Field
+   ========================================================================== */
+
+.bkx-gf-date-field {
+	position: relative;
+}
+
+.bkx-gf-date-field .bkx-date-picker {
+	width: 100%;
+	padding: 12px 15px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 16px;
+	background: #fff;
+	cursor: pointer;
+}
+
+.bkx-gf-date-field .bkx-calendar-container {
+	position: absolute;
+	z-index: 1000;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+	padding: 15px;
+	display: none;
+	min-width: 280px;
+}
+
+.bkx-gf-date-field .bkx-calendar-container.open {
+	display: block;
+}
+
+.bkx-gf-date-field .calendar-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+
+.bkx-gf-date-field .calendar-header button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 5px 10px;
+	color: #666;
+	font-size: 18px;
+}
+
+.bkx-gf-date-field .calendar-header button:hover {
+	color: #0073aa;
+}
+
+.bkx-gf-date-field .calendar-header .current-month {
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.bkx-gf-date-field .calendar-weekdays {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	text-align: center;
+	font-weight: 600;
+	font-size: 12px;
+	color: #666;
+	margin-bottom: 10px;
+}
+
+.bkx-gf-date-field .calendar-days {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 5px;
+}
+
+.bkx-gf-date-field .calendar-day {
+	aspect-ratio: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	cursor: pointer;
+	font-size: 14px;
+	transition: all 0.2s ease;
+}
+
+.bkx-gf-date-field .calendar-day:hover:not(.disabled):not(.empty) {
+	background: rgba(0, 115, 170, 0.1);
+}
+
+.bkx-gf-date-field .calendar-day.selected {
+	background: #0073aa;
+	color: #fff;
+}
+
+.bkx-gf-date-field .calendar-day.today {
+	border: 2px solid #0073aa;
+}
+
+.bkx-gf-date-field .calendar-day.disabled {
+	color: #ccc;
+	cursor: not-allowed;
+}
+
+.bkx-gf-date-field .calendar-day.empty {
+	cursor: default;
+}
+
+/* ==========================================================================
+   Time Slots Field
+   ========================================================================== */
+
+.bkx-gf-time-field .bkx-select-date-prompt {
+	text-align: center;
+	padding: 20px;
+	color: #666;
+	background: #f9f9f9;
+	border-radius: 8px;
+}
+
+.bkx-gf-time-field .bkx-time-slots-container.loading {
+	position: relative;
+	min-height: 100px;
+}
+
+.bkx-gf-time-field .bkx-time-slots-container.loading::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 30px;
+	height: 30px;
+	border: 3px solid #e0e0e0;
+	border-top-color: #0073aa;
+	border-radius: 50%;
+	animation: bkx-gf-spin 1s linear infinite;
+}
+
+@keyframes bkx-gf-spin {
+	to {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+
+.bkx-gf-time-field.bkx-time-grid .time-slots-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+	gap: 10px;
+}
+
+.bkx-gf-time-field .time-slot {
+	padding: 12px 15px;
+	border: 2px solid #e0e0e0;
+	border-radius: 6px;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	font-size: 14px;
+}
+
+.bkx-gf-time-field .time-slot:hover:not(.unavailable) {
+	border-color: #0073aa;
+}
+
+.bkx-gf-time-field .time-slot.selected {
+	border-color: #0073aa;
+	background: #0073aa;
+	color: #fff;
+}
+
+.bkx-gf-time-field .time-slot.unavailable {
+	background: #f5f5f5;
+	color: #999;
+	cursor: not-allowed;
+	text-decoration: line-through;
+}
+
+.bkx-gf-time-field.bkx-time-list .time-slots-list {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.bkx-gf-time-field .no-slots-message {
+	text-align: center;
+	padding: 30px;
+	color: #666;
+	background: #f9f9f9;
+	border-radius: 8px;
+}
+
+/* ==========================================================================
+   Extras Field
+   ========================================================================== */
+
+.bkx-gf-extras-field .bkx-extras-list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.bkx-gf-extras-field .bkx-extra-item {
+	display: flex;
+	align-items: center;
+	padding: 12px 15px;
+	border: 1px solid #e0e0e0;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.bkx-gf-extras-field .bkx-extra-item:hover {
+	border-color: #0073aa;
+	background: #f9f9f9;
+}
+
+.bkx-gf-extras-field .bkx-extra-item input {
+	margin-right: 12px;
+}
+
+.bkx-gf-extras-field .bkx-extra-item input:checked + .extra-info .extra-name {
+	color: #0073aa;
+}
+
+.bkx-gf-extras-field .extra-info {
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bkx-gf-extras-field .extra-name {
+	font-weight: 500;
+}
+
+.bkx-gf-extras-field .extra-price {
+	color: #0073aa;
+	font-weight: 500;
+}
+
+.bkx-gf-extras-field .bkx-no-extras {
+	text-align: center;
+	padding: 20px;
+	color: #666;
+	background: #f9f9f9;
+	border-radius: 8px;
+}
+
+/* ==========================================================================
+   Summary Field
+   ========================================================================== */
+
+.bkx-gf-summary-field .bkx-summary-content {
+	background: #f9f9f9;
+	padding: 20px;
+	border-radius: 8px;
+}
+
+.bkx-gf-summary-field .summary-row {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.bkx-gf-summary-field .summary-row:last-child {
+	border-bottom: none;
+}
+
+.bkx-gf-summary-field .summary-row .label {
+	color: #666;
+}
+
+.bkx-gf-summary-field .summary-row .value {
+	font-weight: 500;
+}
+
+.bkx-gf-summary-field .summary-row.summary-total {
+	font-size: 18px;
+	font-weight: 600;
+	border-top: 2px solid #ddd;
+	margin-top: 10px;
+	padding-top: 15px;
+}
+
+.bkx-gf-summary-field .summary-row.summary-total .value {
+	color: #0073aa;
+}
+
+/* ==========================================================================
+   Responsive Styles
+   ========================================================================== */
+
+@media (max-width: 767px) {
+	.bkx-gf-service-field .bkx-service-cards,
+	.bkx-gf-seat-field .bkx-seat-cards {
+		grid-template-columns: 1fr;
+	}
+
+	.bkx-gf-time-field.bkx-time-grid .time-slots-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.bkx-gf-summary-field .summary-row {
+		flex-direction: column;
+		gap: 5px;
+	}
+}

@@ -1,0 +1,199 @@
+/**
+ * BookingX Elementor Editor Styles
+ *
+ * @package BookingX\Elementor
+ * @since   1.0.0
+ */
+
+/* Widget Category Icon */
+.elementor-panel .elementor-element-wrapper[data-category="bookingx"] .icon {
+	color: #0073aa;
+}
+
+/* Widget Icons */
+.elementor-element .icon[class*="eicon-"] {
+	color: #0073aa;
+}
+
+/* BookingX Widget Preview Placeholder */
+.elementor-widget-bkx-booking-form .elementor-widget-container,
+.elementor-widget-bkx-services-grid .elementor-widget-container,
+.elementor-widget-bkx-staff-carousel .elementor-widget-container,
+.elementor-widget-bkx-availability .elementor-widget-container {
+	min-height: 100px;
+}
+
+/* Editor Preview Styles */
+.elementor-editor-active .bkx-booking-form-widget {
+	background: #f9f9f9;
+	border: 2px dashed #ddd;
+	padding: 20px;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.elementor-editor-active .bkx-booking-form-widget::before {
+	content: "BookingX Booking Form";
+	display: block;
+	font-weight: 600;
+	color: #0073aa;
+	margin-bottom: 10px;
+}
+
+.elementor-editor-active .bkx-services-grid:empty,
+.elementor-editor-active .bkx-staff-carousel .carousel-track:empty {
+	min-height: 200px;
+	background: #f9f9f9;
+	border: 2px dashed #ddd;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.elementor-editor-active .bkx-services-grid:empty::before {
+	content: "No services found. Add services to display them here.";
+	color: #666;
+	font-size: 14px;
+}
+
+.elementor-editor-active .bkx-staff-carousel .carousel-track:empty::before {
+	content: "No staff found. Add staff members to display them here.";
+	color: #666;
+	font-size: 14px;
+}
+
+/* Panel Control Styling */
+.elementor-control-bkx_service_select .elementor-control-input-wrapper {
+	width: 100%;
+}
+
+.elementor-control-bkx_service_select select {
+	width: 100%;
+	padding: 8px 12px;
+	border: 1px solid #d5dadf;
+	border-radius: 3px;
+}
+
+/* Widget Category Header */
+#elementor-panel-category-bookingx .elementor-panel-category-title {
+	background: linear-gradient(135deg, #0073aa 0%, #005a87 100%);
+	color: #fff;
+}
+
+#elementor-panel-category-bookingx .elementor-panel-category-title::before {
+	content: "\f145";
+	font-family: dashicons;
+	margin-right: 8px;
+}
+
+/* Control Section Headers */
+.elementor-control-type-section[data-setting="section_content"] .elementor-section-title,
+.elementor-control-type-section[data-setting="section_style"] .elementor-section-title {
+	color: #0073aa;
+}
+
+/* Preview Notice */
+.bkx-elementor-preview-notice {
+	background: #fff8e5;
+	border-left: 4px solid #ffb900;
+	padding: 15px;
+	margin: 15px 0;
+	font-size: 13px;
+	color: #666;
+}
+
+.bkx-elementor-preview-notice .dashicons {
+	color: #ffb900;
+	margin-right: 5px;
+}
+
+/* Responsive Controls */
+.elementor-control-responsive-switchers {
+	margin-left: 10px;
+}
+
+/* Widget Wrapper in Editor */
+.elementor-widget-bkx-booking-form,
+.elementor-widget-bkx-services-grid,
+.elementor-widget-bkx-staff-carousel,
+.elementor-widget-bkx-availability {
+	position: relative;
+}
+
+/* Loading Indicator for Dynamic Content */
+.bkx-loading-indicator {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(255, 255, 255, 0.9);
+	padding: 20px 30px;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.bkx-loading-indicator .spinner {
+	width: 20px;
+	height: 20px;
+	border: 2px solid #e0e0e0;
+	border-top-color: #0073aa;
+	border-radius: 50%;
+	animation: bkx-editor-spin 1s linear infinite;
+}
+
+@keyframes bkx-editor-spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* Control Group Styling */
+.elementor-control-bkx-info-box {
+	background: #f0f7fc;
+	border: 1px solid #0073aa;
+	border-radius: 4px;
+	padding: 12px;
+	margin: 10px 0;
+}
+
+.elementor-control-bkx-info-box .info-icon {
+	color: #0073aa;
+	margin-right: 8px;
+}
+
+/* Multi-select Styling */
+.elementor-control-type-select2 .select2-container {
+	width: 100% !important;
+}
+
+.elementor-control-type-select2 .select2-selection--multiple {
+	border: 1px solid #d5dadf !important;
+	border-radius: 3px !important;
+	min-height: 36px !important;
+}
+
+/* Color Picker Enhancement */
+.elementor-control-type-color .wp-picker-container {
+	width: 100%;
+}
+
+/* Slider Control Styling */
+.elementor-control-type-slider .elementor-slider-input input[type="number"] {
+	width: 60px;
+}
+
+/* Typography Control */
+.elementor-control-type-typography .elementor-control-content {
+	padding: 10px 0;
+}
+
+/* Dimension Control */
+.elementor-control-type-dimensions .elementor-control-dimensions {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 5px;
+}

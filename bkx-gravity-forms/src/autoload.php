@@ -1,0 +1,25 @@
+<?php
+/**
+ * Autoloader for BookingX Gravity Forms Integration.
+ *
+ * @package BookingX\GravityForms
+ */
+
+spl_autoload_register(
+	function ( $class ) {
+		$prefix   = 'BookingX\\GravityForms\\';
+		$base_dir = __DIR__ . '/';
+
+		$len = strlen( $prefix );
+		if ( strncmp( $prefix, $class, $len ) !== 0 ) {
+			return;
+		}
+
+		$relative_class = substr( $class, $len );
+		$file           = $base_dir . str_replace( '\\', '/', $relative_class ) . '.php';
+
+		if ( file_exists( $file ) ) {
+			require $file;
+		}
+	}
+);

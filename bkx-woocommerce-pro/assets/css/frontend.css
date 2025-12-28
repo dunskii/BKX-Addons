@@ -1,0 +1,476 @@
+/**
+ * WooCommerce Pro Frontend Styles.
+ *
+ * @package BookingX\WooCommercePro
+ * @since   1.0.0
+ */
+
+/* Booking Product */
+.product-type-bkx_booking .single_add_to_cart_button {
+	width: 100%;
+}
+
+.product-type-bkx_booking .quantity {
+	display: none;
+}
+
+/* Booking Form on Product Page */
+.bkx-woo-booking-form {
+	margin-bottom: 30px;
+}
+
+.bkx-woo-booking-form .form-row {
+	margin-bottom: 20px;
+}
+
+.bkx-woo-booking-form label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: 600;
+}
+
+.bkx-woo-booking-form input[type="date"],
+.bkx-woo-booking-form input[type="time"],
+.bkx-woo-booking-form select {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 16px;
+}
+
+.bkx-woo-booking-form input[type="date"]:focus,
+.bkx-woo-booking-form input[type="time"]:focus,
+.bkx-woo-booking-form select:focus {
+	border-color: #2271b1;
+	outline: none;
+	box-shadow: 0 0 0 1px #2271b1;
+}
+
+/* Time Slots */
+.bkx-time-slots {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+	gap: 10px;
+	margin-top: 10px;
+}
+
+.bkx-time-slot {
+	padding: 10px;
+	text-align: center;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.bkx-time-slot:hover {
+	border-color: #2271b1;
+	background: #f0f6fc;
+}
+
+.bkx-time-slot.selected {
+	background: #2271b1;
+	color: #fff;
+	border-color: #2271b1;
+}
+
+.bkx-time-slot.unavailable {
+	background: #f5f5f5;
+	color: #999;
+	cursor: not-allowed;
+	text-decoration: line-through;
+}
+
+/* Extras Selection */
+.bkx-extras-list {
+	margin-top: 10px;
+}
+
+.bkx-extra-item {
+	display: flex;
+	align-items: center;
+	padding: 12px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.bkx-extra-item:hover {
+	border-color: #2271b1;
+}
+
+.bkx-extra-item.selected {
+	border-color: #2271b1;
+	background: #f0f6fc;
+}
+
+.bkx-extra-item input[type="checkbox"] {
+	margin-right: 12px;
+}
+
+.bkx-extra-item .extra-info {
+	flex: 1;
+}
+
+.bkx-extra-item .extra-name {
+	font-weight: 600;
+	display: block;
+}
+
+.bkx-extra-item .extra-price {
+	color: #2271b1;
+	font-weight: 600;
+}
+
+/* Resource/Staff Selection */
+.bkx-resource-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	gap: 15px;
+	margin-top: 10px;
+}
+
+.bkx-resource-card {
+	padding: 15px;
+	border: 2px solid #ddd;
+	border-radius: 8px;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.bkx-resource-card:hover {
+	border-color: #2271b1;
+}
+
+.bkx-resource-card.selected {
+	border-color: #2271b1;
+	background: #f0f6fc;
+}
+
+.bkx-resource-card input[type="radio"] {
+	display: none;
+}
+
+.bkx-resource-card .resource-image {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin: 0 auto 10px;
+	background: #f0f0f0;
+	overflow: hidden;
+}
+
+.bkx-resource-card .resource-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.bkx-resource-card .resource-name {
+	font-weight: 600;
+}
+
+/* Cart Item Booking Details */
+.woocommerce-cart .bkx-booking-datetime,
+.woocommerce-checkout .bkx-booking-datetime {
+	display: block;
+	color: #666;
+	margin-top: 5px;
+}
+
+.woocommerce-cart-form .product-quantity input {
+	pointer-events: none;
+}
+
+/* Mini Cart */
+.woocommerce-mini-cart .bkx-booking-datetime {
+	display: block;
+	font-size: 12px;
+	color: #666;
+}
+
+/* Order Details */
+.woocommerce-order .bkx-order-booking-details,
+.woocommerce-view-order .bkx-order-booking-details {
+	background: #f9f9f9;
+	padding: 15px;
+	margin: 15px 0;
+	border-left: 3px solid #2271b1;
+}
+
+/* Booking Confirmation */
+.bkx-woo-booking-confirmation {
+	background: #d4edda;
+	border: 1px solid #c3e6cb;
+	padding: 20px;
+	border-radius: 4px;
+	margin-bottom: 30px;
+}
+
+.bkx-woo-booking-confirmation h2 {
+	color: #155724;
+	margin-top: 0;
+}
+
+.bkx-woo-booking-confirmation .bkx-booking-summary {
+	background: #fff;
+	padding: 15px;
+	border-radius: 4px;
+	margin-top: 15px;
+}
+
+.bkx-woo-booking-confirmation .bkx-booking-summary p {
+	margin: 5px 0;
+}
+
+/* My Account - Bookings Tab */
+.woocommerce-account .bkx-bookings-list {
+	width: 100%;
+}
+
+.bkx-bookings-list .booking-row {
+	display: flex;
+	align-items: center;
+	padding: 15px;
+	border-bottom: 1px solid #eee;
+	flex-wrap: wrap;
+}
+
+.bkx-bookings-list .booking-row:last-child {
+	border-bottom: none;
+}
+
+.bkx-bookings-list .booking-date {
+	flex: 0 0 120px;
+	font-weight: 600;
+}
+
+.bkx-bookings-list .booking-service {
+	flex: 1;
+}
+
+.bkx-bookings-list .booking-status {
+	flex: 0 0 100px;
+	text-align: center;
+}
+
+.bkx-bookings-list .booking-actions {
+	flex: 0 0 100px;
+	text-align: right;
+}
+
+.bkx-bookings-list .bkx-status-badge {
+	display: inline-block;
+	padding: 4px 12px;
+	border-radius: 20px;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.bkx-status-pending {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.bkx-status-acknowledged,
+.bkx-status-confirmed {
+	background: #cce5ff;
+	color: #004085;
+}
+
+.bkx-status-completed {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-status-cancelled {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+/* Service Catalog Shortcode */
+.bkx-service-catalog {
+	display: grid;
+	grid-template-columns: repeat(var(--columns, 3), 1fr);
+	gap: 30px;
+}
+
+.bkx-service-card {
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	overflow: hidden;
+	transition: box-shadow 0.2s ease;
+}
+
+.bkx-service-card:hover {
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bkx-service-card .service-image {
+	aspect-ratio: 4/3;
+	background: #f5f5f5;
+}
+
+.bkx-service-card .service-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.bkx-service-card .service-content {
+	padding: 20px;
+}
+
+.bkx-service-card .service-title {
+	margin: 0 0 10px;
+	font-size: 18px;
+}
+
+.bkx-service-card .service-description {
+	color: #666;
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+
+.bkx-service-card .service-meta {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.bkx-service-card .service-price {
+	font-size: 20px;
+	font-weight: 600;
+	color: #2271b1;
+}
+
+.bkx-service-card .service-duration {
+	color: #666;
+	font-size: 13px;
+}
+
+.bkx-service-card .book-button {
+	display: block;
+	width: 100%;
+	padding: 12px;
+	margin-top: 15px;
+	background: #2271b1;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 4px;
+	font-weight: 600;
+	transition: background 0.2s ease;
+}
+
+.bkx-service-card .book-button:hover {
+	background: #135e96;
+	color: #fff;
+}
+
+/* Add to Cart Button States */
+.bkx-add-to-cart.loading {
+	position: relative;
+	pointer-events: none;
+	opacity: 0.7;
+}
+
+.bkx-add-to-cart.loading::after {
+	content: "";
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 16px;
+	height: 16px;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	border-top-color: #fff;
+	border-radius: 50%;
+	animation: bkx-spin 0.8s linear infinite;
+}
+
+.bkx-add-to-cart.added {
+	background: #46b450 !important;
+}
+
+@keyframes bkx-spin {
+	to { transform: translateY(-50%) rotate(360deg); }
+}
+
+/* Added to Cart Message */
+.bkx-cart-message {
+	display: none;
+	padding: 15px;
+	margin-top: 15px;
+	background: #d4edda;
+	border: 1px solid #c3e6cb;
+	border-radius: 4px;
+	color: #155724;
+}
+
+.bkx-cart-message.show {
+	display: block;
+	animation: slideIn 0.3s ease;
+}
+
+.bkx-cart-message a {
+	color: #155724;
+	font-weight: 600;
+}
+
+@keyframes slideIn {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* No Bookings */
+.bkx-no-bookings {
+	text-align: center;
+	padding: 40px;
+	background: #f9f9f9;
+	border-radius: 4px;
+}
+
+.bkx-no-bookings p {
+	margin-bottom: 20px;
+	color: #666;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+	.bkx-service-catalog {
+		grid-template-columns: 1fr;
+	}
+
+	.bkx-bookings-list .booking-row {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.bkx-bookings-list .booking-date,
+	.bkx-bookings-list .booking-status,
+	.bkx-bookings-list .booking-actions {
+		flex: none;
+		width: 100%;
+		margin-bottom: 10px;
+		text-align: left;
+	}
+
+	.bkx-time-slots {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.bkx-resource-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}

@@ -1,0 +1,113 @@
+/**
+ * Yoast SEO Integration Admin Styles.
+ *
+ * @package BookingX\YoastSeo
+ * @since   1.0.0
+ */
+
+/* Settings Page */
+.bkx-yoast-settings {
+	max-width: 800px;
+}
+
+.bkx-yoast-settings .bkx-settings-intro {
+	background: #fff;
+	border-left: 4px solid #a4286a;
+	padding: 15px 20px;
+	margin-bottom: 20px;
+}
+
+.bkx-yoast-settings .bkx-settings-intro p {
+	margin: 0;
+	font-size: 14px;
+}
+
+/* Settings Sections */
+.bkx-yoast-settings h2 {
+	margin-top: 30px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.bkx-yoast-settings .form-table th {
+	width: 200px;
+	padding-left: 0;
+}
+
+.bkx-yoast-settings .form-table td {
+	padding-left: 0;
+}
+
+.bkx-yoast-settings .form-table input[type="text"].regular-text {
+	width: 100%;
+	max-width: 400px;
+}
+
+/* Help Section */
+.bkx-settings-help {
+	margin-top: 40px;
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+
+.bkx-settings-help h3 {
+	margin-top: 0;
+}
+
+.bkx-settings-help table {
+	margin-top: 15px;
+}
+
+.bkx-settings-help code {
+	background: #f5f5f5;
+	padding: 2px 6px;
+	border-radius: 3px;
+}
+
+/* Description Text */
+.bkx-yoast-settings .description {
+	font-style: italic;
+	color: #666;
+	margin-top: 5px;
+}
+
+/* Checkbox Labels */
+.bkx-yoast-settings label {
+	cursor: pointer;
+}
+
+.bkx-yoast-settings input[type="checkbox"] {
+	margin-right: 8px;
+}
+
+/* Status Indicators */
+.bkx-status-indicator {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	margin-right: 8px;
+}
+
+.bkx-status-active {
+	background: #46b450;
+}
+
+.bkx-status-inactive {
+	background: #dc3232;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+	.bkx-yoast-settings .form-table th,
+	.bkx-yoast-settings .form-table td {
+		display: block;
+		width: 100%;
+		padding-left: 0;
+	}
+
+	.bkx-yoast-settings .form-table th {
+		padding-bottom: 5px;
+	}
+}
