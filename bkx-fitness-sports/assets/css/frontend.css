@@ -1,0 +1,614 @@
+/**
+ * Fitness & Sports Frontend Styles
+ *
+ * @package BookingX\FitnessSports
+ * @since   1.0.0
+ */
+
+/* ==========================================================================
+   Class Schedule
+   ========================================================================== */
+
+.bkx-class-schedule {
+	margin: 2rem 0;
+}
+
+.bkx-schedule-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1.5rem;
+	padding-bottom: 1rem;
+	border-bottom: 2px solid #e8e8e8;
+}
+
+.bkx-schedule-nav {
+	background: #f5f5f5;
+	border: none;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+	border-radius: 4px;
+	transition: background 0.2s ease;
+}
+
+.bkx-schedule-nav:hover {
+	background: #e0e0e0;
+}
+
+.bkx-schedule-range {
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: #2c3e50;
+}
+
+.bkx-schedule-body {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 1rem;
+}
+
+.bkx-schedule-day {
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+}
+
+.bkx-day-header {
+	background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+	color: #fff;
+	padding: 0.75rem;
+	text-align: center;
+}
+
+.bkx-day-name {
+	display: block;
+	font-weight: 600;
+	font-size: 0.9rem;
+}
+
+.bkx-day-date {
+	font-size: 0.8rem;
+	opacity: 0.9;
+}
+
+.bkx-day-classes {
+	padding: 0.75rem;
+}
+
+/* Class Card */
+.bkx-class-card {
+	background: #f9f9f9;
+	border-radius: 6px;
+	padding: 0.75rem;
+	margin-bottom: 0.75rem;
+	border-left: 3px solid #3498db;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bkx-class-card:last-child {
+	margin-bottom: 0;
+}
+
+.bkx-class-card:hover {
+	transform: translateX(3px);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bkx-class-card.bkx-class-full {
+	border-left-color: #e74c3c;
+	opacity: 0.8;
+}
+
+.bkx-class-time {
+	font-size: 0.85rem;
+	color: #666;
+	margin-bottom: 0.25rem;
+}
+
+.bkx-class-name {
+	font-weight: 600;
+	color: #2c3e50;
+	margin-bottom: 0.25rem;
+}
+
+.bkx-class-trainer {
+	font-size: 0.85rem;
+	color: #888;
+}
+
+.bkx-class-spots {
+	font-size: 0.8rem;
+	color: #27ae60;
+	margin-top: 0.5rem;
+}
+
+.bkx-class-full .bkx-class-spots {
+	color: #e74c3c;
+}
+
+.bkx-book-class-btn,
+.bkx-join-waitlist-btn,
+.bkx-login-to-book {
+	display: block;
+	width: 100%;
+	padding: 0.5rem;
+	margin-top: 0.75rem;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 0.85rem;
+	font-weight: 500;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	border: none;
+}
+
+.bkx-book-class-btn {
+	background: #3498db;
+	color: #fff;
+}
+
+.bkx-book-class-btn:hover {
+	background: #2980b9;
+	color: #fff;
+}
+
+.bkx-join-waitlist-btn {
+	background: #e67e22;
+	color: #fff;
+}
+
+.bkx-join-waitlist-btn:hover {
+	background: #d35400;
+}
+
+.bkx-login-to-book {
+	background: #f0f0f0;
+	color: #666;
+}
+
+/* ==========================================================================
+   Trainer List
+   ========================================================================== */
+
+.bkx-trainer-list {
+	display: grid;
+	gap: 1.5rem;
+	margin: 2rem 0;
+}
+
+.bkx-trainer-columns-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.bkx-trainer-columns-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.bkx-trainer-columns-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.bkx-trainer-card {
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bkx-trainer-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.bkx-trainer-image {
+	position: relative;
+	padding-top: 100%;
+	overflow: hidden;
+}
+
+.bkx-trainer-image img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.bkx-trainer-content {
+	padding: 1.25rem;
+}
+
+.bkx-trainer-name {
+	margin: 0 0 0.5rem;
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: #2c3e50;
+}
+
+.bkx-trainer-specialties {
+	color: #3498db;
+	font-size: 0.9rem;
+	margin-bottom: 0.75rem;
+}
+
+.bkx-trainer-bio {
+	color: #666;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	margin-bottom: 1rem;
+}
+
+.bkx-trainer-certifications {
+	font-size: 0.85rem;
+	color: #888;
+	margin-bottom: 1rem;
+}
+
+.bkx-book-trainer-btn {
+	display: block;
+	width: 100%;
+	padding: 0.75rem;
+	background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 6px;
+	font-weight: 500;
+	transition: all 0.3s ease;
+}
+
+.bkx-book-trainer-btn:hover {
+	background: linear-gradient(135deg, #2980b9 0%, #1f618d 100%);
+	color: #fff;
+}
+
+/* ==========================================================================
+   Membership Plans
+   ========================================================================== */
+
+.bkx-membership-plans {
+	display: grid;
+	gap: 1.5rem;
+	margin: 2rem 0;
+}
+
+.bkx-plan-columns-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.bkx-plan-columns-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.bkx-plan-card {
+	position: relative;
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bkx-plan-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.bkx-plan-featured {
+	border: 2px solid #3498db;
+}
+
+.bkx-plan-badge {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #3498db;
+	color: #fff;
+	padding: 0.5rem 1rem;
+	font-size: 0.75rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	border-radius: 0 0 0 12px;
+}
+
+.bkx-plan-header {
+	padding: 2rem;
+	text-align: center;
+	background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.bkx-plan-featured .bkx-plan-header {
+	background: linear-gradient(135deg, #ebf5fb 0%, #d4e6f1 100%);
+}
+
+.bkx-plan-name {
+	margin: 0 0 1rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #2c3e50;
+}
+
+.bkx-plan-price {
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	gap: 0.25rem;
+}
+
+.bkx-price-amount {
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: #3498db;
+}
+
+.bkx-price-period {
+	color: #888;
+	font-size: 0.9rem;
+}
+
+.bkx-plan-features {
+	padding: 1.5rem 2rem;
+}
+
+.bkx-plan-features ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.bkx-plan-features li {
+	padding: 0.75rem 0;
+	border-bottom: 1px solid #eee;
+	position: relative;
+	padding-left: 1.75rem;
+}
+
+.bkx-plan-features li:last-child {
+	border-bottom: none;
+}
+
+.bkx-plan-features li::before {
+	content: "\2713";
+	position: absolute;
+	left: 0;
+	color: #27ae60;
+	font-weight: bold;
+}
+
+.bkx-plan-footer {
+	padding: 1.5rem 2rem;
+}
+
+.bkx-select-plan-btn {
+	display: block;
+	width: 100%;
+	padding: 1rem;
+	background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 6px;
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+
+.bkx-select-plan-btn:hover {
+	background: linear-gradient(135deg, #2980b9 0%, #1f618d 100%);
+	color: #fff;
+	transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   Equipment Booking
+   ========================================================================== */
+
+.bkx-equipment-booking {
+	margin: 2rem 0;
+}
+
+.bkx-equipment-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 1.5rem;
+}
+
+.bkx-equipment-item {
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+	transition: box-shadow 0.2s ease;
+}
+
+.bkx-equipment-item:hover {
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.bkx-equipment-image {
+	height: 180px;
+	overflow: hidden;
+}
+
+.bkx-equipment-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.bkx-equipment-details {
+	padding: 1.25rem;
+}
+
+.bkx-equipment-name {
+	margin: 0 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 600;
+	color: #2c3e50;
+}
+
+.bkx-equipment-location {
+	color: #888;
+	font-size: 0.9rem;
+	margin: 0 0 0.5rem;
+}
+
+.bkx-equipment-duration {
+	font-size: 0.85rem;
+	color: #666;
+}
+
+.bkx-membership-required {
+	display: inline-block;
+	background: #fff3cd;
+	color: #856404;
+	padding: 0.25rem 0.5rem;
+	font-size: 0.75rem;
+	border-radius: 4px;
+	margin-top: 0.5rem;
+}
+
+.bkx-select-equipment-btn {
+	display: block;
+	width: 100%;
+	padding: 0.75rem;
+	margin-top: 1rem;
+	background: #3498db;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-weight: 500;
+	transition: background 0.2s ease;
+}
+
+.bkx-select-equipment-btn:hover {
+	background: #2980b9;
+}
+
+/* Booking Form */
+.bkx-booking-form {
+	max-width: 400px;
+	margin: 2rem auto;
+	padding: 1.5rem;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bkx-booking-form h3 {
+	margin: 0 0 1.5rem;
+	text-align: center;
+	color: #2c3e50;
+}
+
+.bkx-form-row {
+	margin-bottom: 1.25rem;
+}
+
+.bkx-form-row label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-weight: 500;
+	color: #2c3e50;
+}
+
+.bkx-form-row input,
+.bkx-form-row select {
+	width: 100%;
+	padding: 0.75rem;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 1rem;
+}
+
+.bkx-form-row input:focus,
+.bkx-form-row select:focus {
+	outline: none;
+	border-color: #3498db;
+}
+
+.bkx-availability-status {
+	padding: 0.75rem;
+	border-radius: 4px;
+	margin-bottom: 1rem;
+	text-align: center;
+	font-size: 0.9rem;
+}
+
+.bkx-availability-status.available {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-availability-status.unavailable {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+.bkx-book-equipment-btn,
+.bkx-cancel-btn {
+	width: 100%;
+	padding: 0.75rem;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-weight: 500;
+	transition: all 0.2s ease;
+}
+
+.bkx-book-equipment-btn {
+	background: #3498db;
+	color: #fff;
+	margin-bottom: 0.5rem;
+}
+
+.bkx-book-equipment-btn:hover {
+	background: #2980b9;
+}
+
+.bkx-cancel-btn {
+	background: #f0f0f0;
+	color: #666;
+}
+
+.bkx-cancel-btn:hover {
+	background: #e0e0e0;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+	.bkx-schedule-body {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+@media (max-width: 768px) {
+	.bkx-schedule-body {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.bkx-trainer-columns-3,
+	.bkx-trainer-columns-4,
+	.bkx-plan-columns-3 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 480px) {
+	.bkx-schedule-body,
+	.bkx-trainer-list,
+	.bkx-membership-plans {
+		grid-template-columns: 1fr;
+	}
+
+	.bkx-equipment-list {
+		grid-template-columns: 1fr;
+	}
+}

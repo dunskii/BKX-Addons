@@ -1,0 +1,847 @@
+/**
+ * Healthcare Practice Frontend Styles
+ *
+ * @package BookingX\HealthcarePractice
+ * @since   1.0.0
+ */
+
+/* ==========================================================================
+   Patient Portal
+   ========================================================================== */
+
+.bkx-patient-portal {
+	max-width: 1200px;
+	margin: 0 auto;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.bkx-portal-header {
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #e0e0e0;
+}
+
+.bkx-portal-header h2 {
+	margin: 0 0 10px 0;
+	font-size: 28px;
+	color: #1a1a1a;
+}
+
+.bkx-welcome-message {
+	color: #666;
+	font-size: 16px;
+	margin: 0;
+}
+
+/* Portal Tabs */
+.bkx-portal-tabs {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	margin-bottom: 30px;
+	border-bottom: 2px solid #e0e0e0;
+	padding-bottom: 0;
+}
+
+.bkx-tab-btn {
+	padding: 12px 24px;
+	background: transparent;
+	border: none;
+	border-bottom: 3px solid transparent;
+	margin-bottom: -2px;
+	cursor: pointer;
+	font-size: 15px;
+	color: #666;
+	transition: all 0.2s ease;
+	position: relative;
+}
+
+.bkx-tab-btn:hover {
+	color: #0073aa;
+}
+
+.bkx-tab-btn.active {
+	color: #0073aa;
+	border-bottom-color: #0073aa;
+	font-weight: 600;
+}
+
+.bkx-tab-btn .bkx-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	background: #d63638;
+	color: #fff;
+	border-radius: 10px;
+	font-size: 12px;
+	margin-left: 8px;
+}
+
+.bkx-tab-pane {
+	display: none;
+}
+
+.bkx-tab-pane.active {
+	display: block;
+}
+
+/* Appointments */
+.bkx-section-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.bkx-section-header h3 {
+	margin: 0;
+	font-size: 20px;
+}
+
+.bkx-appointment-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	gap: 20px;
+	margin-bottom: 40px;
+}
+
+.bkx-appointment-card {
+	display: flex;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.bkx-apt-date {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	min-width: 60px;
+	padding-right: 20px;
+	border-right: 2px solid #e0e0e0;
+	margin-right: 20px;
+}
+
+.bkx-apt-day {
+	font-size: 28px;
+	font-weight: 700;
+	color: #0073aa;
+	line-height: 1;
+}
+
+.bkx-apt-month {
+	font-size: 14px;
+	color: #666;
+	text-transform: uppercase;
+}
+
+.bkx-apt-details {
+	flex: 1;
+}
+
+.bkx-apt-details h4 {
+	margin: 0 0 8px 0;
+	font-size: 16px;
+	color: #1a1a1a;
+}
+
+.bkx-apt-provider,
+.bkx-apt-time {
+	margin: 0 0 4px 0;
+	color: #666;
+	font-size: 14px;
+}
+
+.bkx-telemedicine-badge {
+	display: inline-block;
+	padding: 3px 10px;
+	background: #2271b1;
+	color: #fff;
+	border-radius: 3px;
+	font-size: 12px;
+	margin-top: 8px;
+}
+
+.bkx-apt-actions {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-left: 15px;
+}
+
+/* Tables */
+.bkx-appointments-table,
+.bkx-documents-table {
+	width: 100%;
+	border-collapse: collapse;
+	background: #fff;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.bkx-appointments-table th,
+.bkx-appointments-table td,
+.bkx-documents-table th,
+.bkx-documents-table td {
+	padding: 12px 16px;
+	text-align: left;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.bkx-appointments-table th,
+.bkx-documents-table th {
+	background: #f8f9fa;
+	font-weight: 600;
+	color: #1a1a1a;
+}
+
+.bkx-past-appointments-header {
+	margin-top: 40px;
+	font-size: 18px;
+}
+
+/* Status Badges */
+.bkx-status-active,
+.bkx-status-bkx-completed {
+	color: #00a32a;
+}
+
+.bkx-status-pending,
+.bkx-status-bkx-pending {
+	color: #dba617;
+}
+
+.bkx-status-cancelled,
+.bkx-status-revoked,
+.bkx-status-bkx-cancelled {
+	color: #d63638;
+}
+
+/* Messages */
+.bkx-messages-list {
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.bkx-message-item {
+	display: flex;
+	align-items: center;
+	padding: 15px 20px;
+	border-bottom: 1px solid #e0e0e0;
+	cursor: pointer;
+	transition: background 0.2s ease;
+}
+
+.bkx-message-item:last-child {
+	border-bottom: none;
+}
+
+.bkx-message-item:hover {
+	background: #f8f9fa;
+}
+
+.bkx-message-item.unread {
+	background: #f0f6fc;
+}
+
+.bkx-message-item.unread .bkx-message-sender {
+	font-weight: 700;
+}
+
+.bkx-message-sender {
+	width: 150px;
+	font-weight: 600;
+	color: #1a1a1a;
+}
+
+.bkx-message-preview {
+	flex: 1;
+	color: #666;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.bkx-message-date {
+	width: 100px;
+	text-align: right;
+	color: #999;
+	font-size: 13px;
+}
+
+/* Profile Form */
+.bkx-profile-form {
+	background: #fff;
+	padding: 30px;
+	border-radius: 8px;
+	border: 1px solid #e0e0e0;
+}
+
+.bkx-form-row {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 20px;
+	margin-bottom: 20px;
+}
+
+.bkx-form-field {
+	margin-bottom: 20px;
+}
+
+.bkx-form-field label {
+	display: block;
+	margin-bottom: 6px;
+	font-weight: 600;
+	color: #1a1a1a;
+}
+
+.bkx-form-field input,
+.bkx-form-field select,
+.bkx-form-field textarea {
+	width: 100%;
+	padding: 10px 12px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+.bkx-form-field input:focus,
+.bkx-form-field select:focus,
+.bkx-form-field textarea:focus {
+	border-color: #0073aa;
+	outline: none;
+	box-shadow: 0 0 0 2px rgba(0, 115, 170, 0.1);
+}
+
+.bkx-data-privacy-section {
+	margin-top: 40px;
+	padding-top: 30px;
+	border-top: 1px solid #e0e0e0;
+}
+
+.bkx-no-data {
+	text-align: center;
+	padding: 40px;
+	color: #666;
+	background: #f8f9fa;
+	border-radius: 8px;
+}
+
+/* ==========================================================================
+   Consent Forms
+   ========================================================================== */
+
+.bkx-consent-form {
+	max-width: 800px;
+	margin: 0 auto;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.bkx-consent-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background: #f8f9fa;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.bkx-consent-header h3 {
+	margin: 0;
+	font-size: 20px;
+}
+
+.bkx-consent-version {
+	color: #666;
+	font-size: 13px;
+}
+
+.bkx-consent-actions-top {
+	padding: 10px 20px;
+	border-bottom: 1px solid #e0e0e0;
+	text-align: right;
+}
+
+.bkx-consent-content {
+	padding: 30px;
+	max-height: 400px;
+	overflow-y: auto;
+	line-height: 1.7;
+}
+
+.bkx-consent-submission {
+	padding: 20px 30px 30px;
+	background: #f8f9fa;
+	border-top: 1px solid #e0e0e0;
+}
+
+/* Signature Pad */
+.bkx-signature-section {
+	margin-bottom: 20px;
+}
+
+.bkx-signature-section label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: 600;
+}
+
+.bkx-signature-pad-container {
+	border: 2px solid #ddd;
+	border-radius: 4px;
+	background: #fff;
+	margin-bottom: 10px;
+}
+
+.bkx-signature-pad {
+	width: 100%;
+	height: 150px;
+	cursor: crosshair;
+}
+
+.bkx-consent-agreement {
+	margin-bottom: 20px;
+}
+
+.bkx-checkbox-label {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	cursor: pointer;
+}
+
+.bkx-checkbox-label input {
+	margin-top: 4px;
+}
+
+.bkx-consent-submit {
+	text-align: center;
+}
+
+/* Already Consented */
+.bkx-consent-already-signed {
+	text-align: center;
+	padding: 40px;
+	background: #f0f7e6;
+	border: 1px solid #c3e6a8;
+	border-radius: 8px;
+}
+
+.bkx-consent-check-icon {
+	font-size: 48px;
+	color: #00a32a;
+	margin-bottom: 10px;
+}
+
+.bkx-consent-already-signed h4 {
+	margin: 0 0 10px;
+	color: #1a1a1a;
+}
+
+.bkx-consent-already-signed p {
+	margin: 0 0 15px;
+	color: #666;
+}
+
+/* Login Required */
+.bkx-consent-login-required,
+.bkx-portal-login-required {
+	text-align: center;
+	padding: 40px;
+}
+
+.bkx-portal-login-required {
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+}
+
+.bkx-register-link {
+	margin-top: 20px;
+	color: #666;
+}
+
+/* ==========================================================================
+   Patient Intake Forms
+   ========================================================================== */
+
+.bkx-patient-intake-form {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.bkx-patient-intake-form h3 {
+	margin: 0 0 10px;
+	font-size: 24px;
+}
+
+.bkx-form-description {
+	margin-bottom: 30px;
+	padding: 15px;
+	background: #f8f9fa;
+	border-radius: 4px;
+	color: #666;
+}
+
+.bkx-intake-form fieldset {
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	padding: 25px;
+	margin-bottom: 25px;
+	background: #fff;
+}
+
+.bkx-intake-form legend {
+	font-weight: 600;
+	font-size: 16px;
+	padding: 0 10px;
+	color: #1a1a1a;
+}
+
+.bkx-form-field {
+	margin-bottom: 20px;
+}
+
+.bkx-form-field label {
+	display: block;
+	margin-bottom: 6px;
+	font-weight: 500;
+}
+
+.bkx-form-field .required {
+	color: #d63638;
+}
+
+.bkx-form-field input[type="text"],
+.bkx-form-field input[type="email"],
+.bkx-form-field input[type="tel"],
+.bkx-form-field input[type="date"],
+.bkx-form-field select,
+.bkx-form-field textarea {
+	width: 100%;
+	padding: 10px 12px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+	font-family: inherit;
+}
+
+.bkx-form-field textarea {
+	resize: vertical;
+	min-height: 100px;
+}
+
+.bkx-radio-group,
+.bkx-checkbox-group {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.bkx-radio-group label,
+.bkx-checkbox-group label {
+	font-weight: normal;
+	cursor: pointer;
+}
+
+.bkx-field-help {
+	margin: 6px 0 0;
+	font-size: 13px;
+	color: #666;
+}
+
+/* Medications & Allergies Lists */
+.bkx-medications-list,
+.bkx-allergies-list {
+	margin-bottom: 10px;
+}
+
+.bkx-medication-item,
+.bkx-allergy-item {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 10px;
+	flex-wrap: wrap;
+}
+
+.bkx-medication-item input,
+.bkx-allergy-item input,
+.bkx-allergy-item select {
+	flex: 1;
+	min-width: 120px;
+	padding: 8px 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.bkx-remove-medication,
+.bkx-remove-allergy {
+	background: #d63638;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 1;
+}
+
+.bkx-add-medication,
+.bkx-add-allergy {
+	background: #f0f0f1;
+	border: 1px solid #ddd;
+	padding: 6px 12px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 13px;
+}
+
+.bkx-add-medication:hover,
+.bkx-add-allergy:hover {
+	background: #e0e0e0;
+}
+
+/* HIPAA Notice */
+.bkx-hipaa-notice {
+	background: #fcf0f1;
+	border: 1px solid #f4c7c3;
+	padding: 15px;
+	border-radius: 4px;
+	margin: 20px 0;
+}
+
+.bkx-hipaa-notice p {
+	margin: 0;
+	font-size: 13px;
+	color: #1a1a1a;
+}
+
+.bkx-form-actions {
+	display: flex;
+	gap: 15px;
+	justify-content: flex-end;
+	margin-top: 30px;
+}
+
+/* ==========================================================================
+   Telemedicine
+   ========================================================================== */
+
+.bkx-telemedicine-container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.bkx-telemedicine-header {
+	margin-bottom: 20px;
+}
+
+.bkx-telemedicine-header h3 {
+	margin: 0 0 5px;
+}
+
+.bkx-provider-info {
+	color: #666;
+	margin: 0;
+}
+
+.bkx-telemedicine-instructions {
+	background: #f0f6fc;
+	padding: 15px;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+.bkx-jitsi-embed {
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.bkx-telemedicine-external {
+	text-align: center;
+	padding: 60px 40px;
+	background: #f8f9fa;
+	border-radius: 8px;
+}
+
+.bkx-telemedicine-external p {
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+
+.bkx-telemedicine-footer {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #e0e0e0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bkx-telemedicine-footer .bkx-hipaa-notice {
+	margin: 0;
+	flex: 1;
+	margin-right: 20px;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.bkx-btn {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 14px;
+	font-weight: 500;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	border: none;
+}
+
+.bkx-btn-primary {
+	background: #0073aa;
+	color: #fff;
+}
+
+.bkx-btn-primary:hover {
+	background: #005a87;
+	color: #fff;
+}
+
+.bkx-btn-secondary {
+	background: #f0f0f1;
+	color: #1a1a1a;
+	border: 1px solid #ddd;
+}
+
+.bkx-btn-secondary:hover {
+	background: #e0e0e0;
+}
+
+.bkx-btn-small {
+	padding: 6px 12px;
+	font-size: 13px;
+}
+
+.bkx-btn-large {
+	padding: 15px 30px;
+	font-size: 16px;
+}
+
+/* Errors */
+.bkx-error {
+	color: #d63638;
+	background: #fcf0f1;
+	padding: 15px;
+	border-radius: 4px;
+	border: 1px solid #f4c7c3;
+}
+
+/* Required notices */
+.bkx-consent-required-notice {
+	background: #fcf9e8;
+	border: 1px solid #f0c33c;
+	padding: 15px;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+.bkx-consent-required-notice p {
+	margin: 0 0 10px;
+}
+
+.bkx-consent-required-notice ul {
+	margin: 0;
+	padding-left: 20px;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 768px) {
+	.bkx-portal-tabs {
+		flex-direction: column;
+	}
+
+	.bkx-tab-btn {
+		border-bottom: none;
+		border-left: 3px solid transparent;
+		text-align: left;
+	}
+
+	.bkx-tab-btn.active {
+		border-left-color: #0073aa;
+		border-bottom-color: transparent;
+	}
+
+	.bkx-appointment-cards {
+		grid-template-columns: 1fr;
+	}
+
+	.bkx-appointment-card {
+		flex-direction: column;
+	}
+
+	.bkx-apt-date {
+		flex-direction: row;
+		gap: 10px;
+		width: 100%;
+		padding: 0 0 15px;
+		margin: 0 0 15px;
+		border-right: none;
+		border-bottom: 2px solid #e0e0e0;
+	}
+
+	.bkx-apt-actions {
+		margin: 15px 0 0;
+		flex-direction: row;
+	}
+
+	.bkx-message-item {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 5px;
+	}
+
+	.bkx-message-sender,
+	.bkx-message-date {
+		width: auto;
+	}
+
+	.bkx-message-date {
+		text-align: left;
+	}
+
+	.bkx-form-row {
+		grid-template-columns: 1fr;
+	}
+
+	.bkx-medication-item,
+	.bkx-allergy-item {
+		flex-direction: column;
+	}
+
+	.bkx-telemedicine-footer {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.bkx-telemedicine-footer .bkx-hipaa-notice {
+		margin-right: 0;
+	}
+}

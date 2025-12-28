@@ -1,0 +1,521 @@
+/**
+ * Healthcare Practice Admin Styles
+ *
+ * @package BookingX\HealthcarePractice
+ * @since   1.0.0
+ */
+
+/* ==========================================================================
+   Settings Page
+   ========================================================================== */
+
+.bkx-healthcare-settings .nav-tab-wrapper {
+	margin-bottom: 20px;
+}
+
+.bkx-settings-content {
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #ccd0d4;
+	border-radius: 4px;
+}
+
+.bkx-settings-content h3 {
+	margin-top: 30px;
+	padding-top: 20px;
+	border-top: 1px solid #e0e0e0;
+}
+
+.bkx-settings-content h3:first-child {
+	margin-top: 0;
+	padding-top: 0;
+	border-top: none;
+}
+
+.bkx-conditional-row {
+	transition: opacity 0.2s ease;
+}
+
+.bkx-conditional-row.hidden {
+	display: none;
+}
+
+/* Provider Settings */
+.bkx-provider-settings {
+	margin-top: 20px;
+	padding: 20px;
+	background: #f8f9fa;
+	border-radius: 4px;
+}
+
+.bkx-provider-settings h3 {
+	margin-top: 0 !important;
+	padding-top: 0 !important;
+	border-top: none !important;
+}
+
+/* HIPAA Notice */
+.bkx-hipaa-notice {
+	background: #fcf0f1;
+	border-left: 4px solid #d63638;
+	padding: 15px;
+	margin-bottom: 20px;
+}
+
+.bkx-hipaa-notice p {
+	margin: 0;
+}
+
+/* License Status */
+.bkx-license-active {
+	color: #00a32a;
+	font-weight: 600;
+}
+
+.bkx-license-inactive {
+	color: #d63638;
+}
+
+/* ==========================================================================
+   Provider Metabox
+   ========================================================================== */
+
+.bkx-provider-credentials-metabox,
+.bkx-provider-availability-metabox {
+	padding: 10px 0;
+}
+
+.bkx-credentials-list {
+	margin-bottom: 15px;
+}
+
+.bkx-credential-item {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 10px;
+	flex-wrap: wrap;
+}
+
+.bkx-credential-item input {
+	flex: 1;
+	min-width: 150px;
+}
+
+.bkx-credential-item input[type="date"] {
+	max-width: 150px;
+}
+
+.bkx-credential-item .button {
+	flex-shrink: 0;
+}
+
+/* Availability Table */
+.bkx-availability-table {
+	margin-top: 15px;
+}
+
+.bkx-availability-table input[type="time"] {
+	width: 100px;
+}
+
+.bkx-availability-table input[type="checkbox"] {
+	margin: 0;
+}
+
+/* ==========================================================================
+   Intake Form Builder
+   ========================================================================== */
+
+.bkx-intake-form-builder {
+	padding: 10px 0;
+}
+
+.bkx-form-fields-list {
+	margin-bottom: 20px;
+}
+
+.bkx-field-row {
+	background: #f8f9fa;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+.bkx-field-row-header {
+	display: flex;
+	align-items: center;
+	padding: 10px 15px;
+	background: #fff;
+	border-radius: 4px 4px 0 0;
+	cursor: pointer;
+}
+
+.bkx-field-drag-handle {
+	cursor: move;
+	color: #999;
+	margin-right: 10px;
+}
+
+.bkx-field-label-preview {
+	flex: 1;
+	font-weight: 600;
+}
+
+.bkx-field-type-preview {
+	color: #666;
+	font-size: 12px;
+	margin-right: 15px;
+}
+
+.bkx-toggle-field-settings {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+	color: #666;
+}
+
+.bkx-remove-field {
+	background: #d63638;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	margin-left: 10px;
+	font-size: 16px;
+	line-height: 1;
+}
+
+.bkx-field-row-settings {
+	padding: 15px;
+	border-top: 1px solid #ddd;
+}
+
+.bkx-field-setting {
+	margin-bottom: 15px;
+}
+
+.bkx-field-setting:last-child {
+	margin-bottom: 0;
+}
+
+.bkx-field-setting label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+
+.bkx-field-setting .description {
+	color: #666;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+.bkx-add-field-section {
+	margin-bottom: 20px;
+}
+
+/* Field row being dragged */
+.bkx-field-row.ui-sortable-helper {
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.bkx-field-row.ui-sortable-placeholder {
+	visibility: visible !important;
+	background: #e5f5fa;
+	border: 2px dashed #0073aa;
+}
+
+/* ==========================================================================
+   Patient Metabox
+   ========================================================================== */
+
+.bkx-patient-metabox {
+	padding: 5px 0;
+}
+
+.bkx-allergy-alert {
+	background: #fcf0f1;
+	border: 2px solid #d63638;
+	padding: 10px 15px;
+	margin-bottom: 15px;
+	border-radius: 4px;
+	color: #d63638;
+	font-weight: 500;
+}
+
+.bkx-patient-info p {
+	margin: 0 0 8px;
+}
+
+.bkx-intake-status,
+.bkx-consent-status {
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 1px solid #ddd;
+}
+
+.bkx-intake-status h4,
+.bkx-consent-status h4 {
+	margin: 0 0 10px;
+	font-size: 13px;
+}
+
+.bkx-consent-status ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.bkx-consent-status li {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+}
+
+.bkx-consent-status li:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+.bkx-status-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-left: 5px;
+}
+
+.bkx-status-active,
+.bkx-status-submitted {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-status-pending,
+.bkx-status-draft {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.bkx-status-revoked,
+.bkx-status-expired {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+.bkx-patient-actions {
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 1px solid #ddd;
+}
+
+.bkx-provider-notes {
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 1px solid #ddd;
+}
+
+.bkx-provider-notes h4 {
+	margin: 0 0 10px;
+	font-size: 13px;
+}
+
+/* ==========================================================================
+   Patient Records Page
+   ========================================================================== */
+
+.bkx-patient-records {
+	padding: 20px;
+}
+
+.bkx-patient-search {
+	margin-bottom: 30px;
+}
+
+.bkx-patient-search-input {
+	width: 400px;
+	max-width: 100%;
+}
+
+.bkx-patient-list {
+	background: #fff;
+	border: 1px solid #ccd0d4;
+}
+
+.bkx-patient-row {
+	display: flex;
+	align-items: center;
+	padding: 15px 20px;
+	border-bottom: 1px solid #eee;
+}
+
+.bkx-patient-row:last-child {
+	border-bottom: none;
+}
+
+.bkx-patient-row:hover {
+	background: #f8f9fa;
+}
+
+.bkx-patient-info {
+	flex: 1;
+}
+
+.bkx-patient-name {
+	font-weight: 600;
+	margin-bottom: 3px;
+}
+
+.bkx-patient-email {
+	color: #666;
+	font-size: 13px;
+}
+
+.bkx-patient-actions {
+	display: flex;
+	gap: 10px;
+}
+
+/* Patient Detail View */
+.bkx-patient-detail {
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	gap: 30px;
+}
+
+.bkx-patient-sidebar {
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.bkx-patient-sidebar h3 {
+	margin: 0 0 15px;
+	font-size: 16px;
+}
+
+.bkx-patient-main {
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+/* ==========================================================================
+   Audit Log Page
+   ========================================================================== */
+
+.bkx-audit-log {
+	padding: 20px;
+}
+
+.bkx-audit-filters {
+	display: flex;
+	gap: 15px;
+	margin-bottom: 20px;
+	flex-wrap: wrap;
+}
+
+.bkx-audit-table {
+	width: 100%;
+	border-collapse: collapse;
+	background: #fff;
+}
+
+.bkx-audit-table th,
+.bkx-audit-table td {
+	padding: 12px 15px;
+	text-align: left;
+	border-bottom: 1px solid #eee;
+}
+
+.bkx-audit-table th {
+	background: #f8f9fa;
+	font-weight: 600;
+}
+
+.bkx-audit-table tr:hover {
+	background: #f8f9fa;
+}
+
+.bkx-event-type {
+	display: inline-block;
+	padding: 3px 8px;
+	background: #e5f5fa;
+	color: #0073aa;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.bkx-event-type.access {
+	background: #fcf0f1;
+	color: #d63638;
+}
+
+.bkx-event-type.consent {
+	background: #d4edda;
+	color: #155724;
+}
+
+/* ==========================================================================
+   Consent Settings Metabox
+   ========================================================================== */
+
+.bkx-consent-settings p {
+	margin-bottom: 15px;
+}
+
+.bkx-consent-settings label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+
+.bkx-consent-settings .description {
+	color: #666;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+.bkx-consent-settings code {
+	display: block;
+	padding: 8px 12px;
+	background: #f0f0f1;
+	border-radius: 3px;
+	font-size: 12px;
+	word-break: break-all;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 782px) {
+	.bkx-credential-item {
+		flex-direction: column;
+	}
+
+	.bkx-credential-item input {
+		width: 100%;
+	}
+
+	.bkx-patient-detail {
+		grid-template-columns: 1fr;
+	}
+
+	.bkx-audit-filters {
+		flex-direction: column;
+	}
+
+	.bkx-patient-search-input {
+		width: 100%;
+	}
+}

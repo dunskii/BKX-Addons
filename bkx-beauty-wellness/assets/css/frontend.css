@@ -1,0 +1,625 @@
+/**
+ * Beauty & Wellness Frontend Styles
+ *
+ * @package BookingX\BeautyWellness
+ * @since   1.0.0
+ */
+
+/* ==========================================================================
+   Treatment Menu
+   ========================================================================== */
+
+.bkx-treatment-menu {
+	margin: 2rem 0;
+}
+
+.bkx-treatment-category {
+	margin-bottom: 3rem;
+}
+
+.bkx-category-title {
+	font-size: 1.75rem;
+	font-weight: 600;
+	margin-bottom: 1.5rem;
+	padding-bottom: 0.75rem;
+	border-bottom: 2px solid #e8e8e8;
+	color: #2c3e50;
+}
+
+/* Grid Layout */
+.bkx-treatments-grid {
+	display: grid;
+	gap: 1.5rem;
+}
+
+.bkx-treatment-columns-2 .bkx-treatments-grid {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.bkx-treatment-columns-3 .bkx-treatments-grid {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.bkx-treatment-columns-4 .bkx-treatments-grid {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+/* Treatment Card */
+.bkx-treatment-card {
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bkx-treatment-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.bkx-treatment-image {
+	position: relative;
+	padding-top: 66.67%;
+	overflow: hidden;
+}
+
+.bkx-treatment-image img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.4s ease;
+}
+
+.bkx-treatment-card:hover .bkx-treatment-image img {
+	transform: scale(1.05);
+}
+
+.bkx-treatment-content {
+	padding: 1.25rem;
+}
+
+.bkx-treatment-name {
+	margin: 0 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 600;
+}
+
+.bkx-treatment-name a {
+	color: #2c3e50;
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+.bkx-treatment-name a:hover {
+	color: #8e44ad;
+}
+
+.bkx-treatment-description {
+	color: #666;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	margin-bottom: 1rem;
+}
+
+.bkx-treatment-meta {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1rem;
+	padding-top: 0.75rem;
+	border-top: 1px solid #eee;
+}
+
+.bkx-treatment-duration {
+	color: #888;
+	font-size: 0.875rem;
+}
+
+.bkx-treatment-duration::before {
+	content: "\231A";
+	margin-right: 0.25rem;
+}
+
+.bkx-treatment-price {
+	font-weight: 600;
+	color: #8e44ad;
+	font-size: 1.125rem;
+}
+
+.bkx-book-treatment-btn {
+	display: block;
+	width: 100%;
+	padding: 0.75rem 1rem;
+	background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 6px;
+	font-weight: 500;
+	transition: all 0.3s ease;
+}
+
+.bkx-book-treatment-btn:hover {
+	background: linear-gradient(135deg, #8e44ad 0%, #7d3c98 100%);
+	color: #fff;
+	transform: translateY(-1px);
+}
+
+/* List Style */
+.bkx-treatment-style-list .bkx-treatments-grid {
+	display: block;
+}
+
+.bkx-treatment-style-list .bkx-treatment-card {
+	display: flex;
+	margin-bottom: 1rem;
+}
+
+.bkx-treatment-style-list .bkx-treatment-image {
+	width: 150px;
+	min-width: 150px;
+	padding-top: 0;
+	height: 120px;
+}
+
+.bkx-treatment-style-list .bkx-treatment-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 1;
+}
+
+.bkx-treatment-style-list .bkx-treatment-meta {
+	border-top: none;
+	padding-top: 0;
+}
+
+.bkx-treatment-style-list .bkx-book-treatment-btn {
+	width: auto;
+	margin-left: auto;
+}
+
+/* ==========================================================================
+   Portfolio Gallery
+   ========================================================================== */
+
+.bkx-portfolio-gallery {
+	display: grid;
+	gap: 1.5rem;
+	margin: 2rem 0;
+}
+
+.bkx-portfolio-columns-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.bkx-portfolio-columns-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.bkx-portfolio-columns-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.bkx-portfolio-item {
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bkx-portfolio-item:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Before/After Container */
+.bkx-before-after-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2px;
+	background: #eee;
+}
+
+.bkx-before-image,
+.bkx-after-image {
+	position: relative;
+}
+
+.bkx-before-image img,
+.bkx-after-image img {
+	display: block;
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.bkx-before-image .bkx-label,
+.bkx-after-image .bkx-label {
+	position: absolute;
+	bottom: 8px;
+	left: 8px;
+	background: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	padding: 4px 10px;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	border-radius: 4px;
+}
+
+/* Single Image */
+.bkx-single-image img {
+	display: block;
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+}
+
+/* Video Container */
+.bkx-video-container {
+	position: relative;
+	padding-top: 56.25%;
+}
+
+.bkx-video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Portfolio Content */
+.bkx-portfolio-content {
+	padding: 1.25rem;
+}
+
+.bkx-portfolio-title {
+	margin: 0 0 0.5rem;
+	font-size: 1rem;
+	font-weight: 600;
+	color: #2c3e50;
+}
+
+.bkx-portfolio-stylist {
+	color: #888;
+	font-size: 0.875rem;
+	margin: 0 0 0.5rem;
+}
+
+.bkx-portfolio-category {
+	display: inline-block;
+	background: #f0e6f5;
+	color: #8e44ad;
+	padding: 4px 10px;
+	font-size: 0.75rem;
+	border-radius: 12px;
+	margin-bottom: 0.75rem;
+}
+
+.bkx-testimonial {
+	font-style: italic;
+	color: #666;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	margin: 0.75rem 0 0;
+	padding: 0.75rem;
+	background: #f9f9f9;
+	border-left: 3px solid #8e44ad;
+	border-radius: 0 4px 4px 0;
+}
+
+/* ==========================================================================
+   Service Add-ons
+   ========================================================================== */
+
+.bkx-addons-section {
+	margin: 2rem 0;
+	padding: 1.5rem;
+	background: #f9f9f9;
+	border-radius: 12px;
+}
+
+.bkx-addons-title {
+	font-size: 1.25rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	color: #2c3e50;
+}
+
+.bkx-addons-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 1rem;
+}
+
+.bkx-addon-item {
+	display: flex;
+	align-items: flex-start;
+	padding: 1rem;
+	background: #fff;
+	border-radius: 8px;
+	border: 2px solid transparent;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.bkx-addon-item:hover {
+	border-color: #e0d4e8;
+}
+
+.bkx-addon-item.selected {
+	border-color: #8e44ad;
+	background: #faf5fc;
+}
+
+.bkx-addon-checkbox {
+	margin-right: 0.75rem;
+	margin-top: 4px;
+}
+
+.bkx-addon-image {
+	width: 60px;
+	height: 60px;
+	border-radius: 6px;
+	overflow: hidden;
+	margin-right: 0.75rem;
+	flex-shrink: 0;
+}
+
+.bkx-addon-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.bkx-addon-details {
+	flex: 1;
+}
+
+.bkx-addon-name {
+	font-weight: 600;
+	margin-bottom: 0.25rem;
+	color: #2c3e50;
+}
+
+.bkx-addon-description {
+	font-size: 0.85rem;
+	color: #666;
+	margin-bottom: 0.5rem;
+}
+
+.bkx-addon-meta {
+	display: flex;
+	gap: 1rem;
+	font-size: 0.85rem;
+}
+
+.bkx-addon-duration {
+	color: #888;
+}
+
+.bkx-addon-price {
+	font-weight: 600;
+	color: #8e44ad;
+}
+
+.bkx-recommended-badge {
+	display: inline-block;
+	background: #27ae60;
+	color: #fff;
+	padding: 2px 8px;
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	border-radius: 4px;
+	margin-left: 0.5rem;
+}
+
+/* Bundle Cards */
+.bkx-bundle-card {
+	background: linear-gradient(135deg, #faf5fc 0%, #f0e6f5 100%);
+	border: 2px solid #d4b8e0;
+}
+
+.bkx-bundle-savings {
+	display: inline-block;
+	background: #e74c3c;
+	color: #fff;
+	padding: 2px 8px;
+	font-size: 0.75rem;
+	border-radius: 4px;
+	margin-left: 0.5rem;
+}
+
+/* ==========================================================================
+   Consultation Form
+   ========================================================================== */
+
+.bkx-consultation-form {
+	max-width: 600px;
+	margin: 2rem auto;
+	padding: 2rem;
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.bkx-form-section {
+	margin-bottom: 2rem;
+}
+
+.bkx-form-section-title {
+	font-size: 1.125rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	padding-bottom: 0.5rem;
+	border-bottom: 2px solid #f0e6f5;
+	color: #2c3e50;
+}
+
+.bkx-form-row {
+	margin-bottom: 1.25rem;
+}
+
+.bkx-form-label {
+	display: block;
+	font-weight: 500;
+	margin-bottom: 0.5rem;
+	color: #2c3e50;
+}
+
+.bkx-form-input,
+.bkx-form-select,
+.bkx-form-textarea {
+	width: 100%;
+	padding: 0.75rem 1rem;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	font-size: 1rem;
+	transition: border-color 0.2s ease;
+}
+
+.bkx-form-input:focus,
+.bkx-form-select:focus,
+.bkx-form-textarea:focus {
+	outline: none;
+	border-color: #8e44ad;
+}
+
+.bkx-checkbox-group {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0.75rem;
+}
+
+.bkx-checkbox-item {
+	display: flex;
+	align-items: center;
+}
+
+.bkx-checkbox-item input {
+	margin-right: 0.5rem;
+}
+
+.bkx-allergy-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-top: 0.75rem;
+}
+
+.bkx-allergy-tag {
+	display: inline-flex;
+	align-items: center;
+	padding: 4px 10px;
+	background: #fff3cd;
+	color: #856404;
+	border-radius: 20px;
+	font-size: 0.85rem;
+}
+
+.bkx-allergy-tag-remove {
+	margin-left: 6px;
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+.bkx-allergy-tag-remove:hover {
+	opacity: 1;
+}
+
+.bkx-consent-section {
+	padding: 1.25rem;
+	background: #f9f9f9;
+	border-radius: 8px;
+	margin-top: 1.5rem;
+}
+
+.bkx-consent-text {
+	font-size: 0.9rem;
+	color: #666;
+	line-height: 1.6;
+	margin-bottom: 1rem;
+}
+
+.bkx-signature-pad {
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	background: #fff;
+	margin-top: 0.75rem;
+}
+
+.bkx-submit-btn {
+	display: block;
+	width: 100%;
+	padding: 1rem;
+	background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.bkx-submit-btn:hover {
+	background: linear-gradient(135deg, #8e44ad 0%, #7d3c98 100%);
+	transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 768px) {
+	.bkx-treatment-columns-3 .bkx-treatments-grid,
+	.bkx-treatment-columns-4 .bkx-treatments-grid,
+	.bkx-portfolio-columns-3,
+	.bkx-portfolio-columns-4 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.bkx-treatment-style-list .bkx-treatment-card {
+		flex-direction: column;
+	}
+
+	.bkx-treatment-style-list .bkx-treatment-image {
+		width: 100%;
+		height: 180px;
+	}
+
+	.bkx-treatment-style-list .bkx-book-treatment-btn {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.bkx-before-after-container {
+		grid-template-columns: 1fr;
+	}
+
+	.bkx-checkbox-group {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 480px) {
+	.bkx-treatment-columns-2 .bkx-treatments-grid,
+	.bkx-treatment-columns-3 .bkx-treatments-grid,
+	.bkx-treatment-columns-4 .bkx-treatments-grid,
+	.bkx-portfolio-columns-2,
+	.bkx-portfolio-columns-3,
+	.bkx-portfolio-columns-4 {
+		grid-template-columns: 1fr;
+	}
+
+	.bkx-addons-grid {
+		grid-template-columns: 1fr;
+	}
+}

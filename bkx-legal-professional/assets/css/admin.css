@@ -1,0 +1,573 @@
+/**
+ * Legal & Professional Services - Admin Styles
+ *
+ * @package BookingX\LegalProfessional
+ * @since   1.0.0
+ */
+
+/* Settings Page */
+.bkx-legal-settings .nav-tab-wrapper {
+	margin-bottom: 20px;
+}
+
+.bkx-legal-settings .form-table th {
+	width: 200px;
+}
+
+.bkx-legal-settings .description {
+	color: #666;
+	font-style: italic;
+}
+
+/* License Status */
+.bkx-license-status {
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 600;
+	margin-left: 10px;
+}
+
+.bkx-license-status.valid {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-license-status.invalid {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+/* Matter Metabox */
+.bkx-fee-flat,
+.bkx-fee-contingency {
+	display: none;
+}
+
+.bkx-fee-arrangement-flat .bkx-fee-flat,
+.bkx-fee-arrangement-contingency .bkx-fee-contingency,
+.bkx-fee-arrangement-hybrid .bkx-fee-hourly,
+.bkx-fee-arrangement-hybrid .bkx-fee-flat,
+.bkx-fee-arrangement-hybrid .bkx-fee-contingency {
+	display: table-row;
+}
+
+/* Admissions List */
+.bkx-admission-row {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.bkx-admission-row input {
+	flex: 1;
+}
+
+.bkx-admission-row .bkx-remove-admission {
+	flex: 0 0 30px;
+	padding: 0;
+	width: 30px;
+	height: 30px;
+	line-height: 28px;
+	text-align: center;
+}
+
+/* Time Entry Form */
+#bkx_legal_time_entry .form-table th {
+	width: 150px;
+	padding: 10px 10px 10px 0;
+}
+
+#bkx_legal_time_entry .form-table td {
+	padding: 10px 0;
+}
+
+/* Dashboard Widgets */
+.bkx-legal-widget {
+	padding: 10px;
+}
+
+.bkx-legal-widget .stat-box {
+	display: inline-block;
+	width: 48%;
+	padding: 15px;
+	margin-bottom: 10px;
+	background: #f8f9fa;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.bkx-legal-widget .stat-box h3 {
+	margin: 0 0 5px;
+	font-size: 24px;
+	color: #2271b1;
+}
+
+.bkx-legal-widget .stat-box p {
+	margin: 0;
+	color: #666;
+	font-size: 12px;
+}
+
+/* Matter List Table */
+.column-matter_number {
+	width: 120px;
+}
+
+.column-client {
+	width: 150px;
+}
+
+.column-status {
+	width: 100px;
+}
+
+.column-responsible_attorney {
+	width: 150px;
+}
+
+/* Status Badges */
+.bkx-status-badge {
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.bkx-status-active {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-status-pending {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.bkx-status-on_hold {
+	background: #cce5ff;
+	color: #004085;
+}
+
+.bkx-status-closed {
+	background: #e2e3e5;
+	color: #383d41;
+}
+
+.bkx-status-archived {
+	background: #f5f5f5;
+	color: #6c757d;
+}
+
+/* Conflict Check */
+.bkx-conflict-results {
+	margin-top: 20px;
+}
+
+.bkx-conflict-clear {
+	padding: 15px;
+	background: #d4edda;
+	border-left: 4px solid #28a745;
+	margin-bottom: 15px;
+}
+
+.bkx-conflict-potential {
+	padding: 15px;
+	background: #fff3cd;
+	border-left: 4px solid #ffc107;
+	margin-bottom: 15px;
+}
+
+.bkx-conflict-conflict {
+	padding: 15px;
+	background: #f8d7da;
+	border-left: 4px solid #dc3545;
+	margin-bottom: 15px;
+}
+
+.bkx-conflict-match {
+	padding: 10px;
+	margin: 10px 0;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.bkx-conflict-match.severity-high {
+	border-left: 4px solid #dc3545;
+}
+
+.bkx-conflict-match.severity-medium {
+	border-left: 4px solid #ffc107;
+}
+
+.bkx-conflict-match.severity-low {
+	border-left: 4px solid #17a2b8;
+}
+
+/* Billing Summary */
+.bkx-billing-summary {
+	display: flex;
+	gap: 20px;
+	margin-bottom: 20px;
+}
+
+.bkx-billing-card {
+	flex: 1;
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.bkx-billing-card h4 {
+	margin: 0 0 10px;
+	color: #666;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.bkx-billing-card .amount {
+	font-size: 28px;
+	font-weight: 600;
+	color: #2271b1;
+}
+
+.bkx-billing-card .amount.negative {
+	color: #dc3545;
+}
+
+.bkx-billing-card .amount.positive {
+	color: #28a745;
+}
+
+/* Time Entry List */
+.bkx-time-entries-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.bkx-time-entries-table th,
+.bkx-time-entries-table td {
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+	text-align: left;
+}
+
+.bkx-time-entries-table th {
+	background: #f8f9fa;
+	font-weight: 600;
+}
+
+.bkx-time-entries-table tr:hover {
+	background: #f8f9fa;
+}
+
+.bkx-time-entries-table .amount {
+	text-align: right;
+	font-weight: 600;
+}
+
+.bkx-time-entries-table .billable {
+	color: #28a745;
+}
+
+.bkx-time-entries-table .non-billable {
+	color: #6c757d;
+}
+
+.bkx-time-entries-table .billed {
+	color: #2271b1;
+}
+
+/* Document List */
+.bkx-document-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.bkx-document-item {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+}
+
+.bkx-document-item:hover {
+	background: #f8f9fa;
+}
+
+.bkx-document-icon {
+	width: 40px;
+	height: 40px;
+	background: #e2e3e5;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15px;
+}
+
+.bkx-document-icon .dashicons {
+	font-size: 24px;
+	color: #666;
+}
+
+.bkx-document-info {
+	flex: 1;
+}
+
+.bkx-document-name {
+	font-weight: 600;
+	margin-bottom: 3px;
+}
+
+.bkx-document-meta {
+	font-size: 12px;
+	color: #666;
+}
+
+.bkx-document-actions {
+	display: flex;
+	gap: 5px;
+}
+
+/* Deadline List */
+.bkx-deadline-item {
+	padding: 15px;
+	margin-bottom: 10px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.bkx-deadline-item.overdue {
+	border-left: 4px solid #dc3545;
+	background: #fff5f5;
+}
+
+.bkx-deadline-item.upcoming {
+	border-left: 4px solid #ffc107;
+}
+
+.bkx-deadline-item.completed {
+	border-left: 4px solid #28a745;
+	opacity: 0.7;
+}
+
+.bkx-deadline-title {
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.bkx-deadline-meta {
+	font-size: 12px;
+	color: #666;
+}
+
+/* Activity Log */
+.bkx-activity-log {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.bkx-activity-item {
+	display: flex;
+	padding: 10px 0;
+	border-bottom: 1px solid #eee;
+}
+
+.bkx-activity-icon {
+	width: 30px;
+	height: 30px;
+	background: #e2e3e5;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15px;
+}
+
+.bkx-activity-content {
+	flex: 1;
+}
+
+.bkx-activity-action {
+	font-weight: 500;
+}
+
+.bkx-activity-meta {
+	font-size: 12px;
+	color: #666;
+	margin-top: 3px;
+}
+
+/* Invoice Preview */
+.bkx-invoice-preview {
+	background: #fff;
+	border: 1px solid #ddd;
+	padding: 30px;
+	max-width: 800px;
+	margin: 20px auto;
+}
+
+.bkx-invoice-header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #2271b1;
+}
+
+.bkx-invoice-logo {
+	max-width: 200px;
+}
+
+.bkx-invoice-info {
+	text-align: right;
+}
+
+.bkx-invoice-title {
+	font-size: 24px;
+	font-weight: 700;
+	color: #2271b1;
+	margin: 0 0 10px;
+}
+
+.bkx-invoice-details {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.bkx-invoice-client,
+.bkx-invoice-matter {
+	flex: 1;
+}
+
+.bkx-invoice-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 30px;
+}
+
+.bkx-invoice-table th {
+	background: #f8f9fa;
+	padding: 10px;
+	text-align: left;
+	border-bottom: 2px solid #ddd;
+}
+
+.bkx-invoice-table td {
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+}
+
+.bkx-invoice-totals {
+	width: 300px;
+	margin-left: auto;
+}
+
+.bkx-invoice-totals tr td {
+	padding: 8px;
+}
+
+.bkx-invoice-totals tr td:first-child {
+	text-align: right;
+	font-weight: 500;
+}
+
+.bkx-invoice-totals tr td:last-child {
+	text-align: right;
+}
+
+.bkx-invoice-totals tr.total {
+	font-size: 18px;
+	font-weight: 700;
+	border-top: 2px solid #2271b1;
+}
+
+.bkx-invoice-footer {
+	margin-top: 30px;
+	padding-top: 20px;
+	border-top: 1px solid #ddd;
+	font-size: 12px;
+	color: #666;
+}
+
+/* Modal Styles */
+.bkx-modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 100000;
+}
+
+.bkx-modal {
+	background: #fff;
+	border-radius: 4px;
+	max-width: 600px;
+	width: 100%;
+	max-height: 80vh;
+	overflow-y: auto;
+}
+
+.bkx-modal-header {
+	padding: 15px 20px;
+	border-bottom: 1px solid #ddd;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bkx-modal-header h3 {
+	margin: 0;
+}
+
+.bkx-modal-close {
+	background: none;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+	color: #666;
+}
+
+.bkx-modal-body {
+	padding: 20px;
+}
+
+.bkx-modal-footer {
+	padding: 15px 20px;
+	border-top: 1px solid #ddd;
+	text-align: right;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+	.bkx-billing-summary {
+		flex-direction: column;
+	}
+
+	.bkx-invoice-header,
+	.bkx-invoice-details {
+		flex-direction: column;
+	}
+
+	.bkx-invoice-info {
+		text-align: left;
+		margin-top: 20px;
+	}
+}

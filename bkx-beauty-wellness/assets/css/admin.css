@@ -1,0 +1,474 @@
+/**
+ * Beauty & Wellness Admin Styles
+ *
+ * @package BookingX\BeautyWellness
+ * @since   1.0.0
+ */
+
+/* ==========================================================================
+   Settings Page
+   ========================================================================== */
+
+.bkx-beauty-wellness-settings {
+	max-width: 1200px;
+}
+
+.bkx-beauty-wellness-settings .nav-tab-wrapper {
+	margin-bottom: 20px;
+}
+
+.bkx-beauty-wellness-settings .form-table th {
+	width: 250px;
+	padding: 20px 10px 20px 0;
+}
+
+.bkx-beauty-wellness-settings .form-table td {
+	padding: 15px 10px;
+}
+
+.bkx-beauty-wellness-settings .description {
+	margin-top: 8px;
+	color: #666;
+}
+
+/* ==========================================================================
+   Client Profile Metabox
+   ========================================================================== */
+
+.bkx-client-profile {
+	padding: 10px 0;
+}
+
+.bkx-client-header {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ddd;
+}
+
+.bkx-client-header img {
+	border-radius: 50%;
+}
+
+.bkx-client-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.bkx-client-info strong {
+	font-size: 14px;
+	color: #23282d;
+}
+
+.bkx-client-info span {
+	color: #666;
+	font-size: 12px;
+}
+
+.bkx-profile-section {
+	margin-bottom: 12px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #eee;
+}
+
+.bkx-profile-section:last-of-type {
+	border-bottom: none;
+}
+
+.bkx-profile-section h4 {
+	margin: 0 0 5px;
+	font-size: 11px;
+	color: #666;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.bkx-profile-section p {
+	margin: 3px 0;
+	font-size: 13px;
+}
+
+.bkx-allergies-alert {
+	background: #fff3cd;
+	padding: 10px;
+	border-radius: 4px;
+	border-left: 4px solid #ffc107;
+	margin-left: -12px;
+	margin-right: -12px;
+	padding-left: 12px;
+}
+
+.bkx-allergy-list {
+	margin: 5px 0 0;
+	padding-left: 18px;
+}
+
+.bkx-allergy-item {
+	color: #856404;
+	font-weight: 500;
+	font-size: 12px;
+}
+
+.bkx-profile-actions {
+	display: flex;
+	gap: 8px;
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 1px solid #ddd;
+}
+
+.bkx-profile-actions .button {
+	flex: 1;
+	text-align: center;
+	font-size: 11px;
+}
+
+/* ==========================================================================
+   Booking Alerts
+   ========================================================================== */
+
+.bkx-booking-alerts {
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 1px solid #ddd;
+}
+
+.bkx-booking-alerts h4 {
+	margin: 0 0 10px;
+	font-size: 11px;
+	color: #666;
+	text-transform: uppercase;
+}
+
+.bkx-alert {
+	padding: 8px 10px;
+	margin-bottom: 6px;
+	border-radius: 4px;
+	font-size: 12px;
+	line-height: 1.4;
+}
+
+.bkx-alert-high {
+	background: #fff3cd;
+	border-left: 4px solid #ffc107;
+	color: #856404;
+}
+
+.bkx-alert-critical {
+	background: #f8d7da;
+	border-left: 4px solid #dc3545;
+	color: #721c24;
+}
+
+.bkx-alert-medium {
+	background: #d1ecf1;
+	border-left: 4px solid #17a2b8;
+	color: #0c5460;
+}
+
+/* ==========================================================================
+   Treatment Metabox
+   ========================================================================== */
+
+.bkx-variations-container {
+	margin-top: 10px;
+}
+
+.bkx-variations-table {
+	margin-top: 10px;
+}
+
+.bkx-variations-table th {
+	text-align: left;
+	padding: 10px 8px;
+	background: #f9f9f9;
+}
+
+.bkx-variations-table td {
+	padding: 8px;
+	vertical-align: middle;
+}
+
+.bkx-variations-table input[type="text"] {
+	width: 100%;
+}
+
+.bkx-variations-table input[type="number"] {
+	width: 80px;
+}
+
+.bkx-variation-row:nth-child(even) {
+	background: #f9f9f9;
+}
+
+.bkx-add-variation {
+	margin-top: 10px;
+}
+
+.bkx-remove-variation {
+	color: #a00 !important;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 2px 8px !important;
+}
+
+.bkx-remove-variation:hover {
+	color: #dc3232 !important;
+	background: #ffeaea !important;
+}
+
+/* ==========================================================================
+   Add-ons Checklist
+   ========================================================================== */
+
+.bkx-addons-checklist {
+	max-height: 200px;
+	overflow-y: auto;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 10px;
+	background: #fff;
+}
+
+.bkx-addons-checklist label {
+	display: block;
+	margin-bottom: 8px;
+	padding: 5px 8px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background 0.2s ease;
+}
+
+.bkx-addons-checklist label:hover {
+	background: #f5f5f5;
+}
+
+.bkx-addons-checklist input[type="checkbox"] {
+	margin-right: 8px;
+}
+
+/* ==========================================================================
+   Treatment Notes Metabox
+   ========================================================================== */
+
+.bkx-treatment-notes-form {
+	padding: 10px 0;
+}
+
+.bkx-treatment-notes-form label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.bkx-treatment-notes-form .description {
+	margin-top: 5px;
+	color: #666;
+	font-style: italic;
+}
+
+.bkx-treatment-notes-form textarea {
+	width: 100%;
+}
+
+.bkx-treatment-notes-form select {
+	min-width: 200px;
+}
+
+/* ==========================================================================
+   Portfolio Management
+   ========================================================================== */
+
+.bkx-portfolio-manager {
+	margin-top: 20px;
+}
+
+.bkx-portfolio-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 15px;
+	margin-top: 15px;
+}
+
+.bkx-portfolio-card {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	overflow: hidden;
+	transition: box-shadow 0.2s ease;
+}
+
+.bkx-portfolio-card:hover {
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bkx-portfolio-card-image {
+	height: 150px;
+	background: #f5f5f5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bkx-portfolio-card-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.bkx-portfolio-card-content {
+	padding: 12px;
+}
+
+.bkx-portfolio-card-title {
+	font-weight: 600;
+	margin-bottom: 5px;
+	color: #23282d;
+}
+
+.bkx-portfolio-card-meta {
+	font-size: 12px;
+	color: #666;
+}
+
+.bkx-portfolio-card-actions {
+	display: flex;
+	gap: 5px;
+	padding: 10px 12px;
+	border-top: 1px solid #eee;
+}
+
+.bkx-portfolio-card-actions .button {
+	flex: 1;
+	text-align: center;
+	font-size: 11px;
+}
+
+/* ==========================================================================
+   Before/After Preview
+   ========================================================================== */
+
+.bkx-before-after-preview {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+	margin-top: 10px;
+}
+
+.bkx-image-preview {
+	position: relative;
+	border: 1px dashed #ddd;
+	border-radius: 4px;
+	min-height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #f9f9f9;
+}
+
+.bkx-image-preview img {
+	max-width: 100%;
+	max-height: 150px;
+	border-radius: 4px;
+}
+
+.bkx-image-preview-label {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 2px 8px;
+	font-size: 10px;
+	text-transform: uppercase;
+	border-radius: 3px;
+}
+
+.bkx-upload-placeholder {
+	text-align: center;
+	color: #999;
+}
+
+.bkx-upload-placeholder .dashicons {
+	font-size: 32px;
+	width: 32px;
+	height: 32px;
+	margin-bottom: 5px;
+}
+
+/* ==========================================================================
+   Statistics Dashboard
+   ========================================================================== */
+
+.bkx-beauty-stats {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	margin-bottom: 30px;
+}
+
+.bkx-stat-card {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	padding: 20px;
+	text-align: center;
+}
+
+.bkx-stat-value {
+	font-size: 28px;
+	font-weight: 600;
+	color: #8e44ad;
+	margin-bottom: 5px;
+}
+
+.bkx-stat-label {
+	font-size: 13px;
+	color: #666;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.bkx-stat-trend {
+	display: inline-block;
+	margin-top: 8px;
+	padding: 2px 8px;
+	border-radius: 10px;
+	font-size: 11px;
+}
+
+.bkx-stat-trend.positive {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-stat-trend.negative {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+/* ==========================================================================
+   Responsive Admin
+   ========================================================================== */
+
+@media screen and (max-width: 782px) {
+	.bkx-beauty-wellness-settings .form-table th {
+		width: 100%;
+		display: block;
+		padding-bottom: 5px;
+	}
+
+	.bkx-beauty-wellness-settings .form-table td {
+		display: block;
+		padding-left: 0;
+	}
+
+	.bkx-beauty-stats {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.bkx-before-after-preview {
+		grid-template-columns: 1fr;
+	}
+}
