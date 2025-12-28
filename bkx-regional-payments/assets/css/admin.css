@@ -1,0 +1,152 @@
+/**
+ * Regional Payments Admin Styles
+ *
+ * @package BookingX\RegionalPayments
+ * @since   1.0.0
+ */
+
+/* Settings Page */
+.bkx-regional-payments-settings .nav-tab-wrapper {
+	margin-bottom: 20px;
+}
+
+/* Gateway Grid */
+.bkx-gateway-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+	margin-top: 20px;
+}
+
+/* Gateway Card */
+.bkx-gateway-card {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	overflow: hidden;
+	transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.bkx-gateway-card:hover {
+	border-color: #0073aa;
+}
+
+.bkx-gateway-card.enabled {
+	border-color: #46b450;
+	box-shadow: 0 0 0 1px #46b450;
+}
+
+.bkx-gateway-header {
+	padding: 15px;
+	background: #f9f9f9;
+	border-bottom: 1px solid #eee;
+}
+
+.bkx-gateway-header label {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.bkx-gateway-header input[type="checkbox"] {
+	margin: 0;
+}
+
+.bkx-gateway-icon {
+	width: 40px;
+	height: 26px;
+	object-fit: contain;
+}
+
+.bkx-gateway-title {
+	flex: 1;
+}
+
+.bkx-gateway-body {
+	padding: 15px;
+}
+
+.bkx-gateway-description {
+	margin: 0 0 15px 0;
+	color: #666;
+	font-size: 13px;
+}
+
+.bkx-gateway-meta {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	font-size: 12px;
+	color: #888;
+}
+
+.bkx-gateway-meta strong {
+	color: #555;
+}
+
+/* Form Tables */
+.bkx-regional-payments-settings .form-table th {
+	width: 200px;
+}
+
+.bkx-regional-payments-settings .description {
+	margin-top: 5px;
+	color: #666;
+	font-style: italic;
+}
+
+/* Info Box */
+.bkx-info-box {
+	padding: 15px 20px;
+	background: #f0f6fc;
+	border-left: 4px solid #0073aa;
+	margin: 20px 0;
+}
+
+.bkx-info-box h4 {
+	margin: 0 0 10px 0;
+	color: #0073aa;
+}
+
+.bkx-info-box p {
+	margin: 0;
+	color: #333;
+}
+
+.bkx-info-box a {
+	color: #0073aa;
+	font-weight: 500;
+}
+
+/* Status Badges */
+.bkx-status-badge {
+	display: inline-block;
+	padding: 3px 8px;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border-radius: 3px;
+}
+
+.bkx-status-badge.active {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-status-badge.inactive {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+	.bkx-gateway-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.bkx-regional-payments-settings .form-table th {
+		width: auto;
+	}
+}

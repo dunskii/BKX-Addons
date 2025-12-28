@@ -1,0 +1,165 @@
+/**
+ * Google Pay Admin Styles
+ *
+ * @package BookingX\GooglePay
+ * @since   1.0.0
+ */
+
+/* Settings Page */
+.bkx-google-pay-settings .nav-tab-wrapper {
+	margin-bottom: 20px;
+}
+
+.bkx-google-pay-settings h2 {
+	margin-top: 30px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.bkx-google-pay-settings h2:first-of-type {
+	margin-top: 20px;
+}
+
+/* Form Tables */
+.bkx-google-pay-settings .form-table th {
+	width: 200px;
+	padding-top: 20px;
+}
+
+.bkx-google-pay-settings .form-table td {
+	padding-top: 15px;
+}
+
+.bkx-google-pay-settings .description {
+	margin-top: 5px;
+	color: #666;
+	font-style: italic;
+}
+
+/* Environment Badge */
+.bkx-environment-badge {
+	display: inline-block;
+	padding: 3px 8px;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border-radius: 3px;
+	margin-left: 10px;
+}
+
+.bkx-environment-badge.test {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.bkx-environment-badge.production {
+	background: #d4edda;
+	color: #155724;
+}
+
+/* Preview Section */
+.bkx-button-preview {
+	margin-top: 15px;
+}
+
+.bkx-preview-container {
+	margin-top: 10px;
+}
+
+/* Card Network Checkboxes */
+.bkx-google-pay-settings input[type="checkbox"] {
+	margin-right: 5px;
+}
+
+/* Status Indicators */
+.bkx-status-indicator {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.bkx-status-indicator::before {
+	content: '';
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+}
+
+.bkx-status-indicator.active::before {
+	background: #46b450;
+}
+
+.bkx-status-indicator.inactive::before {
+	background: #dc3232;
+}
+
+.bkx-status-indicator.pending::before {
+	background: #f0ad4e;
+}
+
+/* Info Box */
+.bkx-info-box {
+	padding: 15px;
+	background: #f8f9fa;
+	border-left: 4px solid #0073aa;
+	margin: 20px 0;
+}
+
+.bkx-info-box h4 {
+	margin: 0 0 10px 0;
+	color: #0073aa;
+}
+
+.bkx-info-box p {
+	margin: 0;
+	color: #555;
+}
+
+.bkx-info-box a {
+	color: #0073aa;
+}
+
+/* Requirements Checklist */
+.bkx-requirements-list {
+	list-style: none;
+	padding: 0;
+	margin: 15px 0;
+}
+
+.bkx-requirements-list li {
+	padding: 8px 0;
+	border-bottom: 1px solid #eee;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.bkx-requirements-list li:last-child {
+	border-bottom: none;
+}
+
+.bkx-requirements-list .dashicons-yes {
+	color: #46b450;
+}
+
+.bkx-requirements-list .dashicons-no {
+	color: #dc3232;
+}
+
+/* License Tab */
+.bkx-license-status {
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+.bkx-license-status.valid {
+	border-left: 4px solid #46b450;
+}
+
+.bkx-license-status.invalid {
+	border-left: 4px solid #dc3232;
+}

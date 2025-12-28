@@ -1,0 +1,278 @@
+/**
+ * Regional Payments Frontend Styles
+ *
+ * @package BookingX\RegionalPayments
+ * @since   1.0.0
+ */
+
+/* Common Styles */
+.bkx-payment-description {
+	margin-bottom: 15px;
+	color: #666;
+	font-size: 14px;
+}
+
+.bkx-form-row {
+	margin-bottom: 15px;
+}
+
+.bkx-form-row label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: 500;
+	color: #333;
+}
+
+.bkx-form-row .required {
+	color: #c62828;
+}
+
+.bkx-form-row input[type="text"],
+.bkx-form-row select {
+	width: 100%;
+	padding: 10px 12px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 16px;
+}
+
+.bkx-form-row input[type="text"]:focus,
+.bkx-form-row select:focus {
+	border-color: #0073aa;
+	outline: none;
+}
+
+.bkx-form-row .description {
+	margin-top: 5px;
+	color: #888;
+	font-size: 12px;
+}
+
+/* PIX Styles */
+.bkx-pix-fields,
+.bkx-boleto-fields {
+	padding: 20px;
+	background: #f9f9f9;
+	border: 1px solid #e0e0e0;
+	border-radius: 6px;
+}
+
+.bkx-pix-qr-container,
+.bkx-upi-qr-container {
+	text-align: center;
+	padding: 20px;
+	margin-top: 15px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.bkx-pix-qr-code img,
+.bkx-upi-qr-code img {
+	max-width: 200px;
+	height: auto;
+}
+
+.bkx-pix-copy-paste {
+	display: flex;
+	gap: 10px;
+	margin-top: 15px;
+}
+
+.bkx-pix-copy-paste input {
+	flex: 1;
+	padding: 10px;
+	font-family: monospace;
+	font-size: 12px;
+}
+
+.bkx-copy-btn {
+	padding: 10px 20px;
+	background: #0073aa;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.bkx-copy-btn:hover {
+	background: #005a87;
+}
+
+.bkx-pix-instructions,
+.bkx-upi-instructions {
+	margin-top: 15px;
+	color: #666;
+	font-size: 13px;
+}
+
+/* UPI Styles */
+.bkx-upi-fields {
+	padding: 20px;
+	background: #f9f9f9;
+	border: 1px solid #e0e0e0;
+	border-radius: 6px;
+}
+
+.bkx-upi-apps {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-top: 15px;
+	font-size: 12px;
+	color: #666;
+}
+
+.bkx-upi-apps img {
+	height: 24px;
+}
+
+/* SEPA Styles */
+.bkx-sepa-fields {
+	padding: 20px;
+	background: #f9f9f9;
+	border: 1px solid #e0e0e0;
+	border-radius: 6px;
+}
+
+.bkx-sepa-mandate {
+	margin-top: 15px;
+	padding: 15px;
+	background: #fff8e1;
+	border: 1px solid #ffcc02;
+	border-radius: 4px;
+}
+
+.bkx-mandate-text {
+	margin: 0;
+	font-size: 12px;
+	color: #666;
+}
+
+.bkx-sepa-notice {
+	margin-top: 10px;
+	color: #888;
+	font-size: 12px;
+}
+
+/* iDEAL Styles */
+.bkx-ideal-fields,
+.bkx-bancontact-fields,
+.bkx-giropay-fields,
+.bkx-p24-fields {
+	padding: 20px;
+	background: #f9f9f9;
+	border: 1px solid #e0e0e0;
+	border-radius: 6px;
+}
+
+.bkx-ideal-fields select {
+	width: 100%;
+}
+
+/* Logo Styles */
+.bkx-bancontact-logo,
+.bkx-giropay-logo,
+.bkx-p24-logo {
+	margin-top: 15px;
+	text-align: center;
+}
+
+/* Boleto Styles */
+.bkx-boleto-notice {
+	margin-top: 15px;
+	padding: 10px 15px;
+	background: #e3f2fd;
+	border: 1px solid #90caf9;
+	border-radius: 4px;
+	color: #1565c0;
+	font-size: 13px;
+}
+
+.bkx-boleto-result {
+	text-align: center;
+	padding: 20px;
+	margin-top: 15px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.bkx-boleto-barcode {
+	font-family: monospace;
+	font-size: 14px;
+	padding: 10px;
+	background: #f5f5f5;
+	margin-bottom: 15px;
+	word-break: break-all;
+}
+
+.bkx-boleto-download {
+	display: inline-block;
+	padding: 10px 20px;
+	background: #0073aa;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 4px;
+}
+
+.bkx-boleto-download:hover {
+	background: #005a87;
+	color: #fff;
+}
+
+/* Processing State */
+.bkx-regional-processing {
+	position: relative;
+	opacity: 0.7;
+	pointer-events: none;
+}
+
+.bkx-regional-processing::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 30px;
+	height: 30px;
+	margin: -15px 0 0 -15px;
+	border: 3px solid #ddd;
+	border-top-color: #0073aa;
+	border-radius: 50%;
+	animation: bkx-regional-spin 0.8s linear infinite;
+}
+
+@keyframes bkx-regional-spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* Error Messages */
+.bkx-regional-error {
+	padding: 10px 15px;
+	background: #ffebee;
+	border: 1px solid #ef9a9a;
+	border-radius: 4px;
+	color: #c62828;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+/* Success Messages */
+.bkx-regional-success {
+	padding: 10px 15px;
+	background: #e8f5e9;
+	border: 1px solid #a5d6a7;
+	border-radius: 4px;
+	color: #2e7d32;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+	.bkx-pix-copy-paste {
+		flex-direction: column;
+	}
+}
