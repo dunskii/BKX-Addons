@@ -1,0 +1,482 @@
+/**
+ * Staff Analytics Admin Styles.
+ *
+ * @package BookingX\StaffAnalytics
+ * @since   1.0.0
+ */
+
+/* Wrap */
+.bkx-staff-wrap {
+	max-width: 1400px;
+}
+
+/* Navigation */
+.bkx-staff-nav {
+	margin-bottom: 20px;
+}
+
+/* Content */
+.bkx-staff-content {
+	margin-top: 20px;
+}
+
+/* Grid */
+.bkx-staff-row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+}
+
+.bkx-staff-col-3,
+.bkx-staff-col-4,
+.bkx-staff-col-6,
+.bkx-staff-col-8 {
+	padding: 0 10px;
+	margin-bottom: 20px;
+}
+
+.bkx-staff-col-3 { width: 25%; }
+.bkx-staff-col-4 { width: 33.333%; }
+.bkx-staff-col-6 { width: 50%; }
+.bkx-staff-col-8 { width: 66.666%; }
+
+/* Cards */
+.bkx-staff-card {
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	border-radius: 4px;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.bkx-staff-card h2 {
+	margin-top: 0;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+	font-size: 16px;
+}
+
+.bkx-card-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.bkx-card-header h2 {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.bkx-card-actions {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+/* Stat Cards */
+.bkx-staff-stat {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	padding: 25px;
+}
+
+.bkx-stat-icon {
+	font-size: 40px;
+	color: #667eea;
+	opacity: 0.8;
+}
+
+.bkx-stat-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.bkx-stat-value {
+	font-size: 28px;
+	font-weight: 700;
+	color: #1e1e1e;
+}
+
+.bkx-stat-label {
+	font-size: 13px;
+	color: #50575e;
+}
+
+/* Top List */
+.bkx-top-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.bkx-top-list li {
+	display: flex;
+	align-items: center;
+	padding: 12px 0;
+	border-bottom: 1px solid #eee;
+}
+
+.bkx-top-list li:last-child {
+	border-bottom: none;
+}
+
+.bkx-rank {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	height: 28px;
+	background: #667eea;
+	color: #fff;
+	border-radius: 50%;
+	font-size: 12px;
+	font-weight: 600;
+	margin-right: 12px;
+}
+
+.bkx-top-list li:nth-child(1) .bkx-rank { background: #ffd700; color: #333; }
+.bkx-top-list li:nth-child(2) .bkx-rank { background: #c0c0c0; color: #333; }
+.bkx-top-list li:nth-child(3) .bkx-rank { background: #cd7f32; color: #fff; }
+
+.bkx-name {
+	flex: 1;
+	font-weight: 500;
+}
+
+.bkx-value {
+	font-weight: 600;
+	color: #46b450;
+}
+
+.bkx-stars {
+	color: #ffc107;
+	margin-left: 5px;
+}
+
+/* Chart Container */
+.bkx-chart-container {
+	position: relative;
+	height: 300px;
+}
+
+/* Progress Bar */
+.bkx-progress-bar {
+	background: #e9ecef;
+	border-radius: 4px;
+	height: 20px;
+	overflow: hidden;
+	display: inline-block;
+	width: 100px;
+	vertical-align: middle;
+}
+
+.bkx-progress-fill {
+	height: 100%;
+	background: #667eea;
+	border-radius: 4px;
+	transition: width 0.3s ease;
+}
+
+.bkx-progress-fill.bkx-status-achieved { background: #46b450; }
+.bkx-progress-fill.bkx-status-ahead { background: #2196f3; }
+.bkx-progress-fill.bkx-status-behind { background: #dc3545; }
+
+.bkx-progress-text {
+	margin-left: 10px;
+	font-weight: 500;
+}
+
+/* Status Badges */
+.bkx-status {
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 500;
+	background: #e9ecef;
+}
+
+.bkx-status.bkx-status-achieved {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-status.bkx-status-ahead {
+	background: #cce5ff;
+	color: #004085;
+}
+
+.bkx-status.bkx-status-behind {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+/* Warning Card */
+.bkx-warning-card {
+	border-left: 4px solid #dc3545;
+}
+
+/* Leaderboard */
+.bkx-leaderboard-item {
+	display: flex;
+	align-items: center;
+	padding: 15px;
+	border-bottom: 1px solid #eee;
+}
+
+.bkx-leaderboard-item:last-child {
+	border-bottom: none;
+}
+
+.bkx-leaderboard-rank {
+	font-size: 24px;
+	font-weight: 700;
+	width: 50px;
+	color: #667eea;
+}
+
+.bkx-leaderboard-avatar {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 15px;
+	object-fit: cover;
+}
+
+.bkx-leaderboard-info {
+	flex: 1;
+}
+
+.bkx-leaderboard-name {
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.bkx-leaderboard-stats {
+	color: #666;
+	font-size: 13px;
+}
+
+.bkx-leaderboard-value {
+	font-size: 20px;
+	font-weight: 700;
+	color: #46b450;
+}
+
+/* Modal */
+.bkx-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bkx-modal-content {
+	background: #fff;
+	border-radius: 4px;
+	padding: 20px;
+	width: 90%;
+	max-width: 500px;
+	max-height: 90vh;
+	overflow-y: auto;
+	position: relative;
+}
+
+.bkx-modal-close {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	font-size: 24px;
+	cursor: pointer;
+	color: #666;
+}
+
+.bkx-modal-close:hover {
+	color: #000;
+}
+
+.bkx-modal h2 {
+	margin-top: 0;
+	padding-right: 30px;
+}
+
+.bkx-modal label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+
+.bkx-modal input,
+.bkx-modal select {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.bkx-form-actions {
+	display: flex;
+	gap: 10px;
+	margin-top: 20px;
+}
+
+/* Review List */
+.bkx-review-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.bkx-review-list li {
+	padding: 15px 0;
+	border-bottom: 1px solid #eee;
+}
+
+.bkx-review-list li:last-child {
+	border-bottom: none;
+}
+
+.bkx-review-header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px;
+}
+
+.bkx-review-text {
+	color: #555;
+	margin: 5px 0;
+	font-style: italic;
+}
+
+.bkx-review-meta {
+	font-size: 12px;
+	color: #888;
+}
+
+/* Working List */
+.bkx-working-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.bkx-working-list li {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
+	border-bottom: 1px solid #eee;
+}
+
+.bkx-working-list li:last-child {
+	border-bottom: none;
+}
+
+.bkx-working-name {
+	font-weight: 500;
+}
+
+.bkx-working-time {
+	color: #46b450;
+	font-weight: 600;
+}
+
+/* Form Rows */
+.bkx-form-row {
+	display: flex;
+	gap: 20px;
+	margin-bottom: 20px;
+	align-items: flex-end;
+}
+
+.bkx-form-field {
+	flex: 1;
+}
+
+.bkx-form-field label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+
+.bkx-form-field input,
+.bkx-form-field select {
+	width: 100%;
+}
+
+.bkx-form-submit {
+	flex: 0 0 auto;
+}
+
+/* Empty State */
+.bkx-empty {
+	color: #888;
+	text-align: center;
+	padding: 20px;
+	font-style: italic;
+}
+
+/* Loading */
+.bkx-loading {
+	text-align: center;
+	padding: 40px;
+	color: #666;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+	.bkx-staff-col-3 { width: 50%; }
+	.bkx-staff-col-4 { width: 50%; }
+	.bkx-staff-col-6 { width: 100%; }
+	.bkx-staff-col-8 { width: 100%; }
+}
+
+@media screen and (max-width: 782px) {
+	.bkx-staff-col-3,
+	.bkx-staff-col-4,
+	.bkx-staff-col-6,
+	.bkx-staff-col-8 {
+		width: 100%;
+	}
+
+	.bkx-card-header {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 10px;
+	}
+
+	.bkx-card-actions {
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.bkx-card-actions select,
+	.bkx-card-actions input {
+		flex: 1;
+		min-width: 120px;
+	}
+
+	.bkx-form-row {
+		flex-direction: column;
+	}
+
+	.bkx-staff-stat {
+		padding: 15px;
+	}
+
+	.bkx-stat-icon {
+		font-size: 30px;
+	}
+
+	.bkx-stat-value {
+		font-size: 22px;
+	}
+}
