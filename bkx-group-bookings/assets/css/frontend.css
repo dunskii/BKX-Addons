@@ -1,0 +1,193 @@
+/**
+ * Group Bookings Frontend Styles
+ *
+ * @package BookingX\GroupBookings
+ * @since   1.0.0
+ */
+
+/* Quantity Wrapper */
+.bkx-quantity-wrapper {
+	margin: 15px 0;
+	padding: 15px;
+	background: #f9f9f9;
+	border: 1px solid #e0e0e0;
+	border-radius: 6px;
+}
+
+.bkx-quantity-label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: 600;
+	color: #333;
+}
+
+/* Quantity Control */
+.bkx-quantity-control {
+	display: flex;
+	align-items: center;
+	gap: 0;
+	max-width: 150px;
+}
+
+.bkx-qty-minus,
+.bkx-qty-plus {
+	width: 40px;
+	height: 40px;
+	border: 1px solid #ddd;
+	background: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+
+.bkx-qty-minus:hover,
+.bkx-qty-plus:hover {
+	background: #f5f5f5;
+}
+
+.bkx-qty-minus:disabled,
+.bkx-qty-plus:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.bkx-qty-minus {
+	border-radius: 4px 0 0 4px;
+}
+
+.bkx-qty-plus {
+	border-radius: 0 4px 4px 0;
+}
+
+.bkx-quantity-input {
+	width: 60px;
+	height: 40px;
+	border: 1px solid #ddd;
+	border-left: none;
+	border-right: none;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	-moz-appearance: textfield;
+}
+
+.bkx-quantity-input::-webkit-outer-spin-button,
+.bkx-quantity-input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Quantity Info */
+.bkx-quantity-info {
+	margin-top: 8px;
+}
+
+.bkx-qty-range {
+	font-size: 13px;
+	color: #666;
+}
+
+/* Price Preview */
+.bkx-price-preview {
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 1px solid #e0e0e0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bkx-price-label {
+	font-weight: 500;
+	color: #666;
+}
+
+.bkx-price-value {
+	font-size: 20px;
+	font-weight: 700;
+	color: #333;
+}
+
+/* Price Breakdown */
+.bkx-price-breakdown {
+	margin-top: 10px;
+	font-size: 13px;
+}
+
+.bkx-breakdown-item {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 0;
+	color: #666;
+}
+
+.bkx-breakdown-item.is-discount {
+	color: #2e7d32;
+}
+
+.bkx-breakdown-item.is-discount .bkx-breakdown-value {
+	font-weight: 600;
+}
+
+/* Availability Warning */
+.bkx-availability-warning {
+	margin-top: 10px;
+	padding: 10px;
+	background: #fff3e0;
+	border: 1px solid #ffcc80;
+	border-radius: 4px;
+	font-size: 13px;
+	color: #e65100;
+}
+
+.bkx-availability-warning.success {
+	background: #e8f5e9;
+	border-color: #a5d6a7;
+	color: #2e7d32;
+}
+
+.bkx-availability-warning.error {
+	background: #ffebee;
+	border-color: #ef9a9a;
+	color: #c62828;
+}
+
+/* Loading State */
+.bkx-quantity-wrapper.loading {
+	opacity: 0.7;
+	pointer-events: none;
+}
+
+.bkx-quantity-wrapper.loading::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 20px;
+	height: 20px;
+	margin: -10px 0 0 -10px;
+	border: 2px solid #ddd;
+	border-top-color: #333;
+	border-radius: 50%;
+	animation: bkx-spin 0.6s linear infinite;
+}
+
+@keyframes bkx-spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+	.bkx-quantity-wrapper {
+		padding: 12px;
+	}
+
+	.bkx-price-preview {
+		flex-direction: column;
+		gap: 5px;
+		text-align: center;
+	}
+}

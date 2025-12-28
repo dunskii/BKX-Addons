@@ -1,0 +1,473 @@
+/**
+ * Class Bookings Frontend Styles
+ *
+ * @package BookingX\ClassBookings
+ * @since   1.0.0
+ */
+
+/* Schedule List */
+.bkx-class-schedule {
+	max-width: 800px;
+}
+
+.bkx-schedule-title {
+	margin-bottom: 20px;
+}
+
+.bkx-schedule-day {
+	margin-bottom: 25px;
+}
+
+.bkx-day-header {
+	font-size: 18px;
+	color: #333;
+	margin-bottom: 10px;
+	padding-bottom: 8px;
+	border-bottom: 2px solid #e0e0e0;
+}
+
+.bkx-session-item {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 15px;
+	margin-bottom: 10px;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-left: 4px solid #3788d8;
+	border-radius: 4px;
+	transition: box-shadow 0.2s;
+}
+
+.bkx-session-item:hover {
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bkx-session-item.bkx-session-past {
+	opacity: 0.6;
+}
+
+.bkx-session-item.bkx-session-full {
+	background: #fafafa;
+}
+
+.bkx-session-time {
+	min-width: 120px;
+	font-weight: 600;
+	color: #333;
+}
+
+.bkx-session-info {
+	flex: 1;
+}
+
+.bkx-class-name {
+	margin: 0 0 5px;
+	font-size: 16px;
+}
+
+.bkx-class-name a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.bkx-class-name a:hover {
+	color: #0073aa;
+}
+
+.bkx-class-location,
+.bkx-class-instructor {
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 13px;
+	color: #666;
+}
+
+.bkx-class-location .dashicons,
+.bkx-class-instructor .dashicons {
+	font-size: 14px;
+	width: 14px;
+	height: 14px;
+	vertical-align: middle;
+}
+
+.bkx-session-availability {
+	text-align: right;
+	min-width: 140px;
+}
+
+.bkx-spots-available {
+	display: block;
+	font-size: 13px;
+	color: #2e7d32;
+	margin-bottom: 8px;
+}
+
+.bkx-status-full {
+	display: block;
+	color: #c62828;
+	font-weight: 500;
+	margin-bottom: 8px;
+}
+
+.bkx-status-past {
+	color: #666;
+	font-style: italic;
+}
+
+/* Calendar */
+.bkx-class-calendar {
+	max-width: 1000px;
+}
+
+.bkx-calendar-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.bkx-calendar-month {
+	margin: 0;
+	font-size: 24px;
+}
+
+.bkx-cal-nav {
+	color: #0073aa;
+	text-decoration: none;
+}
+
+.bkx-calendar-grid {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+.bkx-calendar-grid th {
+	padding: 10px;
+	background: #f5f5f5;
+	text-align: center;
+	font-weight: 600;
+	border: 1px solid #e0e0e0;
+}
+
+.bkx-cal-day {
+	height: 100px;
+	vertical-align: top;
+	padding: 5px;
+	border: 1px solid #e0e0e0;
+	background: #fff;
+}
+
+.bkx-cal-empty {
+	background: #fafafa;
+}
+
+.bkx-cal-today {
+	background: #fff8e1;
+}
+
+.bkx-cal-past {
+	opacity: 0.7;
+}
+
+.bkx-day-number {
+	font-weight: 600;
+	color: #333;
+	margin-bottom: 5px;
+}
+
+.bkx-day-sessions {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+
+.bkx-cal-session {
+	display: block;
+	padding: 3px 5px;
+	font-size: 11px;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 3px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.bkx-cal-session:hover {
+	opacity: 0.9;
+}
+
+.bkx-cal-session.bkx-session-full {
+	opacity: 0.6;
+}
+
+.bkx-session-time {
+	font-weight: 600;
+	margin-right: 5px;
+}
+
+/* Class List Grid */
+.bkx-class-list {
+	padding: 20px 0;
+}
+
+.bkx-class-grid {
+	display: grid;
+	gap: 25px;
+}
+
+.bkx-columns-2 .bkx-class-grid {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.bkx-columns-3 .bkx-class-grid {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.bkx-columns-4 .bkx-class-grid {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.bkx-class-card {
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	overflow: hidden;
+	transition: box-shadow 0.2s;
+}
+
+.bkx-class-card:hover {
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bkx-class-image img {
+	width: 100%;
+	height: 180px;
+	object-fit: cover;
+}
+
+.bkx-class-content {
+	padding: 20px;
+}
+
+.bkx-class-categories {
+	margin-bottom: 10px;
+}
+
+.bkx-category-badge {
+	display: inline-block;
+	padding: 3px 8px;
+	background: var(--bkx-class-color, #3788d8);
+	color: #fff;
+	font-size: 11px;
+	border-radius: 3px;
+	margin-right: 5px;
+}
+
+.bkx-class-title {
+	margin: 0 0 10px;
+	font-size: 18px;
+}
+
+.bkx-class-title a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.bkx-class-excerpt {
+	color: #666;
+	font-size: 14px;
+	line-height: 1.5;
+	margin-bottom: 15px;
+}
+
+.bkx-class-meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	margin-bottom: 10px;
+	font-size: 13px;
+	color: #666;
+}
+
+.bkx-meta-item .dashicons {
+	font-size: 14px;
+	width: 14px;
+	height: 14px;
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+.bkx-class-instructor {
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 15px;
+}
+
+.bkx-class-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 15px;
+	border-top: 1px solid #e0e0e0;
+}
+
+.bkx-class-price {
+	font-size: 20px;
+	font-weight: 700;
+	color: #333;
+}
+
+.bkx-price-free {
+	color: #2e7d32;
+}
+
+/* Booking Form */
+.bkx-booking-form-wrapper {
+	max-width: 500px;
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+}
+
+.bkx-session-summary {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.bkx-session-summary h3 {
+	margin: 0 0 10px;
+}
+
+.bkx-session-datetime {
+	color: #666;
+}
+
+.bkx-form-row {
+	margin-bottom: 15px;
+}
+
+.bkx-form-row label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+
+.bkx-form-row .required {
+	color: #c62828;
+}
+
+.bkx-form-row input[type="text"],
+.bkx-form-row input[type="email"],
+.bkx-form-row input[type="tel"],
+.bkx-form-row select,
+.bkx-form-row textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.bkx-form-row textarea {
+	resize: vertical;
+}
+
+.bkx-form-actions {
+	display: flex;
+	gap: 10px;
+	margin-top: 20px;
+}
+
+.bkx-form-message {
+	margin-top: 15px;
+	padding: 10px 15px;
+	border-radius: 4px;
+}
+
+.bkx-form-message.success {
+	background: #e8f5e9;
+	color: #2e7d32;
+}
+
+.bkx-form-message.error {
+	background: #fce8e8;
+	color: #c62828;
+}
+
+/* Modal */
+.bkx-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bkx-modal-content {
+	position: relative;
+	background: #fff;
+	padding: 30px;
+	border-radius: 8px;
+	max-width: 600px;
+	width: 90%;
+	max-height: 90vh;
+	overflow-y: auto;
+}
+
+.bkx-modal-close {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	background: none;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+	color: #666;
+}
+
+.bkx-modal-close:hover {
+	color: #333;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+	.bkx-session-item {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 10px;
+	}
+
+	.bkx-session-availability {
+		text-align: left;
+		width: 100%;
+	}
+
+	.bkx-columns-2 .bkx-class-grid,
+	.bkx-columns-3 .bkx-class-grid,
+	.bkx-columns-4 .bkx-class-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.bkx-calendar-grid th,
+	.bkx-cal-day {
+		font-size: 12px;
+		padding: 3px;
+	}
+
+	.bkx-cal-day {
+		height: 70px;
+	}
+
+	.bkx-cal-session {
+		font-size: 9px;
+	}
+}

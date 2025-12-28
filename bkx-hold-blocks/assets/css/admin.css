@@ -1,0 +1,171 @@
+/**
+ * Hold Blocks Admin Styles
+ *
+ * @package BookingX\HoldBlocks
+ * @since   1.0.0
+ */
+
+/* Page Layout */
+.bkx-hold-blocks-page .nav-tab-wrapper {
+	margin-bottom: 20px;
+}
+
+.bkx-hold-blocks-page .tab-content {
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #ccd0d4;
+	border-top: none;
+}
+
+/* Blocks Container */
+.bkx-blocks-container {
+	display: flex;
+	gap: 30px;
+}
+
+.bkx-blocks-sidebar {
+	flex: 0 0 300px;
+	background: #f9f9f9;
+	padding: 20px;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+}
+
+.bkx-blocks-sidebar h3 {
+	margin-top: 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.bkx-blocks-main {
+	flex: 1;
+}
+
+/* Block Form */
+.bkx-block-form .bkx-form-row {
+	margin-bottom: 15px;
+}
+
+.bkx-block-form label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+
+.bkx-block-form .required {
+	color: #c62828;
+}
+
+.bkx-block-form input[type="text"],
+.bkx-block-form input[type="date"],
+.bkx-block-form input[type="time"],
+.bkx-block-form select,
+.bkx-block-form textarea {
+	width: 100%;
+}
+
+.bkx-block-form .description {
+	font-size: 12px;
+	color: #666;
+	font-style: italic;
+	margin-top: 3px;
+}
+
+.bkx-form-inline {
+	display: flex;
+	gap: 15px;
+}
+
+.bkx-form-inline > div {
+	flex: 1;
+}
+
+.bkx-time-fields {
+	margin-top: 10px;
+	padding: 10px;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+}
+
+/* Filter */
+.bkx-blocks-filter {
+	margin-bottom: 15px;
+}
+
+.bkx-blocks-filter label {
+	margin-right: 10px;
+}
+
+/* Block Type Badges */
+.bkx-block-type {
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #fff;
+}
+
+.bkx-type-hold {
+	background: #9e9e9e;
+}
+
+.bkx-type-holiday {
+	background: #4caf50;
+}
+
+.bkx-type-maintenance {
+	background: #ff9800;
+}
+
+.bkx-type-private {
+	background: #9c27b0;
+}
+
+.bkx-type-break {
+	background: #2196f3;
+}
+
+.bkx-type-other {
+	background: #607d8b;
+}
+
+/* No Blocks */
+.bkx-no-blocks {
+	padding: 40px;
+	text-align: center;
+	color: #666;
+	font-style: italic;
+	background: #f9f9f9;
+	border: 1px dashed #ddd;
+	border-radius: 4px;
+}
+
+/* Blocks Table */
+#bkx-blocks-table th,
+#bkx-blocks-table td {
+	vertical-align: middle;
+}
+
+#bkx-blocks-table small {
+	color: #666;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+	.bkx-blocks-container {
+		flex-direction: column;
+	}
+
+	.bkx-blocks-sidebar {
+		flex: none;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.bkx-form-inline {
+		flex-direction: column;
+	}
+}
