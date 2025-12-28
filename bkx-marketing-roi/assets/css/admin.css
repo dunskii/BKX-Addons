@@ -1,0 +1,482 @@
+/**
+ * BookingX Marketing ROI - Admin Styles
+ *
+ * @package BookingX\MarketingROI
+ * @since   1.0.0
+ */
+
+/* General Layout */
+.bkx-roi-wrap {
+	max-width: 1600px;
+	margin: 20px 20px 0 0;
+}
+
+.bkx-roi-wrap h1 {
+	margin-bottom: 20px;
+}
+
+/* Filters */
+.bkx-roi-filters {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+	padding: 15px 20px;
+	border: 1px solid #ccd0d4;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+.bkx-roi-date-range {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.bkx-roi-date-input {
+	padding: 6px 10px;
+	border: 1px solid #8c8f94;
+	border-radius: 4px;
+}
+
+.bkx-roi-quick-ranges {
+	display: flex;
+	gap: 8px;
+}
+
+.bkx-roi-range-btn.active {
+	background: #2271b1;
+	border-color: #2271b1;
+	color: #fff;
+}
+
+/* Tabs */
+.bkx-roi-tabs {
+	margin-bottom: 0;
+	padding-top: 0;
+}
+
+.bkx-roi-tab-content {
+	display: none;
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #ccd0d4;
+	border-top: none;
+}
+
+.bkx-roi-tab-content.active {
+	display: block;
+}
+
+/* Summary Cards */
+.bkx-roi-summary-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 15px;
+	margin-bottom: 25px;
+}
+
+.bkx-roi-card {
+	background: #f8f9fa;
+	border-radius: 8px;
+	padding: 18px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	border: 1px solid #e2e4e7;
+}
+
+.bkx-roi-card.highlight {
+	background: linear-gradient(135deg, #00a32a 0%, #00d664 100%);
+	border: none;
+}
+
+.bkx-roi-card.highlight .bkx-roi-card-icon {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.bkx-roi-card.highlight .bkx-roi-card-value,
+.bkx-roi-card.highlight .bkx-roi-card-label {
+	color: #fff;
+}
+
+.bkx-roi-card-icon {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background: #2271b1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+.bkx-roi-card-icon .dashicons {
+	color: #fff;
+	font-size: 22px;
+	width: 22px;
+	height: 22px;
+}
+
+.bkx-roi-card-icon.success {
+	background: #00a32a;
+}
+
+.bkx-roi-card-icon.info {
+	background: #72aee6;
+}
+
+.bkx-roi-card-icon.warning {
+	background: #dba617;
+}
+
+.bkx-roi-card-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.bkx-roi-card-value {
+	font-size: 24px;
+	font-weight: 600;
+	color: #1d2327;
+	line-height: 1.2;
+}
+
+.bkx-roi-card-label {
+	font-size: 12px;
+	color: #646970;
+	margin-top: 2px;
+}
+
+/* Charts */
+.bkx-roi-charts-row {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	margin-bottom: 25px;
+}
+
+.bkx-roi-chart-container {
+	background: #f8f9fa;
+	border: 1px solid #e2e4e7;
+	border-radius: 8px;
+	padding: 20px;
+}
+
+.bkx-roi-chart-container.half {
+	min-height: 280px;
+}
+
+.bkx-roi-chart-container.full {
+	min-height: 320px;
+	margin-bottom: 25px;
+}
+
+.bkx-roi-chart-container h3 {
+	margin: 0 0 15px 0;
+	font-size: 14px;
+	color: #1d2327;
+}
+
+/* Tables */
+.bkx-roi-table-container {
+	margin-bottom: 25px;
+}
+
+.bkx-roi-table-container h3 {
+	margin: 0 0 15px 0;
+	font-size: 14px;
+	color: #1d2327;
+}
+
+.bkx-roi-loading {
+	text-align: center;
+	color: #646970;
+	padding: 20px;
+}
+
+/* ROI Colors */
+.roi-positive {
+	color: #00a32a;
+	font-weight: 600;
+}
+
+.roi-negative {
+	color: #d63638;
+	font-weight: 600;
+}
+
+/* Campaigns Tab */
+.bkx-roi-campaigns-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.bkx-roi-campaigns-header h2 {
+	margin: 0;
+}
+
+.bkx-roi-campaigns-list {
+	display: grid;
+	gap: 15px;
+}
+
+.bkx-roi-campaign-card {
+	background: #f8f9fa;
+	border: 1px solid #e2e4e7;
+	border-radius: 8px;
+	padding: 20px;
+}
+
+.bkx-roi-campaign-card-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 15px;
+}
+
+.bkx-roi-campaign-title {
+	margin: 0;
+	font-size: 16px;
+}
+
+.bkx-roi-campaign-status {
+	padding: 3px 10px;
+	border-radius: 12px;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.bkx-roi-campaign-status.active {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-roi-campaign-status.paused {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.bkx-roi-campaign-status.ended {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+.bkx-roi-campaign-utm {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+	margin-bottom: 15px;
+}
+
+.bkx-roi-utm-tag {
+	background: #e2e4e7;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	color: #50575e;
+}
+
+.bkx-roi-campaign-metrics {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	gap: 15px;
+	padding: 15px 0;
+	border-top: 1px solid #e2e4e7;
+	border-bottom: 1px solid #e2e4e7;
+	margin-bottom: 15px;
+}
+
+.bkx-roi-metric {
+	text-align: center;
+}
+
+.bkx-roi-metric-value {
+	display: block;
+	font-size: 18px;
+	font-weight: 700;
+	color: #1d2327;
+}
+
+.bkx-roi-metric-label {
+	font-size: 11px;
+	color: #646970;
+	text-transform: uppercase;
+}
+
+.bkx-roi-campaign-actions {
+	display: flex;
+	gap: 8px;
+}
+
+/* UTM Reports */
+.bkx-roi-report-options {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 20px;
+	padding: 15px;
+	background: #f8f9fa;
+	border-radius: 8px;
+}
+
+.bkx-roi-select {
+	padding: 8px 12px;
+	border: 1px solid #8c8f94;
+	border-radius: 4px;
+	min-width: 150px;
+}
+
+/* Modal */
+.bkx-roi-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bkx-roi-modal-content {
+	background: #fff;
+	border-radius: 8px;
+	width: 90%;
+	max-width: 600px;
+	max-height: 90vh;
+	overflow-y: auto;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.bkx-roi-modal-content.bkx-roi-modal-small {
+	max-width: 400px;
+}
+
+.bkx-roi-modal-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	border-bottom: 1px solid #e2e4e7;
+}
+
+.bkx-roi-modal-header h2 {
+	margin: 0;
+	font-size: 18px;
+}
+
+.bkx-roi-modal-close {
+	background: none;
+	border: none;
+	font-size: 24px;
+	color: #646970;
+	cursor: pointer;
+	padding: 0;
+	line-height: 1;
+}
+
+.bkx-roi-modal-close:hover {
+	color: #1d2327;
+}
+
+.bkx-roi-modal-body {
+	padding: 20px;
+}
+
+.bkx-roi-modal-footer {
+	padding: 15px 20px;
+	border-top: 1px solid #e2e4e7;
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+}
+
+/* Form Styles */
+.bkx-roi-form-row {
+	margin-bottom: 15px;
+}
+
+.bkx-roi-form-row label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: 500;
+	color: #1d2327;
+}
+
+.bkx-roi-form-row input[type="text"],
+.bkx-roi-form-row input[type="number"],
+.bkx-roi-form-row input[type="date"],
+.bkx-roi-form-row select,
+.bkx-roi-form-row textarea {
+	width: 100%;
+	padding: 8px 12px;
+	border: 1px solid #8c8f94;
+	border-radius: 4px;
+}
+
+.bkx-roi-form-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 15px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+	.bkx-roi-charts-row {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 782px) {
+	.bkx-roi-filters {
+		flex-direction: column;
+		gap: 15px;
+		align-items: flex-start;
+	}
+
+	.bkx-roi-date-range {
+		flex-wrap: wrap;
+	}
+
+	.bkx-roi-summary-cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.bkx-roi-form-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.bkx-roi-campaign-metrics {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+/* Status Badge */
+.bkx-roi-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 10px;
+	font-size: 11px;
+	font-weight: 500;
+}
+
+.bkx-roi-badge-success {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-roi-badge-warning {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.bkx-roi-badge-danger {
+	background: #f8d7da;
+	color: #721c24;
+}

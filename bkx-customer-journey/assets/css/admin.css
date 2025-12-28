@@ -1,0 +1,628 @@
+/**
+ * BookingX Customer Journey - Admin Styles
+ *
+ * @package BookingX\CustomerJourney
+ * @since   1.0.0
+ */
+
+/* General Layout */
+.bkx-cj-wrap {
+	max-width: 1600px;
+	margin: 20px 20px 0 0;
+}
+
+.bkx-cj-wrap h1 {
+	margin-bottom: 20px;
+}
+
+/* Filters */
+.bkx-cj-filters {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+	padding: 15px 20px;
+	border: 1px solid #ccd0d4;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+.bkx-cj-date-range {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.bkx-cj-date-input {
+	padding: 6px 10px;
+	border: 1px solid #8c8f94;
+	border-radius: 4px;
+}
+
+.bkx-cj-quick-ranges {
+	display: flex;
+	gap: 8px;
+}
+
+.bkx-cj-range-btn.active {
+	background: #2271b1;
+	border-color: #2271b1;
+	color: #fff;
+}
+
+/* Tabs */
+.bkx-cj-tabs {
+	margin-bottom: 0;
+	padding-top: 0;
+}
+
+.bkx-cj-tab-content {
+	display: none;
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #ccd0d4;
+	border-top: none;
+}
+
+.bkx-cj-tab-content.active {
+	display: block;
+}
+
+/* Summary Cards */
+.bkx-cj-summary-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 20px;
+	margin-bottom: 30px;
+}
+
+.bkx-cj-card {
+	background: #f8f9fa;
+	border-radius: 8px;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	border: 1px solid #e2e4e7;
+}
+
+.bkx-cj-card-icon {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #2271b1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+.bkx-cj-card-icon .dashicons {
+	color: #fff;
+	font-size: 24px;
+	width: 24px;
+	height: 24px;
+}
+
+.bkx-cj-card-icon.success {
+	background: #00a32a;
+}
+
+.bkx-cj-card-icon.info {
+	background: #72aee6;
+}
+
+.bkx-cj-card-icon.warning {
+	background: #dba617;
+}
+
+.bkx-cj-card-icon.danger {
+	background: #d63638;
+}
+
+.bkx-cj-card-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.bkx-cj-card-value {
+	font-size: 28px;
+	font-weight: 600;
+	color: #1d2327;
+	line-height: 1.2;
+}
+
+.bkx-cj-card-label {
+	font-size: 13px;
+	color: #646970;
+	margin-top: 2px;
+}
+
+/* Charts */
+.bkx-cj-charts-row {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	margin-bottom: 30px;
+}
+
+.bkx-cj-chart-container {
+	background: #f8f9fa;
+	border: 1px solid #e2e4e7;
+	border-radius: 8px;
+	padding: 20px;
+}
+
+.bkx-cj-chart-container.half {
+	min-height: 300px;
+}
+
+.bkx-cj-chart-container.full {
+	min-height: 350px;
+	margin-bottom: 30px;
+}
+
+.bkx-cj-chart-container h3 {
+	margin: 0 0 15px 0;
+	font-size: 14px;
+	color: #1d2327;
+}
+
+/* Funnel */
+.bkx-cj-funnel {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.bkx-cj-funnel-stage {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.bkx-cj-funnel-bar-container {
+	flex: 1;
+	position: relative;
+}
+
+.bkx-cj-funnel-bar {
+	height: 35px;
+	background: linear-gradient(90deg, #2271b1, #72aee6);
+	border-radius: 4px;
+	transition: width 0.5s ease;
+	position: relative;
+}
+
+.bkx-cj-funnel-bar-label {
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #fff;
+	font-size: 13px;
+	font-weight: 500;
+	white-space: nowrap;
+}
+
+.bkx-cj-funnel-count {
+	min-width: 60px;
+	text-align: right;
+	font-weight: 600;
+	color: #1d2327;
+}
+
+.bkx-cj-funnel-rate {
+	min-width: 50px;
+	text-align: right;
+	color: #646970;
+	font-size: 12px;
+}
+
+/* Tables */
+.bkx-cj-table-container {
+	margin-bottom: 30px;
+}
+
+.bkx-cj-table-container h3 {
+	margin: 0 0 15px 0;
+	font-size: 14px;
+	color: #1d2327;
+}
+
+.bkx-cj-tables-row {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	margin-bottom: 30px;
+}
+
+.bkx-cj-table-container.half {
+	background: #f8f9fa;
+	border: 1px solid #e2e4e7;
+	border-radius: 8px;
+	padding: 20px;
+}
+
+.bkx-cj-loading {
+	text-align: center;
+	color: #646970;
+	padding: 20px;
+}
+
+/* Lifecycle Stages */
+.bkx-cj-lifecycle-stages {
+	margin-bottom: 30px;
+}
+
+.bkx-cj-lifecycle-stages h3 {
+	margin: 0 0 15px 0;
+}
+
+.bkx-cj-stages-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 15px;
+}
+
+.bkx-cj-stage-card {
+	background: #fff;
+	border: 2px solid #e2e4e7;
+	border-radius: 8px;
+	padding: 20px;
+	text-align: center;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.bkx-cj-stage-card:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bkx-cj-stage-card .stage-count {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.bkx-cj-stage-card .stage-label {
+	display: block;
+	margin-top: 8px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #1d2327;
+}
+
+.bkx-cj-stage-card .stage-revenue {
+	display: block;
+	margin-top: 5px;
+	font-size: 13px;
+	color: #646970;
+}
+
+/* Transitions Diagram */
+.bkx-cj-transitions {
+	margin-bottom: 30px;
+}
+
+.bkx-cj-transitions-diagram {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	background: #f8f9fa;
+	padding: 20px;
+	border-radius: 8px;
+}
+
+.bkx-cj-transition {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	background: #fff;
+	padding: 8px 12px;
+	border-radius: 20px;
+	border: 1px solid #e2e4e7;
+	font-size: 12px;
+}
+
+.bkx-cj-transition .from,
+.bkx-cj-transition .to {
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-weight: 500;
+}
+
+.bkx-cj-transition .arrow {
+	color: #646970;
+}
+
+/* Attribution */
+.bkx-cj-attribution-models {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 25px;
+	padding: 15px;
+	background: #f8f9fa;
+	border-radius: 8px;
+}
+
+.bkx-cj-model-select {
+	padding: 8px 15px;
+	border: 1px solid #8c8f94;
+	border-radius: 4px;
+	min-width: 200px;
+}
+
+/* Customer Search */
+.bkx-cj-customer-search {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 30px;
+	padding: 20px;
+	background: #f8f9fa;
+	border-radius: 8px;
+}
+
+.bkx-cj-customer-search input {
+	flex: 1;
+	max-width: 400px;
+}
+
+/* Customer Profile */
+.bkx-cj-customer-profile {
+	background: #fff;
+}
+
+.bkx-cj-profile-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 20px;
+	background: #f8f9fa;
+	border-radius: 8px;
+	margin-bottom: 30px;
+}
+
+.bkx-cj-profile-info h2 {
+	margin: 0 0 10px 0;
+	font-size: 20px;
+}
+
+.bkx-cj-stage-badge {
+	display: inline-block;
+	padding: 5px 12px;
+	border-radius: 20px;
+	font-size: 12px;
+	font-weight: 600;
+	color: #fff;
+}
+
+.bkx-cj-profile-metrics {
+	display: flex;
+	gap: 30px;
+}
+
+.bkx-cj-metric {
+	text-align: center;
+}
+
+.bkx-cj-metric-value {
+	display: block;
+	font-size: 24px;
+	font-weight: 700;
+	color: #1d2327;
+}
+
+.bkx-cj-metric-label {
+	font-size: 12px;
+	color: #646970;
+}
+
+/* Timeline */
+.bkx-cj-customer-timeline {
+	margin-bottom: 30px;
+}
+
+.bkx-cj-timeline {
+	position: relative;
+	padding-left: 30px;
+}
+
+.bkx-cj-timeline::before {
+	content: '';
+	position: absolute;
+	left: 10px;
+	top: 0;
+	bottom: 0;
+	width: 2px;
+	background: #e2e4e7;
+}
+
+.bkx-cj-timeline-item {
+	position: relative;
+	padding: 15px 0;
+	border-bottom: 1px dashed #e2e4e7;
+}
+
+.bkx-cj-timeline-item:last-child {
+	border-bottom: none;
+}
+
+.bkx-cj-timeline-item::before {
+	content: '';
+	position: absolute;
+	left: -24px;
+	top: 20px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #2271b1;
+	border: 2px solid #fff;
+	box-shadow: 0 0 0 2px #2271b1;
+}
+
+.bkx-cj-timeline-item.conversion::before {
+	background: #00a32a;
+	box-shadow: 0 0 0 2px #00a32a;
+}
+
+.bkx-cj-timeline-date {
+	font-size: 12px;
+	color: #646970;
+	margin-bottom: 5px;
+}
+
+.bkx-cj-timeline-title {
+	font-weight: 600;
+	color: #1d2327;
+	margin-bottom: 5px;
+}
+
+.bkx-cj-timeline-details {
+	font-size: 13px;
+	color: #646970;
+}
+
+/* No Customer */
+.bkx-cj-no-customer {
+	text-align: center;
+	padding: 60px 20px;
+	color: #646970;
+}
+
+.bkx-cj-no-customer .dashicons {
+	font-size: 48px;
+	width: 48px;
+	height: 48px;
+	color: #c3c4c7;
+}
+
+.bkx-cj-no-customer p {
+	margin-top: 15px;
+	font-size: 14px;
+}
+
+/* Conversion Path */
+.bkx-cj-path {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	flex-wrap: wrap;
+}
+
+.bkx-cj-path-step {
+	background: #f0f0f1;
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	color: #1d2327;
+}
+
+.bkx-cj-path-arrow {
+	color: #646970;
+	font-size: 11px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+	.bkx-cj-charts-row,
+	.bkx-cj-tables-row {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 782px) {
+	.bkx-cj-filters {
+		flex-direction: column;
+		gap: 15px;
+		align-items: flex-start;
+	}
+
+	.bkx-cj-date-range {
+		flex-wrap: wrap;
+	}
+
+	.bkx-cj-summary-cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.bkx-cj-profile-header {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.bkx-cj-profile-metrics {
+		flex-wrap: wrap;
+	}
+
+	.bkx-cj-customer-search {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.bkx-cj-customer-search input {
+		max-width: none;
+	}
+}
+
+/* Channel Colors */
+.channel-direct { background-color: #6B7280; }
+.channel-organic_search { background-color: #10B981; }
+.channel-paid_search { background-color: #F59E0B; }
+.channel-social { background-color: #3B82F6; }
+.channel-email { background-color: #8B5CF6; }
+.channel-referral { background-color: #EC4899; }
+
+/* Stage Colors */
+.stage-lead { border-color: #9CA3AF; }
+.stage-lead .stage-count { color: #9CA3AF; }
+
+.stage-prospect { border-color: #60A5FA; }
+.stage-prospect .stage-count { color: #60A5FA; }
+
+.stage-customer { border-color: #34D399; }
+.stage-customer .stage-count { color: #34D399; }
+
+.stage-loyal { border-color: #A78BFA; }
+.stage-loyal .stage-count { color: #A78BFA; }
+
+.stage-champion { border-color: #F59E0B; }
+.stage-champion .stage-count { color: #F59E0B; }
+
+.stage-at_risk { border-color: #F97316; }
+.stage-at_risk .stage-count { color: #F97316; }
+
+.stage-churned { border-color: #EF4444; }
+.stage-churned .stage-count { color: #EF4444; }
+
+/* Churn Risk Bar */
+.bkx-cj-risk-bar {
+	width: 60px;
+	height: 8px;
+	background: #e2e4e7;
+	border-radius: 4px;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+
+.bkx-cj-risk-bar-fill {
+	height: 100%;
+	border-radius: 4px;
+	transition: width 0.3s ease;
+}
+
+.bkx-cj-risk-low {
+	background: #00a32a;
+}
+
+.bkx-cj-risk-medium {
+	background: #dba617;
+}
+
+.bkx-cj-risk-high {
+	background: #d63638;
+}
