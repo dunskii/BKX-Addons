@@ -1,0 +1,349 @@
+/**
+ * Discord Notifications Admin Styles
+ *
+ * @package BookingX\Discord
+ */
+
+/* General Layout */
+.bkx-discord-admin {
+	margin: 20px 20px 0 0;
+}
+
+.bkx-discord-admin h1 {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.bkx-discord-logo {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%235865F2"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>') no-repeat center;
+	background-size: contain;
+}
+
+.bkx-discord-content {
+	margin-top: 20px;
+}
+
+/* Cards */
+.bkx-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.bkx-card h2 {
+	margin: 0 0 15px;
+	padding: 0 0 10px;
+	border-bottom: 1px solid #eee;
+	font-size: 16px;
+}
+
+.bkx-card-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: -20px -20px 20px;
+	padding: 15px 20px;
+	background: #f6f7f7;
+	border-bottom: 1px solid #c3c4c7;
+	border-radius: 4px 4px 0 0;
+}
+
+.bkx-card-header h2 {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+/* Form Tables */
+.bkx-card .form-table th {
+	width: 200px;
+	padding: 15px 10px 15px 0;
+}
+
+.bkx-card .form-table td {
+	padding: 15px 10px;
+}
+
+/* Toggle Switch */
+.bkx-toggle {
+	position: relative;
+	display: inline-block;
+	width: 44px;
+	height: 24px;
+}
+
+.bkx-toggle input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.bkx-toggle-slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	transition: .3s;
+	border-radius: 24px;
+}
+
+.bkx-toggle-slider:before {
+	position: absolute;
+	content: "";
+	height: 18px;
+	width: 18px;
+	left: 3px;
+	bottom: 3px;
+	background-color: white;
+	transition: .3s;
+	border-radius: 50%;
+}
+
+.bkx-toggle input:checked + .bkx-toggle-slider {
+	background-color: #5865F2;
+}
+
+.bkx-toggle input:checked + .bkx-toggle-slider:before {
+	transform: translateX(20px);
+}
+
+/* Status Badges */
+.bkx-status {
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.bkx-status-sent {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-status-failed {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+/* Muted Text */
+.bkx-muted {
+	color: #666;
+}
+
+/* Error Text */
+.bkx-error-text {
+	color: #dc3545;
+}
+
+/* Setup Steps */
+.bkx-setup-steps {
+	margin: 0;
+	padding-left: 20px;
+}
+
+.bkx-setup-steps li {
+	margin-bottom: 15px;
+}
+
+.bkx-setup-steps li strong {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.bkx-setup-steps li p {
+	margin: 0;
+	color: #666;
+}
+
+/* Stats Grid */
+.bkx-stats-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 15px;
+}
+
+.bkx-stat-card {
+	text-align: center;
+	padding: 20px;
+	background: #f6f7f7;
+	border-radius: 4px;
+}
+
+.bkx-stat-value {
+	font-size: 32px;
+	font-weight: 600;
+	color: #1d2327;
+}
+
+.bkx-stat-label {
+	font-size: 13px;
+	color: #666;
+	margin-top: 5px;
+}
+
+/* Discord Message Preview */
+.bkx-discord-preview {
+	background: #36393f;
+	border-radius: 8px;
+	padding: 20px;
+}
+
+.bkx-discord-message {
+	display: flex;
+	gap: 16px;
+}
+
+.bkx-discord-avatar {
+	width: 40px;
+	height: 40px;
+	background: #5865F2;
+	border-radius: 50%;
+	color: #fff;
+	font-weight: bold;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+.bkx-discord-content {
+	flex: 1;
+}
+
+.bkx-discord-header {
+	margin-bottom: 4px;
+}
+
+.bkx-discord-username {
+	color: #5865F2;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.bkx-discord-timestamp {
+	color: #72767d;
+	font-size: 12px;
+	margin-left: 8px;
+}
+
+.bkx-discord-embed {
+	background: #2f3136;
+	border-left: 4px solid #5865F2;
+	border-radius: 4px;
+	padding: 12px;
+	margin-top: 8px;
+	max-width: 520px;
+}
+
+.bkx-discord-embed-title {
+	color: #fff;
+	font-weight: 600;
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+
+.bkx-discord-embed-description {
+	color: #dcddde;
+	font-size: 14px;
+	margin-bottom: 12px;
+}
+
+.bkx-discord-embed-fields {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 8px;
+}
+
+.bkx-discord-embed-field {
+	margin-bottom: 8px;
+}
+
+.bkx-discord-field-name {
+	display: block;
+	color: #72767d;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 2px;
+}
+
+.bkx-discord-field-value {
+	display: block;
+	color: #dcddde;
+	font-size: 14px;
+}
+
+.bkx-discord-embed-footer {
+	color: #72767d;
+	font-size: 12px;
+	margin-top: 12px;
+	padding-top: 8px;
+	border-top: 1px solid #40444b;
+}
+
+/* Toast Notifications */
+.bkx-toast {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	padding: 15px 25px;
+	border-radius: 4px;
+	color: #fff;
+	font-weight: 500;
+	z-index: 100001;
+	animation: slideIn 0.3s ease;
+}
+
+.bkx-toast.success {
+	background: #57F287;
+	color: #000;
+}
+
+.bkx-toast.error {
+	background: #ED4245;
+}
+
+@keyframes slideIn {
+	from {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+	.bkx-card .form-table th {
+		width: 100%;
+		display: block;
+		padding-bottom: 5px;
+	}
+
+	.bkx-card .form-table td {
+		display: block;
+		padding-top: 5px;
+	}
+
+	.bkx-card-header {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.bkx-discord-embed-fields {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}

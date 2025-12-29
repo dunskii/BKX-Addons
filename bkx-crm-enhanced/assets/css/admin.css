@@ -1,0 +1,488 @@
+/**
+ * CRM Enhanced Admin Styles
+ *
+ * @package BookingX\CRM
+ */
+
+/* General Layout */
+.bkx-crm-admin {
+	margin: 20px 20px 0 0;
+}
+
+.bkx-crm-admin h1 {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.bkx-crm-content {
+	margin-top: 20px;
+}
+
+/* Cards */
+.bkx-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.bkx-card h2 {
+	margin: 0 0 15px;
+	padding: 0 0 10px;
+	border-bottom: 1px solid #eee;
+	font-size: 16px;
+}
+
+/* Two Column Layout */
+.bkx-two-column {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+	.bkx-two-column {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Toolbar */
+.bkx-toolbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.bkx-toolbar-left {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.bkx-toolbar-right {
+	display: flex;
+	gap: 10px;
+}
+
+.bkx-search-form {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.bkx-search-input {
+	min-width: 200px;
+}
+
+/* Stats Row */
+.bkx-stats-row {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 15px;
+	margin-bottom: 20px;
+}
+
+.bkx-stat-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 20px;
+	text-align: center;
+}
+
+.bkx-stat-value {
+	font-size: 28px;
+	font-weight: 600;
+	color: #1d2327;
+	display: block;
+}
+
+.bkx-stat-label {
+	font-size: 13px;
+	color: #666;
+	margin-top: 5px;
+	display: block;
+}
+
+/* Status Badges */
+.bkx-status {
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.bkx-status-active {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-status-inactive {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.bkx-status-blocked {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+/* Tags */
+.bkx-crm-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+}
+
+.bkx-crm-tag {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 12px;
+	font-size: 11px;
+	font-weight: 500;
+	color: #fff;
+	white-space: nowrap;
+}
+
+.bkx-metabox-tags {
+	margin: 10px 0;
+}
+
+/* Color Swatch */
+.bkx-color-swatch {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	border-radius: 4px;
+	vertical-align: middle;
+}
+
+/* Badges */
+.bkx-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 11px;
+	background: #f0f0f1;
+	color: #666;
+}
+
+.bkx-badge-dynamic {
+	background: #e7f3ff;
+	color: #0073aa;
+}
+
+/* Followup Types */
+.bkx-followup-type {
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.bkx-followup-thankyou {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-followup-feedback {
+	background: #cce5ff;
+	color: #004085;
+}
+
+.bkx-followup-reminder {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.bkx-followup-reengagement {
+	background: #e2d9f3;
+	color: #563d7c;
+}
+
+.bkx-followup-birthday {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+.bkx-followup-custom {
+	background: #f0f0f1;
+	color: #666;
+}
+
+/* Conditions Builder */
+#bkx-conditions-builder {
+	background: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 15px;
+}
+
+.bkx-conditions-list {
+	margin-bottom: 10px;
+}
+
+.bkx-condition-row {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 10px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.bkx-condition-row select,
+.bkx-condition-row input {
+	flex: 1;
+	min-width: 120px;
+}
+
+.bkx-remove-condition {
+	flex: 0 0 auto;
+	padding: 0 10px;
+}
+
+/* Segment Preview */
+.bkx-segment-preview {
+	background: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 15px;
+	margin-top: 20px;
+}
+
+.bkx-segment-preview h4 {
+	margin: 0 0 10px;
+}
+
+/* Modal */
+.bkx-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bkx-modal-content {
+	background: #fff;
+	width: 90%;
+	max-width: 600px;
+	max-height: 80vh;
+	border-radius: 8px;
+	padding: 20px;
+	position: relative;
+	overflow-y: auto;
+}
+
+.bkx-modal-large {
+	max-width: 900px;
+}
+
+.bkx-modal-close {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	font-size: 24px;
+	cursor: pointer;
+	color: #666;
+}
+
+.bkx-modal-close:hover {
+	color: #000;
+}
+
+/* Customer Profile Modal */
+.bkx-customer-profile {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+	.bkx-customer-profile {
+		grid-template-columns: 1fr;
+	}
+}
+
+.bkx-customer-main h3 {
+	margin: 0 0 10px;
+}
+
+.bkx-customer-sidebar {
+	background: #f9f9f9;
+	padding: 15px;
+	border-radius: 4px;
+}
+
+/* Activity Timeline */
+.bkx-activity-timeline {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.bkx-activity-item {
+	display: flex;
+	gap: 10px;
+	padding: 10px 0;
+	border-bottom: 1px solid #eee;
+}
+
+.bkx-activity-item:last-child {
+	border-bottom: none;
+}
+
+.bkx-activity-icon {
+	flex: 0 0 30px;
+	height: 30px;
+	background: #f0f0f1;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bkx-activity-content {
+	flex: 1;
+}
+
+.bkx-activity-time {
+	font-size: 11px;
+	color: #999;
+}
+
+/* Notes */
+.bkx-notes-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.bkx-note-item {
+	padding: 10px;
+	background: #fffbcc;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+.bkx-note-header {
+	display: flex;
+	justify-content: space-between;
+	font-size: 11px;
+	color: #666;
+	margin-bottom: 5px;
+}
+
+.bkx-note-content {
+	white-space: pre-wrap;
+}
+
+/* Customer Stats in Metabox */
+.bkx-customer-stats {
+	display: flex;
+	gap: 15px;
+}
+
+.bkx-customer-stats span {
+	font-size: 12px;
+	color: #666;
+}
+
+.bkx-customer-stats strong {
+	color: #1d2327;
+}
+
+/* Customer Preview in Bookings List */
+.bkx-crm-customer-preview {
+	line-height: 1.4;
+}
+
+.bkx-crm-customer-preview .bkx-crm-tags {
+	margin-top: 5px;
+}
+
+.bkx-crm-no-profile {
+	color: #999;
+	font-style: italic;
+}
+
+/* Muted Text */
+.bkx-muted {
+	color: #666;
+}
+
+/* No Items */
+.bkx-no-items {
+	text-align: center;
+	padding: 40px;
+	color: #666;
+}
+
+/* Toast Notifications */
+.bkx-toast {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	padding: 15px 25px;
+	border-radius: 4px;
+	color: #fff;
+	font-weight: 500;
+	z-index: 100001;
+	animation: slideIn 0.3s ease;
+}
+
+.bkx-toast.success {
+	background: #00a32a;
+}
+
+.bkx-toast.error {
+	background: #d63638;
+}
+
+@keyframes slideIn {
+	from {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+	.bkx-card .form-table th {
+		width: 100%;
+		display: block;
+		padding-bottom: 5px;
+	}
+
+	.bkx-card .form-table td {
+		display: block;
+		padding-top: 5px;
+	}
+
+	.bkx-toolbar {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.bkx-toolbar-right {
+		justify-content: flex-end;
+	}
+}
