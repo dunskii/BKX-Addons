@@ -1,0 +1,459 @@
+/**
+ * Bulk & Recurring Payments Frontend Styles.
+ *
+ * @package BookingX\BulkRecurringPayments
+ * @since   1.0.0
+ */
+
+/* Packages Grid */
+.bkx-packages-grid {
+	display: grid;
+	gap: 25px;
+	margin: 30px 0;
+}
+
+.bkx-packages-grid.columns-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.bkx-packages-grid.columns-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.bkx-packages-grid.columns-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+/* Package Card */
+.bkx-package-card {
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	overflow: hidden;
+	transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.bkx-package-card:hover {
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	transform: translateY(-2px);
+}
+
+.bkx-package-card.featured {
+	border-color: #0073aa;
+	border-width: 2px;
+}
+
+.bkx-package-header {
+	padding: 25px;
+	text-align: center;
+	background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.bkx-package-card.featured .bkx-package-header {
+	background: linear-gradient(135deg, #0073aa 0%, #005a87 100%);
+	color: #fff;
+}
+
+.bkx-package-badge {
+	display: inline-block;
+	padding: 4px 12px;
+	background: #28a745;
+	color: #fff;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border-radius: 20px;
+	margin-bottom: 10px;
+}
+
+.bkx-package-name {
+	font-size: 22px;
+	font-weight: 600;
+	margin: 0 0 10px;
+}
+
+.bkx-package-description {
+	font-size: 14px;
+	color: #666;
+	margin: 0;
+}
+
+.bkx-package-card.featured .bkx-package-description {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+/* Pricing */
+.bkx-package-pricing {
+	padding: 25px;
+	text-align: center;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.bkx-package-price {
+	font-size: 42px;
+	font-weight: 700;
+	color: #0073aa;
+	line-height: 1;
+}
+
+.bkx-package-price .currency {
+	font-size: 24px;
+	vertical-align: super;
+}
+
+.bkx-package-price .period {
+	font-size: 16px;
+	color: #666;
+	font-weight: normal;
+}
+
+.bkx-package-original-price {
+	font-size: 18px;
+	color: #999;
+	text-decoration: line-through;
+	margin-bottom: 5px;
+}
+
+.bkx-package-discount {
+	display: inline-block;
+	background: #28a745;
+	color: #fff;
+	padding: 3px 10px;
+	border-radius: 4px;
+	font-size: 12px;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+.bkx-package-credits {
+	font-size: 14px;
+	color: #666;
+	margin-top: 10px;
+}
+
+/* Features */
+.bkx-package-features {
+	padding: 25px;
+}
+
+.bkx-package-features ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.bkx-package-features li {
+	padding: 10px 0;
+	border-bottom: 1px solid #f0f0f0;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.bkx-package-features li:last-child {
+	border-bottom: none;
+}
+
+.bkx-package-features .dashicons {
+	color: #28a745;
+}
+
+/* Purchase Button */
+.bkx-package-action {
+	padding: 20px 25px 25px;
+}
+
+.bkx-purchase-btn {
+	display: block;
+	width: 100%;
+	padding: 14px 20px;
+	background: #0073aa;
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background 0.2s;
+	text-align: center;
+	text-decoration: none;
+}
+
+.bkx-purchase-btn:hover {
+	background: #005a87;
+	color: #fff;
+}
+
+.bkx-purchase-btn:disabled {
+	background: #ccc;
+	cursor: not-allowed;
+}
+
+/* My Subscriptions */
+.bkx-subscriptions-list,
+.bkx-credits-list {
+	margin: 20px 0;
+}
+
+.bkx-subscription-card,
+.bkx-credit-card {
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	padding: 20px;
+	margin-bottom: 15px;
+}
+
+.bkx-subscription-header,
+.bkx-credit-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.bkx-subscription-name,
+.bkx-credit-name {
+	font-size: 18px;
+	font-weight: 600;
+	margin: 0;
+}
+
+.bkx-subscription-status,
+.bkx-credit-status {
+	display: inline-block;
+	padding: 4px 12px;
+	border-radius: 20px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.bkx-subscription-status.active,
+.bkx-credit-status.active {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-subscription-status.paused {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.bkx-subscription-status.cancelled,
+.bkx-credit-status.expired {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+.bkx-credit-status.depleted {
+	background: #e9ecef;
+	color: #6c757d;
+}
+
+/* Subscription/Credit Details */
+.bkx-subscription-details,
+.bkx-credit-details {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 15px;
+	margin-bottom: 15px;
+}
+
+.bkx-detail-item {
+	display: flex;
+	flex-direction: column;
+}
+
+.bkx-detail-label {
+	font-size: 12px;
+	color: #666;
+	margin-bottom: 3px;
+}
+
+.bkx-detail-value {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+/* Credits Bar */
+.bkx-credits-bar {
+	height: 10px;
+	background: #e9ecef;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+.bkx-credits-progress {
+	height: 100%;
+	background: #28a745;
+	border-radius: 5px;
+	transition: width 0.3s;
+}
+
+.bkx-credits-progress.low {
+	background: #ffc107;
+}
+
+.bkx-credits-progress.critical {
+	background: #dc3545;
+}
+
+.bkx-credits-text {
+	display: flex;
+	justify-content: space-between;
+	font-size: 13px;
+	margin-top: 8px;
+}
+
+.bkx-credits-remaining {
+	font-weight: 600;
+	color: #28a745;
+}
+
+.bkx-credits-remaining.low {
+	color: #ffc107;
+}
+
+.bkx-credits-remaining.critical {
+	color: #dc3545;
+}
+
+/* Actions */
+.bkx-subscription-actions,
+.bkx-credit-actions {
+	display: flex;
+	gap: 10px;
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 1px solid #f0f0f0;
+}
+
+.bkx-sub-btn {
+	padding: 8px 16px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	background: #fff;
+	cursor: pointer;
+	font-size: 14px;
+	transition: all 0.2s;
+}
+
+.bkx-sub-btn:hover {
+	background: #f5f5f5;
+}
+
+.bkx-sub-btn.primary {
+	background: #0073aa;
+	border-color: #0073aa;
+	color: #fff;
+}
+
+.bkx-sub-btn.primary:hover {
+	background: #005a87;
+}
+
+.bkx-sub-btn.danger {
+	color: #dc3545;
+	border-color: #dc3545;
+}
+
+.bkx-sub-btn.danger:hover {
+	background: #dc3545;
+	color: #fff;
+}
+
+/* Expiry Warning */
+.bkx-expiry-warning {
+	background: #fff3cd;
+	border: 1px solid #ffeeba;
+	border-radius: 4px;
+	padding: 10px 15px;
+	margin-top: 15px;
+	font-size: 14px;
+	color: #856404;
+}
+
+.bkx-expiry-warning .dashicons {
+	margin-right: 5px;
+}
+
+/* Loading State */
+.bkx-loading {
+	text-align: center;
+	padding: 40px;
+	color: #666;
+}
+
+.bkx-spinner {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border: 3px solid #f3f3f3;
+	border-top-color: #0073aa;
+	border-radius: 50%;
+	animation: bkx-spin 0.8s linear infinite;
+}
+
+@keyframes bkx-spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* Empty State */
+.bkx-empty-state {
+	text-align: center;
+	padding: 60px 20px;
+	color: #666;
+}
+
+.bkx-empty-state .dashicons {
+	font-size: 48px;
+	width: 48px;
+	height: 48px;
+	color: #ccc;
+	margin-bottom: 15px;
+}
+
+.bkx-empty-state h3 {
+	margin: 0 0 10px;
+	color: #333;
+}
+
+.bkx-empty-state p {
+	margin: 0 0 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+	.bkx-packages-grid.columns-2,
+	.bkx-packages-grid.columns-3,
+	.bkx-packages-grid.columns-4 {
+		grid-template-columns: 1fr;
+	}
+
+	.bkx-subscription-header,
+	.bkx-credit-header {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 10px;
+	}
+
+	.bkx-subscription-details,
+	.bkx-credit-details {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.bkx-subscription-actions,
+	.bkx-credit-actions {
+		flex-direction: column;
+	}
+
+	.bkx-sub-btn {
+		width: 100%;
+		text-align: center;
+	}
+}

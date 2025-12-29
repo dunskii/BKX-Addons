@@ -1,0 +1,443 @@
+/**
+ * Mobile Bookings Admin Styles.
+ *
+ * @package BookingX\MobileBookings
+ * @since   1.0.0
+ */
+
+/* Wrap */
+.bkx-mobile-wrap {
+	max-width: 1400px;
+}
+
+/* Nav Tabs */
+.bkx-nav-tabs {
+	margin-bottom: 20px;
+}
+
+/* Tab Content */
+.bkx-tab-content {
+	display: none;
+}
+
+.bkx-tab-content.active {
+	display: block;
+}
+
+/* Cards */
+.bkx-card {
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	border-radius: 4px;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.bkx-card h2 {
+	margin-top: 0;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+}
+
+.bkx-card h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.bkx-card-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.bkx-card-header h2 {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+/* Dashboard Grid */
+.bkx-dashboard-grid {
+	display: grid;
+	gap: 20px;
+}
+
+/* Stats Row */
+.bkx-stats-row {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 15px;
+}
+
+.bkx-stat-card {
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	border-radius: 4px;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.bkx-stat-icon {
+	width: 50px;
+	height: 50px;
+	background: #f0f6fc;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bkx-stat-icon .dashicons {
+	font-size: 24px;
+	width: 24px;
+	height: 24px;
+	color: #0073aa;
+}
+
+.bkx-stat-content {
+	flex: 1;
+}
+
+.bkx-stat-value {
+	display: block;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1.2;
+	color: #1d2327;
+}
+
+.bkx-stat-label {
+	display: block;
+	font-size: 13px;
+	color: #646970;
+}
+
+/* Map Container */
+.bkx-map-container {
+	width: 100%;
+	height: 300px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-bottom: 15px;
+}
+
+.bkx-map-medium {
+	height: 350px;
+}
+
+.bkx-map-large {
+	height: 450px;
+}
+
+.bkx-map-placeholder {
+	height: 300px;
+	background: #f5f5f5;
+	border: 1px dashed #ccc;
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #666;
+}
+
+.bkx-map-placeholder .dashicons {
+	font-size: 48px;
+	width: 48px;
+	height: 48px;
+	margin-bottom: 10px;
+	color: #999;
+}
+
+/* Quick Actions */
+.bkx-quick-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.bkx-action-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.bkx-action-btn .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+}
+
+/* Form Styles */
+.bkx-form-row {
+	display: flex;
+	gap: 15px;
+	margin-bottom: 15px;
+}
+
+.bkx-form-field {
+	flex: 1;
+}
+
+.bkx-form-field label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+
+.bkx-form-field input,
+.bkx-form-field select,
+.bkx-form-field textarea {
+	width: 100%;
+}
+
+.bkx-form-field input[type="checkbox"] {
+	width: auto;
+}
+
+.bkx-form-actions {
+	display: flex;
+	gap: 10px;
+	margin-top: 20px;
+}
+
+.bkx-form-actions-inline {
+	display: flex;
+	align-items: flex-end;
+	gap: 10px;
+}
+
+.bkx-form-section {
+	margin-top: 20px;
+	padding-top: 15px;
+	border-top: 1px solid #eee;
+}
+
+/* Status Badges */
+.bkx-status {
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.bkx-status.active {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-status.inactive {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+.bkx-badge {
+	display: inline-block;
+	padding: 2px 6px;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 500;
+}
+
+.bkx-badge.enabled {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-badge.disabled {
+	background: #e9ecef;
+	color: #6c757d;
+}
+
+/* Empty State */
+.bkx-empty {
+	color: #888;
+	text-align: center;
+	padding: 20px;
+	font-style: italic;
+}
+
+/* Modal */
+.bkx-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bkx-modal-content {
+	background: #fff;
+	border-radius: 4px;
+	padding: 20px;
+	width: 90%;
+	max-width: 500px;
+	max-height: 90vh;
+	overflow-y: auto;
+	position: relative;
+}
+
+.bkx-modal-large {
+	max-width: 800px;
+}
+
+.bkx-modal-close {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	font-size: 24px;
+	cursor: pointer;
+	color: #666;
+}
+
+.bkx-modal-close:hover {
+	color: #000;
+}
+
+.bkx-modal h2 {
+	margin-top: 0;
+	padding-right: 30px;
+}
+
+/* Route Controls */
+.bkx-route-controls {
+	margin-bottom: 20px;
+}
+
+.bkx-route-details {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #eee;
+}
+
+.bkx-route-summary {
+	display: flex;
+	gap: 30px;
+	margin-bottom: 20px;
+}
+
+.bkx-summary-item {
+	display: flex;
+	flex-direction: column;
+}
+
+.bkx-summary-item .label {
+	font-size: 12px;
+	color: #666;
+}
+
+.bkx-summary-item .value {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.bkx-route-stops {
+	margin-bottom: 20px;
+}
+
+.bkx-route-stop {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	background: #f9f9f9;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+.bkx-stop-number {
+	width: 30px;
+	height: 30px;
+	background: #0073aa;
+	color: #fff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600;
+	margin-right: 15px;
+}
+
+.bkx-stop-info {
+	flex: 1;
+}
+
+.bkx-stop-address {
+	font-weight: 500;
+}
+
+.bkx-stop-time {
+	font-size: 12px;
+	color: #666;
+}
+
+.bkx-stop-travel {
+	text-align: right;
+	font-size: 12px;
+	color: #666;
+}
+
+.bkx-export-buttons {
+	display: flex;
+	gap: 10px;
+}
+
+/* Check-in Filters */
+.bkx-checkin-filters {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+/* Tables */
+#bkx-areas-table td,
+#bkx-checkins-table td {
+	vertical-align: middle;
+}
+
+/* Area Type Options */
+.bkx-area-type-options {
+	margin-bottom: 15px;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+	.bkx-form-row {
+		flex-direction: column;
+	}
+
+	.bkx-stats-row {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.bkx-card-header {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 10px;
+	}
+
+	.bkx-route-summary {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.bkx-checkin-filters {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.bkx-stats-row {
+		grid-template-columns: 1fr;
+	}
+}

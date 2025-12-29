@@ -1,0 +1,300 @@
+/**
+ * Mobile Bookings Frontend Styles.
+ *
+ * @package BookingX\MobileBookings
+ * @since   1.0.0
+ */
+
+/* Address Input */
+.bkx-address-field {
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.bkx-address-input {
+	width: 100%;
+	padding-right: 40px;
+}
+
+.bkx-location-btn {
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+	color: #666;
+}
+
+.bkx-location-btn:hover {
+	color: #0073aa;
+}
+
+.bkx-location-btn .dashicons {
+	font-size: 20px;
+}
+
+/* Map Display */
+.bkx-booking-map {
+	width: 100%;
+	height: 250px;
+	border-radius: 4px;
+	margin-bottom: 15px;
+	border: 1px solid #ddd;
+}
+
+/* Distance Display */
+.bkx-distance-info {
+	background: #f5f5f5;
+	border-radius: 4px;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+.bkx-distance-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px 0;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.bkx-distance-row:last-child {
+	border-bottom: none;
+}
+
+.bkx-distance-label {
+	font-size: 14px;
+	color: #666;
+}
+
+.bkx-distance-value {
+	font-weight: 600;
+	color: #333;
+}
+
+.bkx-travel-fee {
+	color: #0073aa;
+}
+
+/* Service Area Notice */
+.bkx-service-area-notice {
+	padding: 12px 15px;
+	border-radius: 4px;
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.bkx-service-area-notice.success {
+	background: #d4edda;
+	border: 1px solid #c3e6cb;
+	color: #155724;
+}
+
+.bkx-service-area-notice.error {
+	background: #f8d7da;
+	border: 1px solid #f5c6cb;
+	color: #721c24;
+}
+
+.bkx-service-area-notice .dashicons {
+	font-size: 20px;
+}
+
+/* Nearby Providers */
+.bkx-nearby-providers {
+	margin-bottom: 20px;
+}
+
+.bkx-nearby-providers h4 {
+	margin-bottom: 10px;
+}
+
+.bkx-provider-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.bkx-provider-item {
+	display: flex;
+	align-items: center;
+	padding: 12px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+.bkx-provider-avatar {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 15px;
+	object-fit: cover;
+}
+
+.bkx-provider-info {
+	flex: 1;
+}
+
+.bkx-provider-name {
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.bkx-provider-distance {
+	font-size: 13px;
+	color: #666;
+}
+
+.bkx-provider-eta {
+	font-size: 12px;
+	color: #0073aa;
+}
+
+.bkx-select-provider {
+	margin-left: auto;
+}
+
+/* Loading States */
+.bkx-loading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	color: #666;
+}
+
+.bkx-loading-spinner {
+	width: 20px;
+	height: 20px;
+	border: 2px solid #ddd;
+	border-top-color: #0073aa;
+	border-radius: 50%;
+	animation: bkx-spin 0.8s linear infinite;
+	margin-right: 10px;
+}
+
+@keyframes bkx-spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* GPS Check-in Button */
+.bkx-checkin-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 12px 24px;
+	background: #46b450;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+
+.bkx-checkin-btn:hover {
+	background: #3a9a42;
+}
+
+.bkx-checkin-btn:disabled {
+	background: #ccc;
+	cursor: not-allowed;
+}
+
+.bkx-checkin-btn .dashicons {
+	font-size: 20px;
+}
+
+/* Check-in Status */
+.bkx-checkin-status {
+	padding: 15px;
+	border-radius: 4px;
+	margin-bottom: 15px;
+}
+
+.bkx-checkin-status.verified {
+	background: #d4edda;
+	border: 1px solid #c3e6cb;
+}
+
+.bkx-checkin-status.unverified {
+	background: #fff3cd;
+	border: 1px solid #ffeeba;
+}
+
+.bkx-checkin-status h4 {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+.bkx-checkin-status p {
+	margin: 0;
+	font-size: 14px;
+	color: #666;
+}
+
+/* ETA Display */
+.bkx-eta-display {
+	background: #e8f4fd;
+	border: 1px solid #b8daff;
+	border-radius: 4px;
+	padding: 15px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.bkx-eta-label {
+	font-size: 12px;
+	color: #666;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.bkx-eta-time {
+	font-size: 28px;
+	font-weight: 700;
+	color: #0073aa;
+	margin: 5px 0;
+}
+
+.bkx-eta-note {
+	font-size: 12px;
+	color: #666;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 600px) {
+	.bkx-booking-map {
+		height: 200px;
+	}
+
+	.bkx-provider-item {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.bkx-provider-avatar {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	.bkx-select-provider {
+		margin-left: 0;
+		margin-top: 10px;
+		width: 100%;
+	}
+
+	.bkx-checkin-btn {
+		width: 100%;
+		justify-content: center;
+	}
+}

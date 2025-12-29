@@ -1,0 +1,351 @@
+/**
+ * Bulk & Recurring Payments Admin Styles.
+ *
+ * @package BookingX\BulkRecurringPayments
+ * @since   1.0.0
+ */
+
+/* Wrap */
+.bkx-payments-wrap {
+	max-width: 1400px;
+}
+
+/* Nav Tabs */
+.bkx-nav-tabs {
+	margin-bottom: 20px;
+}
+
+/* Tab Content */
+.bkx-tab-content {
+	display: none;
+}
+
+.bkx-tab-content.active {
+	display: block;
+}
+
+/* Cards */
+.bkx-card {
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	border-radius: 4px;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.bkx-card h2 {
+	margin-top: 0;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+}
+
+.bkx-card-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #eee;
+}
+
+.bkx-card-header h2 {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+/* Filters */
+.bkx-package-filters,
+.bkx-subscription-filters,
+.bkx-bulk-filters {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 15px;
+}
+
+.bkx-package-filters select,
+.bkx-subscription-filters select,
+.bkx-bulk-filters select {
+	min-width: 150px;
+}
+
+/* Tables */
+#packages-table th,
+#subscriptions-table th,
+#bulk-table th,
+#templates-table th {
+	font-weight: 600;
+}
+
+#packages-table td,
+#subscriptions-table td,
+#bulk-table td,
+#templates-table td {
+	vertical-align: middle;
+}
+
+.bkx-loading-row td {
+	text-align: center;
+	padding: 30px;
+	color: #666;
+}
+
+/* Status Badges */
+.bkx-status {
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.bkx-status.active {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-status.inactive,
+.bkx-status.cancelled,
+.bkx-status.expired {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+.bkx-status.paused,
+.bkx-status.pending {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.bkx-status.depleted {
+	background: #e9ecef;
+	color: #6c757d;
+}
+
+/* Type Badge */
+.bkx-type {
+	display: inline-block;
+	padding: 2px 6px;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.bkx-type.bulk {
+	background: #e7f3ff;
+	color: #0073aa;
+}
+
+.bkx-type.recurring {
+	background: #f0e7ff;
+	color: #7b1fa2;
+}
+
+/* Credits Display */
+.bkx-credits {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.bkx-credits-used {
+	color: #999;
+}
+
+.bkx-credits-remaining {
+	font-weight: 600;
+}
+
+.bkx-credits-remaining.low {
+	color: #dc3545;
+}
+
+/* Modal */
+.bkx-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bkx-modal-content {
+	background: #fff;
+	border-radius: 4px;
+	padding: 20px;
+	width: 90%;
+	max-width: 500px;
+	max-height: 90vh;
+	overflow-y: auto;
+	position: relative;
+}
+
+.bkx-modal-large {
+	max-width: 700px;
+}
+
+.bkx-modal-close {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	font-size: 24px;
+	cursor: pointer;
+	color: #666;
+	line-height: 1;
+}
+
+.bkx-modal-close:hover {
+	color: #000;
+}
+
+.bkx-modal h2 {
+	margin-top: 0;
+	padding-right: 30px;
+}
+
+/* Form Styles */
+.bkx-form-row {
+	display: flex;
+	gap: 15px;
+	margin-bottom: 15px;
+}
+
+.bkx-form-field {
+	flex: 1;
+}
+
+.bkx-form-field label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+
+.bkx-form-field input,
+.bkx-form-field select,
+.bkx-form-field textarea {
+	width: 100%;
+}
+
+.bkx-form-field input[type="checkbox"] {
+	width: auto;
+}
+
+.bkx-form-field .description {
+	font-size: 12px;
+	color: #666;
+	margin-top: 5px;
+}
+
+.bkx-form-actions {
+	display: flex;
+	gap: 10px;
+	margin-top: 20px;
+	padding-top: 15px;
+	border-top: 1px solid #eee;
+	justify-content: flex-end;
+}
+
+/* Settings Form */
+.bkx-settings-form .form-table th {
+	width: 250px;
+}
+
+.bkx-settings-form .form-table td .description {
+	margin-top: 5px;
+}
+
+/* Action Buttons */
+.bkx-actions {
+	display: flex;
+	gap: 5px;
+}
+
+.bkx-action-btn {
+	padding: 4px 8px;
+	cursor: pointer;
+	background: none;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+.bkx-action-btn:hover {
+	background: #f5f5f5;
+}
+
+.bkx-action-btn.delete:hover {
+	background: #ffebee;
+	border-color: #ef5350;
+	color: #c62828;
+}
+
+/* Price Display */
+.bkx-price {
+	font-weight: 600;
+}
+
+.bkx-price-discount {
+	font-size: 12px;
+	color: #28a745;
+}
+
+.bkx-price-original {
+	text-decoration: line-through;
+	color: #999;
+	font-weight: normal;
+	margin-right: 5px;
+}
+
+/* Customer Info */
+.bkx-customer {
+	display: flex;
+	flex-direction: column;
+}
+
+.bkx-customer-name {
+	font-weight: 500;
+}
+
+.bkx-customer-email {
+	font-size: 12px;
+	color: #666;
+}
+
+/* Invoice Template Preview */
+.bkx-template-preview {
+	border: 1px solid #ddd;
+	padding: 15px;
+	background: #f9f9f9;
+	border-radius: 4px;
+	margin-top: 15px;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+	.bkx-form-row {
+		flex-direction: column;
+	}
+
+	.bkx-card-header {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 10px;
+	}
+
+	.bkx-package-filters,
+	.bkx-subscription-filters,
+	.bkx-bulk-filters {
+		flex-direction: column;
+	}
+
+	.bkx-settings-form .form-table th {
+		width: auto;
+	}
+}
