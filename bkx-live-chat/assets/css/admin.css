@@ -1,0 +1,382 @@
+/**
+ * Live Chat Admin Styles.
+ *
+ * @package BookingX\LiveChat
+ * @since   1.0.0
+ */
+
+/* Operator Status Bar */
+.bkx-operator-status-bar {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 20px;
+	padding: 10px 15px;
+	background: #f6f7f7;
+	border-radius: 4px;
+}
+
+/* Dashboard Layout */
+.bkx-dashboard-layout {
+	display: grid;
+	grid-template-columns: 300px 1fr 280px;
+	gap: 20px;
+	height: calc(100vh - 200px);
+	min-height: 500px;
+}
+
+/* Panels */
+.bkx-chat-list-panel,
+.bkx-chat-view-panel,
+.bkx-visitor-panel {
+	background: white;
+	border: 1px solid #ccd0d4;
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.bkx-panel-header {
+	padding: 15px;
+	border-bottom: 1px solid #ddd;
+	background: #f6f7f7;
+}
+
+.bkx-panel-header h2 {
+	margin: 0;
+	font-size: 14px;
+}
+
+/* Chat List */
+.bkx-chat-filters {
+	display: flex;
+	gap: 5px;
+	margin-top: 10px;
+}
+
+.bkx-filter-btn {
+	padding: 5px 10px;
+	border: 1px solid #ddd;
+	background: white;
+	cursor: pointer;
+	font-size: 12px;
+	border-radius: 3px;
+}
+
+.bkx-filter-btn.active {
+	background: #2271b1;
+	color: white;
+	border-color: #2271b1;
+}
+
+.bkx-chat-list {
+	flex: 1;
+	overflow-y: auto;
+}
+
+.bkx-chat-item {
+	padding: 12px 15px;
+	border-bottom: 1px solid #f0f0f0;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+
+.bkx-chat-item:hover {
+	background: #f6f7f7;
+}
+
+.bkx-chat-item.active {
+	background: #e5f3ff;
+}
+
+.bkx-chat-item.pending {
+	border-left: 3px solid #f0b849;
+}
+
+.bkx-chat-item.active-status {
+	border-left: 3px solid #46b450;
+}
+
+.bkx-chat-item .visitor-name {
+	font-weight: 600;
+	margin-bottom: 4px;
+}
+
+.bkx-chat-item .last-message {
+	color: #666;
+	font-size: 12px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.bkx-chat-item .meta {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 5px;
+	font-size: 11px;
+	color: #999;
+}
+
+.bkx-unread-count {
+	background: #dc3232;
+	color: white;
+	font-size: 10px;
+	padding: 2px 6px;
+	border-radius: 10px;
+}
+
+/* Chat View */
+.bkx-no-chat-selected {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	color: #999;
+}
+
+.bkx-no-chat-selected .dashicons {
+	font-size: 48px;
+	width: 48px;
+	height: 48px;
+	margin-bottom: 15px;
+}
+
+.bkx-active-chat {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.bkx-chat-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	border-bottom: 1px solid #ddd;
+	background: #f6f7f7;
+}
+
+.bkx-visitor-info strong {
+	display: block;
+}
+
+.bkx-visitor-info span {
+	font-size: 12px;
+	color: #666;
+}
+
+.bkx-chat-actions {
+	display: flex;
+	gap: 5px;
+}
+
+.bkx-chat-messages {
+	flex: 1;
+	padding: 15px;
+	overflow-y: auto;
+	background: #f9f9f9;
+}
+
+.bkx-message {
+	max-width: 80%;
+	margin-bottom: 10px;
+	padding: 10px 15px;
+	border-radius: 8px;
+	font-size: 13px;
+	line-height: 1.4;
+}
+
+.bkx-message.visitor {
+	background: white;
+	margin-right: auto;
+	border-bottom-left-radius: 0;
+}
+
+.bkx-message.operator {
+	background: #2271b1;
+	color: white;
+	margin-left: auto;
+	border-bottom-right-radius: 0;
+}
+
+.bkx-message.system {
+	background: #fff3cd;
+	color: #856404;
+	margin: 10px auto;
+	text-align: center;
+	font-style: italic;
+	font-size: 12px;
+}
+
+.bkx-message .message-time {
+	font-size: 10px;
+	opacity: 0.7;
+	margin-top: 5px;
+}
+
+/* Chat Input */
+.bkx-chat-input-area {
+	display: flex;
+	gap: 10px;
+	padding: 15px;
+	border-top: 1px solid #ddd;
+	background: white;
+}
+
+.bkx-chat-input-area textarea {
+	flex: 1;
+	resize: none;
+}
+
+.bkx-canned-responses {
+	position: relative;
+}
+
+.bkx-canned-dropdown {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	width: 250px;
+	max-height: 300px;
+	overflow-y: auto;
+	background: white;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+	margin-bottom: 5px;
+}
+
+.bkx-canned-item {
+	padding: 10px 15px;
+	border-bottom: 1px solid #f0f0f0;
+	cursor: pointer;
+}
+
+.bkx-canned-item:hover {
+	background: #f6f7f7;
+}
+
+/* Visitor Panel */
+.bkx-visitor-details,
+.bkx-active-visitors {
+	padding: 15px;
+	overflow-y: auto;
+}
+
+.bkx-visitor-details p {
+	margin: 0 0 10px;
+}
+
+.bkx-visitor-details strong {
+	display: block;
+	color: #666;
+	font-size: 11px;
+	text-transform: uppercase;
+	margin-bottom: 3px;
+}
+
+.bkx-visitor-item {
+	padding: 10px;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.bkx-visitor-item:last-child {
+	border-bottom: none;
+}
+
+.bkx-visitor-page {
+	font-size: 11px;
+	color: #666;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* Settings */
+.bkx-settings-section {
+	background: white;
+	padding: 20px;
+	margin-bottom: 20px;
+	border: 1px solid #ccd0d4;
+	border-radius: 4px;
+}
+
+.bkx-settings-section h2 {
+	margin-top: 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+/* Modal */
+.bkx-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.5);
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bkx-modal-content {
+	background: white;
+	padding: 25px;
+	border-radius: 8px;
+	max-width: 600px;
+	width: 90%;
+	max-height: 80vh;
+	overflow-y: auto;
+	position: relative;
+}
+
+.bkx-modal-close {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	font-size: 24px;
+	cursor: pointer;
+	color: #666;
+}
+
+/* Admin Bar Badge */
+#wp-admin-bar-bkx-livechat .bkx-livechat-badge {
+	background: #dc3232;
+	color: white;
+	font-size: 9px;
+	padding: 2px 5px;
+	border-radius: 10px;
+	margin-left: 5px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+	.bkx-dashboard-layout {
+		grid-template-columns: 250px 1fr;
+	}
+
+	.bkx-visitor-panel {
+		display: none;
+	}
+}
+
+@media (max-width: 782px) {
+	.bkx-dashboard-layout {
+		grid-template-columns: 1fr;
+		height: auto;
+	}
+
+	.bkx-chat-list-panel {
+		max-height: 300px;
+	}
+
+	.bkx-chat-view-panel {
+		min-height: 400px;
+	}
+}

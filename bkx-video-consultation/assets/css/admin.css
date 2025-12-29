@@ -1,0 +1,156 @@
+/**
+ * Video Consultation Admin Styles.
+ *
+ * @package BookingX\VideoConsultation
+ * @since   1.0.0
+ */
+
+/* General */
+.bkx-video-consultation {
+	max-width: 1200px;
+}
+
+.bkx-video-content {
+	margin-top: 20px;
+}
+
+/* Filters */
+.bkx-rooms-filters {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 15px;
+}
+
+.bkx-rooms-filters select {
+	min-width: 150px;
+}
+
+/* Status badges */
+.bkx-status-badge {
+	display: inline-block;
+	padding: 3px 10px;
+	border-radius: 12px;
+	font-size: 11px;
+	font-weight: 600;
+}
+
+.bkx-status-badge.scheduled {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.bkx-status-badge.active {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-status-badge.ended {
+	background: #e2e3e5;
+	color: #383d41;
+}
+
+.bkx-status-badge.cancelled {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+/* Provider badges */
+.bkx-provider-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	padding: 3px 8px;
+	border-radius: 4px;
+	font-size: 11px;
+	background: #f0f0f0;
+}
+
+.bkx-provider-badge.webrtc {
+	background: #e3f2fd;
+	color: #1565c0;
+}
+
+.bkx-provider-badge.zoom {
+	background: #e3f0ff;
+	color: #2d8cff;
+}
+
+.bkx-provider-badge.google_meet {
+	background: #e8f5e9;
+	color: #2e7d32;
+}
+
+/* Storage info */
+.bkx-storage-info {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 15px;
+	background: #f6f7f7;
+	border-radius: 4px;
+	margin-bottom: 15px;
+}
+
+.bkx-storage-info .dashicons {
+	color: #2271b1;
+}
+
+/* Connection status */
+.bkx-status-connected {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	color: #46b450;
+	font-weight: 600;
+}
+
+.bkx-status-connected::before {
+	content: '';
+	width: 8px;
+	height: 8px;
+	background: #46b450;
+	border-radius: 50%;
+}
+
+/* Action buttons */
+.bkx-action-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 3px;
+	padding: 4px 8px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+.bkx-action-btn.join {
+	background: #2271b1;
+	color: white;
+}
+
+.bkx-action-btn.end {
+	background: #dc3232;
+	color: white;
+}
+
+.bkx-action-btn.download {
+	background: #46b450;
+	color: white;
+}
+
+.bkx-action-btn.delete {
+	background: #a00;
+	color: white;
+}
+
+/* Table responsive */
+@media (max-width: 782px) {
+	.bkx-rooms-filters {
+		flex-wrap: wrap;
+	}
+
+	.bkx-rooms-filters select {
+		width: 100%;
+	}
+}

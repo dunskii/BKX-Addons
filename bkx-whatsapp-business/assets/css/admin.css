@@ -1,0 +1,385 @@
+/**
+ * WhatsApp Business Admin Styles.
+ *
+ * @package BookingX\WhatsAppBusiness
+ * @since   1.0.0
+ */
+
+/* General */
+.bkx-whatsapp-admin .nav-tab-wrapper {
+	margin-bottom: 20px;
+}
+
+.bkx-whatsapp-content {
+	background: white;
+	padding: 20px;
+	border: 1px solid #ccd0d4;
+	border-radius: 4px;
+}
+
+/* Conversations */
+.bkx-conversations-container {
+	display: flex;
+	height: 600px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.bkx-conversations-sidebar {
+	width: 320px;
+	border-right: 1px solid #ddd;
+	display: flex;
+	flex-direction: column;
+}
+
+.bkx-conversations-header {
+	padding: 15px;
+	border-bottom: 1px solid #ddd;
+	display: flex;
+	gap: 10px;
+}
+
+.bkx-conversations-header input {
+	flex: 1;
+}
+
+.bkx-conversations-list {
+	flex: 1;
+	overflow-y: auto;
+}
+
+.bkx-conversation-item {
+	padding: 12px 15px;
+	border-bottom: 1px solid #f0f0f0;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+
+.bkx-conversation-item:hover {
+	background: #f6f7f7;
+}
+
+.bkx-conversation-item.active {
+	background: #e5f3ff;
+}
+
+.bkx-conversation-item .contact-name {
+	font-weight: 600;
+	margin-bottom: 4px;
+}
+
+.bkx-conversation-item .last-message {
+	color: #666;
+	font-size: 13px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.bkx-conversation-item .meta {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 4px;
+	font-size: 11px;
+	color: #999;
+}
+
+.bkx-conversation-item .unread-badge {
+	background: #25D366;
+	color: white;
+	font-size: 10px;
+	padding: 2px 6px;
+	border-radius: 10px;
+}
+
+/* Chat Container */
+.bkx-chat-container {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.bkx-chat-placeholder {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	color: #999;
+}
+
+.bkx-chat-placeholder .dashicons {
+	font-size: 48px;
+	width: 48px;
+	height: 48px;
+	margin-bottom: 15px;
+}
+
+.bkx-chat-view {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.bkx-chat-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	border-bottom: 1px solid #ddd;
+	background: #f6f7f7;
+}
+
+.bkx-chat-contact strong {
+	display: block;
+	font-size: 15px;
+}
+
+.bkx-chat-contact span {
+	color: #666;
+	font-size: 13px;
+}
+
+.bkx-chat-messages {
+	flex: 1;
+	padding: 20px;
+	overflow-y: auto;
+	background: #e5ddd5;
+}
+
+.bkx-message {
+	max-width: 70%;
+	margin-bottom: 10px;
+	padding: 10px 15px;
+	border-radius: 8px;
+	font-size: 14px;
+	line-height: 1.4;
+	position: relative;
+}
+
+.bkx-message.inbound {
+	background: white;
+	margin-right: auto;
+	border-bottom-left-radius: 0;
+}
+
+.bkx-message.outbound {
+	background: #dcf8c6;
+	margin-left: auto;
+	border-bottom-right-radius: 0;
+}
+
+.bkx-message .message-time {
+	font-size: 11px;
+	color: #999;
+	margin-top: 5px;
+	text-align: right;
+}
+
+.bkx-message .message-status {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.bkx-message .message-status.sent::after {
+	content: "✓";
+	color: #999;
+}
+
+.bkx-message .message-status.delivered::after {
+	content: "✓✓";
+	color: #999;
+}
+
+.bkx-message .message-status.read::after {
+	content: "✓✓";
+	color: #34b7f1;
+}
+
+.bkx-message .message-status.failed::after {
+	content: "⚠";
+	color: #dc3232;
+}
+
+/* Chat Input */
+.bkx-chat-input {
+	display: flex;
+	align-items: flex-end;
+	gap: 10px;
+	padding: 15px;
+	border-top: 1px solid #ddd;
+	background: #f6f7f7;
+}
+
+.bkx-chat-input textarea {
+	flex: 1;
+	resize: none;
+	max-height: 100px;
+}
+
+.bkx-quick-replies-trigger {
+	position: relative;
+}
+
+.bkx-quick-replies-dropdown {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	width: 250px;
+	max-height: 300px;
+	overflow-y: auto;
+	background: white;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+	margin-bottom: 5px;
+}
+
+.bkx-quick-reply-item {
+	padding: 10px 15px;
+	border-bottom: 1px solid #f0f0f0;
+	cursor: pointer;
+}
+
+.bkx-quick-reply-item:hover {
+	background: #f6f7f7;
+}
+
+.bkx-quick-reply-item .shortcut {
+	font-size: 11px;
+	color: #666;
+}
+
+/* Settings */
+.bkx-settings-section {
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+}
+
+.bkx-settings-section:last-child {
+	border-bottom: none;
+}
+
+.bkx-provider-settings {
+	background: #f9f9f9;
+	padding: 15px;
+	margin: 15px 0;
+	border-radius: 4px;
+}
+
+/* Status Badges */
+.bkx-status-badge {
+	display: inline-block;
+	padding: 3px 10px;
+	border-radius: 12px;
+	font-size: 11px;
+	font-weight: 600;
+}
+
+.bkx-status-badge.approved {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-status-badge.pending {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.bkx-status-badge.rejected {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+/* Modal */
+.bkx-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.5);
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bkx-modal-content {
+	background: white;
+	padding: 25px;
+	border-radius: 8px;
+	max-width: 500px;
+	width: 90%;
+	max-height: 80vh;
+	overflow-y: auto;
+	position: relative;
+}
+
+.bkx-modal-close {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	font-size: 24px;
+	cursor: pointer;
+	color: #666;
+}
+
+.bkx-modal-close:hover {
+	color: #333;
+}
+
+/* Quick Replies Table */
+.bkx-quick-replies-container .button-primary {
+	margin-bottom: 15px;
+}
+
+/* Loading */
+.bkx-loading {
+	text-align: center;
+	padding: 20px;
+	color: #666;
+}
+
+/* Templates */
+.bkx-templates-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 20px;
+}
+
+.bkx-templates-header h2 {
+	margin: 0;
+}
+
+.bkx-templates-actions {
+	display: flex;
+	gap: 10px;
+}
+
+/* Responsive */
+@media (max-width: 782px) {
+	.bkx-conversations-container {
+		flex-direction: column;
+		height: auto;
+	}
+
+	.bkx-conversations-sidebar {
+		width: 100%;
+		border-right: none;
+		border-bottom: 1px solid #ddd;
+		max-height: 300px;
+	}
+
+	.bkx-chat-messages {
+		min-height: 300px;
+	}
+
+	.bkx-message {
+		max-width: 85%;
+	}
+}
