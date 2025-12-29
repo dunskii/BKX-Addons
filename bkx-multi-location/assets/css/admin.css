@@ -1,0 +1,448 @@
+/**
+ * Multi-Location Management Admin Styles
+ *
+ * @package BookingX\MultiLocation
+ */
+
+/* General Layout */
+.bkx-ml-admin {
+	margin: 20px 20px 0 0;
+}
+
+.bkx-ml-content {
+	margin-top: 20px;
+}
+
+/* Cards */
+.bkx-ml-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.bkx-ml-card h2 {
+	margin: 0 0 15px;
+	padding: 0 0 10px;
+	border-bottom: 1px solid #eee;
+	font-size: 16px;
+}
+
+/* Locations Table */
+#bkx-ml-locations-table {
+	margin-top: 15px;
+}
+
+#bkx-ml-locations-table .bkx-ml-col-handle {
+	width: 30px;
+	cursor: move;
+	text-align: center;
+}
+
+#bkx-ml-locations-table .bkx-ml-col-handle .dashicons {
+	color: #999;
+}
+
+#bkx-ml-locations-table .bkx-ml-col-name {
+	width: 200px;
+}
+
+#bkx-ml-locations-table .bkx-ml-col-stats {
+	width: 80px;
+	text-align: center;
+}
+
+#bkx-ml-locations-table .bkx-ml-col-status {
+	width: 80px;
+}
+
+#bkx-ml-locations-table .bkx-ml-col-actions {
+	width: 60px;
+}
+
+#bkx-ml-locations-table tbody tr.ui-sortable-helper {
+	background: #f0f0f1;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+#bkx-ml-locations-table tbody tr.ui-sortable-placeholder {
+	visibility: visible !important;
+	background: #f0f6fc;
+	border: 2px dashed #2271b1;
+}
+
+/* Status Badges */
+.bkx-ml-status {
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.bkx-ml-status-active {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-ml-status-inactive {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+/* Muted text */
+.bkx-ml-muted {
+	color: #999;
+}
+
+/* Stats Row */
+.bkx-ml-stats-row {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 15px;
+	margin-top: 20px;
+}
+
+.bkx-ml-stat-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 20px;
+	text-align: center;
+}
+
+.bkx-ml-stat-value {
+	font-size: 28px;
+	font-weight: 600;
+	color: #1d2327;
+	display: block;
+}
+
+.bkx-ml-stat-label {
+	font-size: 13px;
+	color: #666;
+	margin-top: 5px;
+	display: block;
+}
+
+/* Modal */
+.bkx-ml-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bkx-ml-modal-content {
+	background: #fff;
+	width: 90%;
+	max-width: 900px;
+	max-height: 90vh;
+	border-radius: 8px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.bkx-ml-modal-content h2 {
+	padding: 15px 20px;
+	margin: 0;
+	border-bottom: 1px solid #ddd;
+	font-size: 18px;
+}
+
+.bkx-ml-modal-close {
+	position: absolute;
+	top: 12px;
+	right: 15px;
+	font-size: 24px;
+	cursor: pointer;
+	color: #666;
+	z-index: 10;
+}
+
+.bkx-ml-modal-close:hover {
+	color: #000;
+}
+
+#bkx-ml-location-form {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	flex: 1;
+}
+
+/* Modal Tabs */
+.bkx-ml-tabs {
+	display: flex;
+	gap: 0;
+	padding: 0 20px;
+	background: #f6f7f7;
+	border-bottom: 1px solid #ddd;
+}
+
+.bkx-ml-tab {
+	background: none;
+	border: none;
+	padding: 12px 16px;
+	cursor: pointer;
+	font-size: 13px;
+	color: #666;
+	border-bottom: 2px solid transparent;
+	margin-bottom: -1px;
+}
+
+.bkx-ml-tab:hover {
+	color: #2271b1;
+}
+
+.bkx-ml-tab.active {
+	color: #2271b1;
+	border-bottom-color: #2271b1;
+	background: #fff;
+}
+
+/* Tab Content */
+.bkx-ml-tab-content {
+	display: none;
+	padding: 20px;
+	overflow-y: auto;
+	flex: 1;
+}
+
+.bkx-ml-tab-content.active {
+	display: block;
+}
+
+.bkx-ml-tab-content .form-table th {
+	width: 150px;
+	padding: 10px 0;
+}
+
+.bkx-ml-tab-content .form-table td {
+	padding: 10px 0;
+}
+
+/* Modal Footer */
+.bkx-ml-modal-footer {
+	padding: 15px 20px;
+	border-top: 1px solid #ddd;
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+	background: #f6f7f7;
+}
+
+/* Hours Table */
+.bkx-ml-hours-table {
+	margin-top: 10px;
+}
+
+.bkx-ml-hours-table th {
+	text-align: left;
+	padding: 8px;
+	font-weight: 500;
+}
+
+.bkx-ml-hours-table td {
+	padding: 8px;
+}
+
+.bkx-ml-hours-table input[type="time"] {
+	width: 110px;
+}
+
+/* Holidays */
+#bkx-ml-holidays-list {
+	margin-bottom: 15px;
+}
+
+.bkx-ml-holiday-item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 8px 0;
+	border-bottom: 1px solid #eee;
+}
+
+.bkx-ml-holiday-item .holiday-name {
+	flex: 1;
+}
+
+.bkx-ml-holiday-item .holiday-date {
+	color: #666;
+}
+
+.bkx-ml-holiday-item .holiday-recurring {
+	font-size: 11px;
+	background: #e5e5e5;
+	padding: 2px 6px;
+	border-radius: 3px;
+}
+
+.bkx-ml-holiday-item .holiday-delete {
+	color: #b32d2e;
+	cursor: pointer;
+}
+
+.bkx-ml-add-holiday {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.bkx-ml-add-holiday input[type="text"] {
+	width: 200px;
+}
+
+/* Staff List */
+#bkx-ml-staff-list {
+	margin-bottom: 20px;
+}
+
+.bkx-ml-staff-item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px;
+	background: #f6f7f7;
+	border-radius: 4px;
+	margin-bottom: 8px;
+}
+
+.bkx-ml-staff-item .staff-name {
+	flex: 1;
+	font-weight: 500;
+}
+
+.bkx-ml-staff-item .staff-primary {
+	font-size: 11px;
+	background: #2271b1;
+	color: #fff;
+	padding: 2px 6px;
+	border-radius: 3px;
+}
+
+.bkx-ml-staff-item .staff-remove {
+	color: #b32d2e;
+	cursor: pointer;
+}
+
+.bkx-ml-assign-staff {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.bkx-ml-assign-staff select {
+	min-width: 200px;
+}
+
+/* Services List */
+#bkx-ml-services-list {
+	margin-top: 10px;
+}
+
+.bkx-ml-service-item {
+	display: grid;
+	grid-template-columns: 30px 1fr 120px 100px;
+	gap: 15px;
+	align-items: center;
+	padding: 12px;
+	background: #f6f7f7;
+	border-radius: 4px;
+	margin-bottom: 8px;
+}
+
+.bkx-ml-service-item .service-available {
+	text-align: center;
+}
+
+.bkx-ml-service-item .service-name {
+	font-weight: 500;
+}
+
+.bkx-ml-service-item .service-name .default-price {
+	font-weight: normal;
+	color: #666;
+	font-size: 12px;
+}
+
+.bkx-ml-service-item input[type="number"] {
+	width: 100%;
+}
+
+.bkx-ml-service-item input[type="number"]::placeholder {
+	font-style: italic;
+	color: #999;
+}
+
+/* Loading State */
+.bkx-ml-loading {
+	color: #666;
+	font-style: italic;
+}
+
+/* No Items */
+.bkx-ml-no-locations {
+	text-align: center;
+	padding: 40px;
+	color: #666;
+}
+
+/* Settings Page */
+.bkx-ml-settings .bkx-ml-card {
+	max-width: 800px;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+	.bkx-ml-modal-content {
+		width: 95%;
+		max-height: 95vh;
+	}
+
+	.bkx-ml-tabs {
+		flex-wrap: wrap;
+		padding: 10px;
+	}
+
+	.bkx-ml-tab {
+		padding: 8px 12px;
+		font-size: 12px;
+	}
+
+	.bkx-ml-tab-content .form-table th {
+		width: 100%;
+		display: block;
+		padding-bottom: 5px;
+	}
+
+	.bkx-ml-tab-content .form-table td {
+		display: block;
+		padding-top: 5px;
+	}
+
+	.bkx-ml-service-item {
+		grid-template-columns: 30px 1fr;
+	}
+
+	.bkx-ml-service-item .service-price,
+	.bkx-ml-service-item .service-duration {
+		grid-column: 2;
+	}
+
+	.bkx-ml-add-holiday,
+	.bkx-ml-assign-staff {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}

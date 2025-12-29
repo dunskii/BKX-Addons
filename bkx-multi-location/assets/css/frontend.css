@@ -1,0 +1,321 @@
+/**
+ * Multi-Location Management Frontend Styles
+ *
+ * @package BookingX\MultiLocation
+ */
+
+/* Location Selector */
+.bkx-location-selector {
+	margin-bottom: 20px;
+}
+
+.bkx-location-dropdown {
+	width: 100%;
+	max-width: 400px;
+	padding: 10px 15px;
+	font-size: 16px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+/* Location List Simple */
+.bkx-location-list-simple {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.bkx-location-list-simple li {
+	margin-bottom: 10px;
+}
+
+.bkx-location-list-simple a {
+	display: block;
+	padding: 12px 15px;
+	background: #f8f9fa;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	text-decoration: none;
+	color: #333;
+	transition: all 0.2s ease;
+}
+
+.bkx-location-list-simple a:hover {
+	background: #e9ecef;
+	border-color: #adb5bd;
+}
+
+/* Location Cards */
+.bkx-location-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 20px;
+}
+
+.bkx-location-card {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 20px;
+	transition: box-shadow 0.2s ease;
+}
+
+.bkx-location-card:hover {
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bkx-location-card-name {
+	margin: 0 0 10px;
+	font-size: 18px;
+	color: #333;
+}
+
+.bkx-location-card-address {
+	color: #666;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+.bkx-location-card-phone {
+	margin-bottom: 15px;
+}
+
+.bkx-location-card-phone a {
+	color: #007cba;
+	text-decoration: none;
+}
+
+.bkx-location-select-btn {
+	display: inline-block;
+	padding: 8px 20px;
+	background: #007cba;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 4px;
+	font-size: 14px;
+	transition: background 0.2s ease;
+}
+
+.bkx-location-select-btn:hover {
+	background: #005a87;
+	color: #fff;
+}
+
+/* Geolocation */
+.bkx-location-geolocation {
+	margin-top: 15px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.bkx-find-nearest {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.bkx-geolocation-status {
+	color: #666;
+	font-size: 13px;
+}
+
+/* Location Grid */
+.bkx-locations-grid {
+	display: grid;
+	grid-template-columns: repeat(var(--columns, 3), 1fr);
+	gap: 30px;
+}
+
+@media (max-width: 992px) {
+	.bkx-locations-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 600px) {
+	.bkx-locations-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+.bkx-location-item {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 25px;
+}
+
+.bkx-location-name {
+	margin: 0 0 10px;
+	font-size: 20px;
+	color: #333;
+}
+
+.bkx-location-description {
+	color: #666;
+	margin-bottom: 15px;
+	line-height: 1.5;
+}
+
+.bkx-location-address,
+.bkx-location-phone,
+.bkx-location-email {
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+	margin-bottom: 10px;
+	color: #555;
+}
+
+.bkx-location-address .dashicons,
+.bkx-location-phone .dashicons,
+.bkx-location-email .dashicons {
+	color: #999;
+	flex-shrink: 0;
+	margin-top: 2px;
+}
+
+.bkx-location-phone a,
+.bkx-location-email a {
+	color: #007cba;
+	text-decoration: none;
+}
+
+.bkx-location-phone a:hover,
+.bkx-location-email a:hover {
+	text-decoration: underline;
+}
+
+.bkx-get-directions {
+	display: inline-block;
+	margin-top: 5px;
+	margin-left: 28px;
+	font-size: 13px;
+	color: #007cba;
+	text-decoration: none;
+}
+
+.bkx-get-directions:hover {
+	text-decoration: underline;
+}
+
+/* Hours Table */
+.bkx-location-hours {
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 1px solid #eee;
+}
+
+.bkx-location-hours h4 {
+	margin: 0 0 10px;
+	font-size: 14px;
+	color: #333;
+}
+
+.bkx-hours-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 13px;
+}
+
+.bkx-hours-table tr {
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.bkx-hours-table td {
+	padding: 6px 0;
+}
+
+.bkx-hours-table .bkx-day-name {
+	color: #333;
+	font-weight: 500;
+}
+
+.bkx-hours-table .bkx-day-hours {
+	color: #666;
+	text-align: right;
+}
+
+.bkx-hours-table .bkx-closed-day .bkx-day-hours {
+	color: #d63638;
+}
+
+/* Location Actions */
+.bkx-location-actions {
+	margin-top: 20px;
+	padding-top: 15px;
+	border-top: 1px solid #eee;
+}
+
+.bkx-book-at-location {
+	display: inline-block;
+	padding: 10px 25px;
+	background: #007cba;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 4px;
+	font-weight: 500;
+	transition: background 0.2s ease;
+}
+
+.bkx-book-at-location:hover {
+	background: #005a87;
+	color: #fff;
+}
+
+/* Map */
+.bkx-location-map-wrapper {
+	margin: 20px 0;
+}
+
+.bkx-location-map {
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.bkx-map-info {
+	padding: 5px;
+	max-width: 250px;
+}
+
+.bkx-map-info h4 {
+	margin: 0 0 8px;
+	font-size: 15px;
+}
+
+.bkx-map-info p {
+	margin: 0 0 5px;
+	font-size: 13px;
+	color: #666;
+}
+
+/* No Locations */
+.bkx-no-locations {
+	text-align: center;
+	padding: 40px 20px;
+	background: #f8f9fa;
+	border-radius: 8px;
+	color: #666;
+}
+
+/* Loading */
+.bkx-location-selector.loading {
+	opacity: 0.6;
+	pointer-events: none;
+}
+
+/* Selected State */
+.bkx-location-card.selected,
+.bkx-location-item.selected {
+	border-color: #007cba;
+	box-shadow: 0 0 0 2px rgba(0, 124, 186, 0.2);
+}
+
+/* Responsive Map */
+@media (max-width: 600px) {
+	.bkx-location-selector-map,
+	.bkx-location-map {
+		height: 250px !important;
+	}
+}

@@ -1,0 +1,363 @@
+/**
+ * HubSpot Integration Admin Styles
+ *
+ * @package BookingX\HubSpot
+ */
+
+/* General Layout */
+.bkx-hs-admin {
+	margin: 20px 20px 0 0;
+}
+
+.bkx-hs-content {
+	margin-top: 20px;
+}
+
+/* Cards */
+.bkx-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.bkx-card h2 {
+	margin: 0 0 15px;
+	padding: 0 0 10px;
+	border-bottom: 1px solid #eee;
+	font-size: 16px;
+}
+
+/* Connection Status */
+.bkx-connection-status {
+	max-width: 600px;
+}
+
+.bkx-status-connected,
+.bkx-status-disconnected {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+.bkx-status-connected {
+	color: #00a32a;
+}
+
+.bkx-status-disconnected {
+	color: #d63638;
+}
+
+.bkx-connection-actions {
+	display: flex;
+	gap: 10px;
+}
+
+.bkx-connection-info {
+	margin-top: 15px;
+	padding: 10px;
+	background: #f6f7f7;
+	border-radius: 4px;
+}
+
+/* Stats Row */
+.bkx-stats-row {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 15px;
+	margin-bottom: 20px;
+}
+
+.bkx-stat-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 20px;
+	text-align: center;
+}
+
+.bkx-stat-value {
+	font-size: 28px;
+	font-weight: 600;
+	color: #1d2327;
+	display: block;
+}
+
+.bkx-stat-label {
+	font-size: 13px;
+	color: #666;
+	margin-top: 5px;
+	display: block;
+}
+
+/* Sync Controls */
+.bkx-sync-controls {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.bkx-sync-progress {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-top: 15px;
+	padding: 10px;
+	background: #f6f7f7;
+	border-radius: 4px;
+}
+
+.bkx-sync-result {
+	margin-top: 15px;
+	padding: 15px;
+	background: #f6f7f7;
+	border-radius: 4px;
+}
+
+.bkx-sync-result.success {
+	background: #d4edda;
+	border: 1px solid #c3e6cb;
+}
+
+.bkx-sync-result.error {
+	background: #f8d7da;
+	border: 1px solid #f5c6cb;
+}
+
+/* Status Badges */
+.bkx-status {
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.bkx-status-success {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-status-error {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+/* Direction Badges */
+.bkx-direction {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 500;
+	font-family: monospace;
+}
+
+.bkx-direction-out {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.bkx-direction-in {
+	background: #cce5ff;
+	color: #004085;
+}
+
+/* Setup Steps */
+.bkx-setup-steps {
+	margin: 0;
+	padding-left: 20px;
+}
+
+.bkx-setup-steps li {
+	margin-bottom: 15px;
+}
+
+.bkx-setup-steps li p {
+	margin: 5px 0 0;
+	color: #666;
+}
+
+.bkx-setup-steps code {
+	display: inline-block;
+	padding: 2px 6px;
+	background: #f6f7f7;
+	border-radius: 3px;
+	font-size: 12px;
+	word-break: break-all;
+}
+
+/* Mapping Tabs */
+.bkx-mapping-tabs {
+	display: flex;
+	gap: 5px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #c3c4c7;
+	padding-bottom: 0;
+}
+
+.bkx-mapping-tab {
+	background: none;
+	border: 1px solid transparent;
+	border-bottom: none;
+	padding: 10px 15px;
+	cursor: pointer;
+	font-size: 14px;
+	margin-bottom: -1px;
+}
+
+.bkx-mapping-tab:hover {
+	background: #f6f7f7;
+}
+
+.bkx-mapping-tab.active {
+	background: #fff;
+	border-color: #c3c4c7;
+	border-bottom-color: #fff;
+}
+
+/* Mapping Table */
+.bkx-mapping-table .bkx-field-name {
+	display: block;
+	font-size: 11px;
+	color: #999;
+	margin-top: 2px;
+}
+
+/* Log Filters */
+.bkx-log-filters {
+	margin-bottom: 20px;
+}
+
+.bkx-log-filters form {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+/* Modal */
+.bkx-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bkx-modal-content {
+	background: #fff;
+	width: 90%;
+	max-width: 600px;
+	max-height: 80vh;
+	border-radius: 8px;
+	padding: 20px;
+	position: relative;
+	overflow-y: auto;
+}
+
+.bkx-modal-close {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	font-size: 24px;
+	cursor: pointer;
+	color: #666;
+}
+
+.bkx-modal-close:hover {
+	color: #000;
+}
+
+.bkx-modal .form-table th {
+	width: 150px;
+	padding: 10px 0;
+}
+
+.bkx-modal .form-table td {
+	padding: 10px 0;
+}
+
+/* Muted Text */
+.bkx-muted {
+	color: #999;
+}
+
+/* No Items */
+.bkx-no-items {
+	text-align: center;
+	padding: 40px;
+	color: #666;
+}
+
+/* Toast Notifications */
+.bkx-toast {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	padding: 15px 25px;
+	border-radius: 4px;
+	color: #fff;
+	font-weight: 500;
+	z-index: 100001;
+	animation: bkxSlideIn 0.3s ease;
+}
+
+.bkx-toast.success {
+	background: #00a32a;
+}
+
+.bkx-toast.error {
+	background: #d63638;
+}
+
+@keyframes bkxSlideIn {
+	from {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+	.bkx-card .form-table th {
+		width: 100%;
+		display: block;
+		padding-bottom: 5px;
+	}
+
+	.bkx-card .form-table td {
+		display: block;
+		padding-top: 5px;
+	}
+
+	.bkx-sync-controls {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.bkx-mapping-tabs {
+		flex-direction: column;
+	}
+
+	.bkx-mapping-tab {
+		border: 1px solid #c3c4c7;
+		margin-bottom: 5px;
+	}
+
+	.bkx-mapping-tab.active {
+		background: #f0f0f1;
+	}
+}
