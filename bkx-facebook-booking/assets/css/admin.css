@@ -1,0 +1,453 @@
+/**
+ * Facebook Booking Admin Styles
+ *
+ * @package BookingX\FacebookBooking
+ */
+
+/* General Layout */
+.bkx-fb-admin {
+	margin: 20px 20px 0 0;
+}
+
+.bkx-fb-admin h1 {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.bkx-fb-admin h1 .dashicons {
+	font-size: 30px;
+	width: 30px;
+	height: 30px;
+	color: #1877f2;
+}
+
+.bkx-fb-content {
+	margin-top: 20px;
+}
+
+/* Cards */
+.bkx-fb-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.bkx-fb-card h2 {
+	margin: 0 0 15px;
+	padding: 0 0 10px;
+	border-bottom: 1px solid #eee;
+	font-size: 16px;
+}
+
+.bkx-fb-card h3 {
+	margin: 0 0 10px;
+	font-size: 14px;
+}
+
+.bkx-fb-card-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: -20px -20px 20px;
+	padding: 15px 20px;
+	background: #f6f7f7;
+	border-bottom: 1px solid #c3c4c7;
+	border-radius: 4px 4px 0 0;
+}
+
+.bkx-fb-card-header h2 {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+/* Status Badges */
+.bkx-status {
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+
+.bkx-status-active {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-status-disconnected,
+.bkx-status-token_expired {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+.bkx-status-pending {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.bkx-status-confirmed {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-status-cancelled {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+.bkx-status-completed {
+	background: #cce5ff;
+	color: #004085;
+}
+
+/* Source Badges */
+.bkx-source {
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.bkx-source-messenger {
+	background: #e7f3ff;
+	color: #1877f2;
+}
+
+.bkx-source-facebook_page {
+	background: #e7f3ff;
+	color: #1877f2;
+}
+
+.bkx-source-widget {
+	background: #e2e3e5;
+	color: #383d41;
+}
+
+/* Form Tables */
+.bkx-fb-card .form-table th {
+	width: 200px;
+	padding: 15px 10px 15px 0;
+}
+
+.bkx-fb-card .form-table td {
+	padding: 15px 10px;
+}
+
+.bkx-fb-card .form-table code {
+	padding: 5px 10px;
+	background: #f6f7f7;
+	border-radius: 3px;
+	font-size: 13px;
+	word-break: break-all;
+}
+
+/* Copy Button */
+.bkx-copy-btn {
+	margin-left: 10px !important;
+}
+
+/* Toggle Password */
+.bkx-toggle-password {
+	margin-left: 10px !important;
+}
+
+/* Connect Button */
+#bkx-connect-page {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+}
+
+#bkx-connect-page .dashicons {
+	font-size: 18px;
+	width: 18px;
+	height: 18px;
+}
+
+/* Tables */
+.bkx-fb-admin .wp-list-table {
+	margin-top: 10px;
+}
+
+.bkx-fb-admin .wp-list-table th,
+.bkx-fb-admin .wp-list-table td {
+	vertical-align: middle;
+}
+
+.bkx-fb-admin .wp-list-table .button-small {
+	margin-right: 5px;
+}
+
+/* Modal */
+.bkx-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bkx-modal-content {
+	background: #fff;
+	width: 90%;
+	max-width: 600px;
+	max-height: 80vh;
+	border-radius: 8px;
+	padding: 20px;
+	position: relative;
+	overflow-y: auto;
+}
+
+.bkx-modal-close {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	font-size: 24px;
+	cursor: pointer;
+	color: #666;
+}
+
+.bkx-modal-close:hover {
+	color: #000;
+}
+
+.bkx-modal h2 {
+	margin: 0 0 20px;
+	padding: 0 0 10px;
+	border-bottom: 1px solid #eee;
+}
+
+/* Services List in Modal */
+#bkx-services-list {
+	max-height: 400px;
+	overflow-y: auto;
+}
+
+#bkx-services-list .service-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+#bkx-services-list .service-item:last-child {
+	margin-bottom: 0;
+}
+
+#bkx-services-list .service-info {
+	flex: 1;
+}
+
+#bkx-services-list .service-name {
+	font-weight: 600;
+	margin-bottom: 3px;
+}
+
+#bkx-services-list .service-meta {
+	font-size: 12px;
+	color: #666;
+}
+
+/* Setup Guide */
+.bkx-fb-setup .bkx-fb-card {
+	margin-bottom: 15px;
+}
+
+.bkx-fb-setup ol {
+	margin: 10px 0 0;
+	padding-left: 20px;
+}
+
+.bkx-fb-setup ol li {
+	margin-bottom: 8px;
+	line-height: 1.6;
+}
+
+.bkx-fb-setup ul {
+	margin: 10px 0;
+	padding-left: 20px;
+}
+
+.bkx-fb-setup ul li {
+	margin-bottom: 5px;
+}
+
+.bkx-fb-setup code {
+	background: #f6f7f7;
+	padding: 2px 6px;
+	border-radius: 3px;
+}
+
+/* Logs */
+.bkx-fb-logs pre {
+	background: #f6f7f7;
+	padding: 10px;
+	border-radius: 4px;
+	font-size: 12px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+.bkx-fb-logs details {
+	cursor: pointer;
+}
+
+.bkx-fb-logs summary {
+	color: #2271b1;
+	font-size: 13px;
+}
+
+.bkx-fb-logs summary:hover {
+	text-decoration: underline;
+}
+
+/* Toast Notifications */
+.bkx-toast {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	padding: 15px 25px;
+	border-radius: 4px;
+	color: #fff;
+	font-weight: 500;
+	z-index: 100001;
+	animation: slideIn 0.3s ease;
+}
+
+.bkx-toast.success {
+	background: #00a32a;
+}
+
+.bkx-toast.error {
+	background: #d63638;
+}
+
+@keyframes slideIn {
+	from {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+/* Loading State */
+.bkx-loading {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #f3f3f3;
+	border-top: 2px solid #2271b1;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+	.bkx-fb-card .form-table th {
+		width: 100%;
+		display: block;
+		padding-bottom: 5px;
+	}
+
+	.bkx-fb-card .form-table td {
+		display: block;
+		padding-top: 5px;
+	}
+
+	.bkx-fb-card-header {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.bkx-modal-content {
+		width: 95%;
+		margin: 10px;
+	}
+}
+
+/* Stats Cards (if used) */
+.bkx-stats {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 15px;
+	margin-bottom: 20px;
+}
+
+.bkx-stat-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 20px;
+	text-align: center;
+}
+
+.bkx-stat-value {
+	font-size: 32px;
+	font-weight: 600;
+	color: #1d2327;
+	line-height: 1;
+}
+
+.bkx-stat-label {
+	font-size: 13px;
+	color: #666;
+	margin-top: 5px;
+}
+
+/* Facebook Brand Colors */
+.bkx-fb-admin .button-primary.fb-button {
+	background: #1877f2;
+	border-color: #1877f2;
+}
+
+.bkx-fb-admin .button-primary.fb-button:hover {
+	background: #166fe5;
+	border-color: #166fe5;
+}
+
+/* Notice styling */
+.bkx-fb-admin .notice {
+	margin: 15px 0;
+}
+
+.bkx-fb-admin .notice.inline {
+	margin: 0 0 15px;
+}
+
+/* Details/Summary styling for expandable content */
+.bkx-fb-admin details[open] summary {
+	margin-bottom: 10px;
+}
+
+/* Pagination */
+.bkx-fb-admin .tablenav {
+	margin-top: 15px;
+}
+
+.bkx-fb-admin .tablenav-pages {
+	float: right;
+}
