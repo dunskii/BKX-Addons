@@ -1,0 +1,379 @@
+/**
+ * Mobile Optimization Styles
+ *
+ * @package BookingX\MobileOptimize
+ */
+
+/* Mobile Form Styles */
+.bkx-mobile-form {
+	max-width: 100%;
+	padding: 0;
+}
+
+.bkx-mobile-form .form-row {
+	margin-bottom: 16px;
+}
+
+.bkx-mobile-form label {
+	display: block;
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 8px;
+	color: #374151;
+}
+
+.bkx-mobile-input {
+	width: 100%;
+	min-height: 48px;
+	padding: 12px 16px;
+	font-size: 16px;
+	border: 1px solid #d1d5db;
+	border-radius: 12px;
+	background: #fff;
+	-webkit-appearance: none;
+	appearance: none;
+	transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.bkx-mobile-input:focus {
+	outline: none;
+	border-color: #2563eb;
+	box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.bkx-mobile-input:disabled {
+	background: #f3f4f6;
+	color: #9ca3af;
+}
+
+/* Select styling */
+.bkx-mobile-form select.bkx-mobile-input {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236b7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right 12px center;
+	background-size: 20px;
+	padding-right: 44px;
+}
+
+/* Step Indicator */
+.bkx-step-indicator {
+	display: flex;
+	justify-content: space-between;
+	padding: 16px 0;
+	margin-bottom: 24px;
+}
+
+.bkx-step {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1;
+	position: relative;
+}
+
+.bkx-step::before {
+	content: '';
+	position: absolute;
+	top: 16px;
+	left: 50%;
+	right: -50%;
+	height: 2px;
+	background: #e5e7eb;
+}
+
+.bkx-step:last-child::before {
+	display: none;
+}
+
+.bkx-step.completed::before {
+	background: #2563eb;
+}
+
+.bkx-step-number {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background: #e5e7eb;
+	color: #6b7280;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	font-weight: 600;
+	position: relative;
+	z-index: 1;
+}
+
+.bkx-step.active .bkx-step-number {
+	background: #2563eb;
+	color: #fff;
+}
+
+.bkx-step.completed .bkx-step-number {
+	background: #2563eb;
+	color: #fff;
+}
+
+.bkx-step-label {
+	font-size: 12px;
+	color: #9ca3af;
+	margin-top: 8px;
+	text-align: center;
+}
+
+.bkx-step.active .bkx-step-label {
+	color: #2563eb;
+	font-weight: 500;
+}
+
+/* Form Navigation */
+.bkx-form-nav {
+	display: flex;
+	gap: 12px;
+	padding: 16px 0;
+	position: sticky;
+	bottom: 0;
+	background: #fff;
+	border-top: 1px solid #f3f4f6;
+	margin-top: 24px;
+}
+
+.bkx-btn {
+	flex: 1;
+	min-height: 48px;
+	padding: 12px 24px;
+	font-size: 16px;
+	font-weight: 500;
+	border-radius: 12px;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	transition: all 0.2s;
+}
+
+.bkx-btn-primary {
+	background: #2563eb;
+	color: #fff;
+}
+
+.bkx-btn-primary:hover {
+	background: #1d4ed8;
+}
+
+.bkx-btn-primary:active {
+	transform: scale(0.98);
+}
+
+.bkx-btn-secondary {
+	background: #f3f4f6;
+	color: #374151;
+}
+
+.bkx-btn-secondary:hover {
+	background: #e5e7eb;
+}
+
+/* Service Cards */
+.bkx-service-cards {
+	display: grid;
+	gap: 12px;
+}
+
+.bkx-service-card {
+	display: flex;
+	align-items: center;
+	padding: 16px;
+	background: #fff;
+	border: 2px solid #e5e7eb;
+	border-radius: 12px;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.bkx-service-card:hover {
+	border-color: #2563eb;
+}
+
+.bkx-service-card.selected {
+	border-color: #2563eb;
+	background: #eff6ff;
+}
+
+.bkx-service-card-image {
+	width: 60px;
+	height: 60px;
+	border-radius: 8px;
+	object-fit: cover;
+	margin-right: 16px;
+}
+
+.bkx-service-card-content {
+	flex: 1;
+}
+
+.bkx-service-card-title {
+	font-weight: 600;
+	color: #1f2937;
+	margin-bottom: 4px;
+}
+
+.bkx-service-card-meta {
+	font-size: 13px;
+	color: #6b7280;
+}
+
+.bkx-service-card-price {
+	font-weight: 600;
+	color: #2563eb;
+}
+
+/* Time Slots */
+.bkx-time-slots {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 8px;
+}
+
+.bkx-time-slot {
+	padding: 12px;
+	text-align: center;
+	background: #fff;
+	border: 1px solid #e5e7eb;
+	border-radius: 8px;
+	font-size: 14px;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.bkx-time-slot:hover {
+	border-color: #2563eb;
+}
+
+.bkx-time-slot.selected {
+	background: #2563eb;
+	color: #fff;
+	border-color: #2563eb;
+}
+
+.bkx-time-slot.unavailable {
+	opacity: 0.5;
+	cursor: not-allowed;
+	text-decoration: line-through;
+}
+
+/* Skeleton Loading */
+.bkx-skeleton {
+	background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+	background-size: 200% 100%;
+	animation: bkx-shimmer 1.5s infinite;
+	border-radius: 8px;
+}
+
+@keyframes bkx-shimmer {
+	0% {
+		background-position: 200% 0;
+	}
+	100% {
+		background-position: -200% 0;
+	}
+}
+
+.bkx-skeleton-text {
+	height: 16px;
+	margin-bottom: 8px;
+}
+
+.bkx-skeleton-text.short {
+	width: 60%;
+}
+
+.bkx-skeleton-input {
+	height: 48px;
+	margin-bottom: 16px;
+}
+
+.bkx-skeleton-button {
+	height: 48px;
+	width: 100%;
+}
+
+/* Loading Spinner */
+.bkx-loading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px;
+}
+
+.bkx-spinner {
+	width: 32px;
+	height: 32px;
+	border: 3px solid #e5e7eb;
+	border-top-color: #2563eb;
+	border-radius: 50%;
+	animation: bkx-spin 0.8s linear infinite;
+}
+
+@keyframes bkx-spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+	.bkx-skeleton {
+		animation: none;
+	}
+
+	.bkx-spinner {
+		animation: none;
+	}
+
+	.bkx-btn,
+	.bkx-service-card,
+	.bkx-time-slot {
+		transition: none;
+	}
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+	.bkx-mobile-input {
+		background: #1f2937;
+		border-color: #374151;
+		color: #f9fafb;
+	}
+
+	.bkx-mobile-form label {
+		color: #f9fafb;
+	}
+
+	.bkx-service-card {
+		background: #1f2937;
+		border-color: #374151;
+	}
+
+	.bkx-service-card-title {
+		color: #f9fafb;
+	}
+
+	.bkx-time-slot {
+		background: #1f2937;
+		border-color: #374151;
+		color: #f9fafb;
+	}
+
+	.bkx-form-nav {
+		background: #1f2937;
+		border-color: #374151;
+	}
+
+	.bkx-btn-secondary {
+		background: #374151;
+		color: #f9fafb;
+	}
+}

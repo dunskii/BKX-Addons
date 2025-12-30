@@ -1,0 +1,455 @@
+/**
+ * BookingX Divi Integration - Frontend Styles
+ *
+ * @package BookingX\Divi
+ */
+
+/* ========================================
+   Booking Form Module
+   ======================================== */
+.bkx-divi-booking-form {
+	max-width: 100%;
+}
+
+.bkx-form-style-compact .bookingx-form {
+	padding: 15px;
+}
+
+.bkx-form-style-horizontal .bookingx-form {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	align-items: flex-end;
+}
+
+.bkx-form-style-horizontal .bookingx-form .form-group {
+	flex: 1;
+	min-width: 200px;
+}
+
+.bkx-form-style-wizard .bookingx-form {
+	/* Handled by BookingX core */
+}
+
+/* ========================================
+   Service List Module
+   ======================================== */
+.bkx-divi-service-list {
+	width: 100%;
+}
+
+.bkx-divi-service-list.bkx-layout-grid {
+	display: grid;
+	gap: 20px;
+}
+
+.bkx-divi-service-list.bkx-columns-1 {
+	grid-template-columns: 1fr;
+}
+
+.bkx-divi-service-list.bkx-columns-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.bkx-divi-service-list.bkx-columns-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.bkx-divi-service-list.bkx-columns-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.bkx-divi-service-list.bkx-layout-list {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.bkx-divi-service-list.bkx-layout-list .bkx-service-card {
+	display: flex;
+	flex-direction: row;
+}
+
+.bkx-divi-service-list.bkx-layout-list .bkx-service-image {
+	flex-shrink: 0;
+	width: 150px;
+}
+
+.bkx-service-card {
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	border-radius: 8px;
+	overflow: hidden;
+	transition: all 0.3s ease;
+}
+
+.bkx-service-card:hover {
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	transform: translateY(-2px);
+}
+
+.bkx-service-image {
+	position: relative;
+	overflow: hidden;
+}
+
+.bkx-service-image img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	display: block;
+}
+
+.bkx-service-content {
+	padding: 20px;
+}
+
+.bkx-service-title {
+	margin: 0 0 10px;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.bkx-service-description {
+	margin: 0 0 15px;
+	color: #666;
+	font-size: 14px;
+}
+
+.bkx-service-meta {
+	display: flex;
+	gap: 15px;
+	margin-bottom: 15px;
+}
+
+.bkx-service-price {
+	font-size: 18px;
+	font-weight: 600;
+	color: #2563eb;
+}
+
+.bkx-service-duration {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	color: #666;
+	font-size: 14px;
+}
+
+.bkx-book-button {
+	display: inline-block;
+	padding: 10px 20px;
+	background: #2563eb;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 4px;
+	font-weight: 500;
+	transition: all 0.2s ease;
+}
+
+.bkx-book-button:hover {
+	background: #1d4ed8;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* ========================================
+   Resource List Module
+   ======================================== */
+.bkx-divi-resource-list {
+	width: 100%;
+}
+
+.bkx-divi-resource-list.bkx-layout-grid {
+	display: grid;
+	gap: 20px;
+}
+
+.bkx-divi-resource-list.bkx-columns-1 {
+	grid-template-columns: 1fr;
+}
+
+.bkx-divi-resource-list.bkx-columns-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.bkx-divi-resource-list.bkx-columns-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.bkx-divi-resource-list.bkx-columns-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.bkx-resource-card {
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	border-radius: 8px;
+	overflow: hidden;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+
+.bkx-resource-card:hover {
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bkx-resource-image img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	display: block;
+}
+
+.bkx-resource-content {
+	padding: 20px;
+}
+
+.bkx-resource-title {
+	margin: 0 0 10px;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.bkx-resource-bio {
+	margin: 0 0 15px;
+	color: #666;
+	font-size: 14px;
+}
+
+.bkx-resource-services {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
+.bkx-service-tag {
+	display: inline-block;
+	padding: 3px 10px;
+	background: #f3f4f6;
+	border-radius: 20px;
+	font-size: 12px;
+	color: #666;
+}
+
+/* ========================================
+   Availability Calendar Module
+   ======================================== */
+.bkx-divi-availability-calendar {
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	border-radius: 8px;
+	padding: 20px;
+}
+
+.bkx-calendar-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.bkx-calendar-header button {
+	background: #f3f4f6;
+	border: none;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.2s ease;
+}
+
+.bkx-calendar-header button:hover {
+	background: #e5e7eb;
+}
+
+.bkx-calendar-title {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.bkx-calendar-view-toggle {
+	display: flex;
+	gap: 5px;
+	margin-bottom: 20px;
+}
+
+.bkx-view-btn {
+	padding: 8px 16px;
+	background: #f3f4f6;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	transition: all 0.2s ease;
+}
+
+.bkx-view-btn:hover {
+	background: #e5e7eb;
+}
+
+.bkx-view-btn.active {
+	background: #2563eb;
+	color: #fff;
+}
+
+.bkx-calendar-grid {
+	min-height: 300px;
+}
+
+.bkx-calendar-loading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 40px;
+	color: #666;
+}
+
+.bkx-calendar-legend {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #e5e5e5;
+}
+
+.bkx-legend-item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 13px;
+	color: #666;
+}
+
+.bkx-legend-color {
+	width: 16px;
+	height: 16px;
+	border-radius: 4px;
+}
+
+.bkx-slot-available {
+	background-color: #22c55e;
+}
+
+.bkx-slot-unavailable {
+	background-color: #ef4444;
+}
+
+.bkx-slot-limited {
+	background-color: #f59e0b;
+}
+
+/* ========================================
+   Booking Button Module
+   ======================================== */
+.bkx-divi-booking-button {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	text-decoration: none;
+	border-radius: 4px;
+	font-weight: 500;
+	transition: all 0.2s ease;
+	cursor: pointer;
+}
+
+.bkx-btn-full-width {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+/* Size variants */
+.bkx-btn-size-small {
+	padding: 8px 16px;
+	font-size: 13px;
+}
+
+.bkx-btn-size-medium {
+	padding: 12px 24px;
+	font-size: 14px;
+}
+
+.bkx-btn-size-large {
+	padding: 16px 32px;
+	font-size: 16px;
+}
+
+/* Style variants */
+.bkx-btn-style-primary {
+	/* Colors set inline */
+}
+
+.bkx-btn-style-secondary {
+	background: #6b7280;
+	color: #fff;
+}
+
+.bkx-btn-style-outline {
+	background: transparent;
+	border: 2px solid currentColor;
+}
+
+.bkx-btn-style-text {
+	background: transparent;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.bkx-btn-icon {
+	font-size: inherit;
+	width: auto;
+	height: auto;
+}
+
+/* ========================================
+   Responsive
+   ======================================== */
+@media (max-width: 991px) {
+	.bkx-divi-service-list.bkx-columns-4,
+	.bkx-divi-resource-list.bkx-columns-4 {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 767px) {
+	.bkx-divi-service-list.bkx-columns-3,
+	.bkx-divi-service-list.bkx-columns-4,
+	.bkx-divi-resource-list.bkx-columns-3,
+	.bkx-divi-resource-list.bkx-columns-4 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.bkx-form-style-horizontal .bookingx-form {
+		flex-direction: column;
+	}
+
+	.bkx-calendar-legend {
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+}
+
+@media (max-width: 480px) {
+	.bkx-divi-service-list.bkx-columns-2,
+	.bkx-divi-service-list.bkx-columns-3,
+	.bkx-divi-service-list.bkx-columns-4,
+	.bkx-divi-resource-list.bkx-columns-2,
+	.bkx-divi-resource-list.bkx-columns-3,
+	.bkx-divi-resource-list.bkx-columns-4 {
+		grid-template-columns: 1fr;
+	}
+
+	.bkx-service-image img,
+	.bkx-resource-image img {
+		height: 150px;
+	}
+}

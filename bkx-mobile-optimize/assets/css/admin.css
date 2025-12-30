@@ -1,0 +1,40 @@
+/**
+ * Mobile Optimization Admin Styles
+ *
+ * @package BookingX\MobileOptimize
+ */
+
+.bkx-mobile-optimize-admin h1 {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.bkx-mobile-optimize-admin h1 .dashicons {
+	font-size: 28px;
+	width: 28px;
+	height: 28px;
+}
+
+.bkx-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.bkx-card h3 {
+	margin-top: 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #f0f0f1;
+}
+
+.bkx-card .form-table th {
+	width: 200px;
+}
+
+.bkx-card .description {
+	color: #646970;
+	font-style: italic;
+}

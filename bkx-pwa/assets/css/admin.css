@@ -1,0 +1,340 @@
+/**
+ * PWA Admin Styles
+ *
+ * @package BookingX\PWA
+ */
+
+/* General Layout */
+.bkx-pwa-admin {
+	max-width: 1200px;
+}
+
+.bkx-pwa-admin h1 {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.bkx-pwa-logo {
+	width: 32px;
+	height: 32px;
+	background: linear-gradient(135deg, #8b5cf6, #6366f1);
+	border-radius: 8px;
+	display: inline-block;
+}
+
+/* Status Banner */
+.bkx-status-banner {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	padding: 20px;
+	border-radius: 8px;
+	margin: 20px 0;
+}
+
+.bkx-status-banner.bkx-enabled {
+	background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+	color: #fff;
+}
+
+.bkx-status-banner.bkx-disabled {
+	background: #f3f4f6;
+	color: #6b7280;
+}
+
+.bkx-status-banner .dashicons {
+	font-size: 32px;
+	width: 32px;
+	height: 32px;
+}
+
+.bkx-status-content strong {
+	font-size: 16px;
+	display: block;
+}
+
+.bkx-status-content p {
+	margin: 5px 0 0;
+	opacity: 0.9;
+}
+
+/* Cards */
+.bkx-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.bkx-card h3 {
+	margin-top: 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #f0f0f1;
+}
+
+/* Icon Upload */
+.bkx-icon-upload {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.bkx-icon-preview {
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+	background: #f6f7f7;
+}
+
+/* Color Picker */
+.wp-picker-container {
+	display: inline-block;
+}
+
+/* Phone Preview */
+.bkx-preview-container {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+
+.bkx-phone-preview {
+	width: 200px;
+	height: 400px;
+	background: #1f2937;
+	border-radius: 30px;
+	padding: 15px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.bkx-phone-screen {
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.bkx-phone-status-bar {
+	height: 24px;
+}
+
+.bkx-phone-content {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.bkx-preview-icon {
+	width: 64px;
+	height: 64px;
+	border-radius: 16px;
+}
+
+.bkx-preview-icon-placeholder {
+	width: 64px;
+	height: 64px;
+	background: #e5e7eb;
+	border-radius: 16px;
+}
+
+.bkx-preview-name {
+	font-size: 14px;
+	color: #1f2937;
+}
+
+/* Strategy Info */
+.bkx-strategy-info {
+	margin-top: 10px;
+}
+
+.bkx-strategy-info details {
+	background: #f6f7f7;
+	padding: 10px 15px;
+	border-radius: 4px;
+}
+
+.bkx-strategy-info summary {
+	cursor: pointer;
+	font-weight: 500;
+}
+
+.bkx-strategy-info ul {
+	margin: 10px 0 0 20px;
+}
+
+.bkx-strategy-info li {
+	margin-bottom: 8px;
+}
+
+/* Offline Info */
+.bkx-offline-info {
+	background: #f0f9ff;
+	border: 1px solid #bae6fd;
+	border-radius: 4px;
+	padding: 15px;
+	margin-top: 15px;
+}
+
+.bkx-offline-info h4 {
+	margin: 0 0 10px;
+	color: #0369a1;
+}
+
+.bkx-offline-info ol {
+	margin: 0 0 0 20px;
+	color: #0369a1;
+}
+
+/* Cache Stats */
+.bkx-cache-stats {
+	display: flex;
+	gap: 30px;
+	margin-bottom: 20px;
+}
+
+.bkx-stat-item {
+	text-align: center;
+}
+
+.bkx-stat-item .bkx-stat-value {
+	display: block;
+	font-size: 24px;
+	font-weight: 600;
+	color: #1d2327;
+}
+
+.bkx-stat-item .bkx-stat-label {
+	font-size: 13px;
+	color: #646970;
+}
+
+.bkx-cache-status {
+	margin-left: 10px;
+	color: #10b981;
+}
+
+/* Install Stats */
+.bkx-install-stats {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 15px;
+	margin-bottom: 20px;
+}
+
+.bkx-stat-card {
+	background: #f9fafb;
+	border-radius: 8px;
+	padding: 20px;
+	text-align: center;
+}
+
+.bkx-stat-card .bkx-stat-value {
+	display: block;
+	font-size: 28px;
+	font-weight: 600;
+	color: #1d2327;
+}
+
+.bkx-stat-card .bkx-stat-label {
+	font-size: 13px;
+	color: #646970;
+	margin-top: 5px;
+}
+
+.bkx-stat-card.bkx-stat-success .bkx-stat-value {
+	color: #10b981;
+}
+
+/* Prompt Preview */
+.bkx-prompt-preview {
+	background: #f3f4f6;
+	border-radius: 8px;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.bkx-install-prompt-demo {
+	background: #2563eb;
+	border-radius: 16px;
+	padding: 20px;
+	width: 100%;
+	max-width: 400px;
+	color: #fff;
+}
+
+.bkx-prompt-content {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 15px;
+}
+
+.bkx-prompt-icon {
+	width: 48px;
+	height: 48px;
+	border-radius: 10px;
+}
+
+.bkx-prompt-text strong {
+	display: block;
+	margin-bottom: 4px;
+}
+
+.bkx-prompt-text p {
+	margin: 0;
+	font-size: 14px;
+	opacity: 0.9;
+}
+
+.bkx-prompt-buttons {
+	display: flex;
+	gap: 10px;
+	justify-content: flex-end;
+}
+
+.bkx-btn-dismiss {
+	background: transparent;
+	border: none;
+	color: rgba(255, 255, 255, 0.8);
+	cursor: pointer;
+	padding: 8px 16px;
+}
+
+.bkx-btn-install {
+	background: #fff;
+	color: #2563eb;
+	border: none;
+	border-radius: 6px;
+	padding: 8px 20px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+/* Form Tables */
+.bkx-card .form-table th {
+	width: 200px;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+	.bkx-status-banner {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.bkx-icon-upload {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.bkx-install-stats {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}

@@ -1,0 +1,493 @@
+/**
+ * BookingX HIPAA Compliance - Admin Styles
+ *
+ * @package BookingX\HIPAA
+ */
+
+/* General Layout */
+.bkx-hipaa-admin {
+	max-width: 1400px;
+}
+
+.bkx-hipaa-admin h1 {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.bkx-hipaa-logo {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background: linear-gradient(135deg, #16a34a, #15803d);
+	border-radius: 4px;
+}
+
+.bkx-hipaa-content {
+	margin-top: 20px;
+}
+
+/* Toggle Switch */
+.bkx-toggle {
+	position: relative;
+	display: inline-block;
+	width: 44px;
+	height: 24px;
+	margin-right: 10px;
+}
+
+.bkx-toggle input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.bkx-toggle-slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	transition: 0.3s;
+	border-radius: 24px;
+}
+
+.bkx-toggle-slider:before {
+	position: absolute;
+	content: "";
+	height: 18px;
+	width: 18px;
+	left: 3px;
+	bottom: 3px;
+	background-color: white;
+	transition: 0.3s;
+	border-radius: 50%;
+}
+
+.bkx-toggle input:checked + .bkx-toggle-slider {
+	background-color: #16a34a;
+}
+
+.bkx-toggle input:checked + .bkx-toggle-slider:before {
+	transform: translateX(20px);
+}
+
+/* Status Banner */
+.bkx-status-banner {
+	padding: 20px;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	flex-wrap: wrap;
+}
+
+.bkx-status-banner .dashicons {
+	font-size: 32px;
+	width: 32px;
+	height: 32px;
+}
+
+.bkx-status-banner p {
+	margin: 0;
+	flex-basis: 100%;
+	padding-left: 47px;
+}
+
+.bkx-enabled {
+	background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+	border: 1px solid #86efac;
+}
+
+.bkx-enabled .dashicons {
+	color: #16a34a;
+}
+
+.bkx-disabled {
+	background: linear-gradient(135deg, #fef3c7, #fde68a);
+	border: 1px solid #fcd34d;
+}
+
+.bkx-disabled .dashicons {
+	color: #d97706;
+}
+
+/* Stats Grid */
+.bkx-stats-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 20px;
+	margin-bottom: 30px;
+}
+
+.bkx-stat-card {
+	background: #fff;
+	padding: 25px;
+	border: 1px solid #e5e5e5;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.bkx-stat-value {
+	display: block;
+	font-size: 36px;
+	font-weight: 700;
+	color: #16a34a;
+}
+
+.bkx-stat-phi .bkx-stat-value {
+	color: #2563eb;
+}
+
+.bkx-stat-warning .bkx-stat-value {
+	color: #d97706;
+}
+
+.bkx-stat-label {
+	display: block;
+	font-size: 13px;
+	color: #666;
+	margin-top: 5px;
+}
+
+/* Dashboard Grid */
+.bkx-dashboard-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	gap: 20px;
+}
+
+.bkx-dashboard-card {
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #e5e5e5;
+	border-radius: 8px;
+}
+
+.bkx-card-wide {
+	grid-column: 1 / -1;
+}
+
+.bkx-dashboard-card h3 {
+	margin-top: 0;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+/* Checklist */
+.bkx-checklist {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.bkx-checklist li {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 0;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.bkx-checklist li:last-child {
+	border-bottom: none;
+}
+
+.bkx-check-pass .dashicons {
+	color: #16a34a;
+}
+
+.bkx-check-fail .dashicons {
+	color: #dc2626;
+}
+
+.bkx-check-warn .dashicons {
+	color: #d97706;
+}
+
+/* PHI Badge */
+.bkx-phi-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	background: #fee2e2;
+	color: #dc2626;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 600;
+}
+
+/* Event Type */
+.bkx-event-type {
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.bkx-type-authentication {
+	background: #dbeafe;
+	color: #2563eb;
+}
+
+.bkx-type-phi {
+	background: #fee2e2;
+	color: #dc2626;
+}
+
+.bkx-type-access_control {
+	background: #fef3c7;
+	color: #d97706;
+}
+
+.bkx-type-settings {
+	background: #f3e8ff;
+	color: #9333ea;
+}
+
+.bkx-type-baa {
+	background: #dcfce7;
+	color: #16a34a;
+}
+
+.bkx-type-system {
+	background: #f3f4f6;
+	color: #6b7280;
+}
+
+.bkx-event-action {
+	margin-left: 5px;
+	color: #666;
+}
+
+/* Audit Section */
+.bkx-audit-section {
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #e5e5e5;
+	border-radius: 8px;
+}
+
+.bkx-audit-filters {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.bkx-audit-filters form {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	flex: 1;
+}
+
+.bkx-audit-table .bkx-time {
+	color: #666;
+	font-size: 12px;
+}
+
+.bkx-audit-table .bkx-user-email {
+	color: #666;
+	font-size: 12px;
+}
+
+/* Access Section */
+.bkx-access-section,
+.bkx-baa-section {
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #e5e5e5;
+	border-radius: 8px;
+}
+
+.bkx-access-form-card,
+.bkx-baa-form-card {
+	background: #f9fafb;
+	padding: 20px;
+	border-radius: 8px;
+	margin-bottom: 30px;
+}
+
+.bkx-access-form-card h3,
+.bkx-baa-form-card h3 {
+	margin-top: 0;
+}
+
+.bkx-access-list h3,
+.bkx-baa-list h3 {
+	margin-bottom: 15px;
+}
+
+/* Access Level */
+.bkx-access-level {
+	display: inline-block;
+	padding: 3px 10px;
+	border-radius: 20px;
+	font-size: 12px;
+}
+
+.bkx-level-none {
+	background: #f3f4f6;
+	color: #6b7280;
+}
+
+.bkx-level-view_own,
+.bkx-level-view_all {
+	background: #dbeafe;
+	color: #2563eb;
+}
+
+.bkx-level-edit_own,
+.bkx-level-edit_all {
+	background: #dcfce7;
+	color: #16a34a;
+}
+
+.bkx-level-admin,
+.bkx-level-super_admin {
+	background: #f3e8ff;
+	color: #9333ea;
+}
+
+/* BAA Status */
+.bkx-baa-status {
+	display: inline-block;
+	padding: 3px 10px;
+	border-radius: 20px;
+	font-size: 12px;
+}
+
+.bkx-status-pending {
+	background: #fef3c7;
+	color: #d97706;
+}
+
+.bkx-status-active {
+	background: #dcfce7;
+	color: #16a34a;
+}
+
+.bkx-status-expired {
+	background: #fee2e2;
+	color: #dc2626;
+}
+
+.bkx-status-revoked {
+	background: #f3f4f6;
+	color: #6b7280;
+}
+
+.bkx-expiring {
+	color: #d97706;
+}
+
+.bkx-expired {
+	color: #dc2626;
+}
+
+.bkx-expiring-badge {
+	display: inline-block;
+	padding: 2px 6px;
+	background: #fef3c7;
+	color: #d97706;
+	border-radius: 3px;
+	font-size: 10px;
+	margin-left: 5px;
+}
+
+/* No Data */
+.bkx-no-data,
+.bkx-no-logs,
+.bkx-no-access,
+.bkx-no-baas {
+	text-align: center;
+	padding: 40px;
+	color: #666;
+}
+
+.bkx-no-logs .dashicons,
+.bkx-no-baas .dashicons {
+	font-size: 48px;
+	width: 48px;
+	height: 48px;
+	color: #ccc;
+}
+
+/* Settings Section */
+.bkx-settings-section {
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #e5e5e5;
+	border-radius: 8px;
+}
+
+.bkx-settings-section h2 {
+	margin-top: 0;
+}
+
+/* Pagination */
+.bkx-pagination {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.bkx-pagination .page-numbers {
+	display: inline-block;
+	padding: 5px 10px;
+	margin: 0 2px;
+	background: #f3f4f6;
+	border-radius: 3px;
+	text-decoration: none;
+}
+
+.bkx-pagination .page-numbers.current {
+	background: #16a34a;
+	color: #fff;
+}
+
+/* Status Badge */
+.bkx-status-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	padding: 5px 12px;
+	border-radius: 20px;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.bkx-status-badge.bkx-status-active {
+	background: #dcfce7;
+	color: #16a34a;
+}
+
+.bkx-status-badge.bkx-status-inactive {
+	background: #fef3c7;
+	color: #d97706;
+}
+
+/* Form */
+.submit .spinner {
+	float: none;
+	vertical-align: middle;
+	margin-top: -2px;
+}
+
+/* Responsive */
+@media (max-width: 782px) {
+	.bkx-dashboard-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.bkx-stats-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}

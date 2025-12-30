@@ -1,0 +1,233 @@
+/**
+ * BookingX Divi Integration - Admin Styles
+ *
+ * @package BookingX\Divi
+ */
+
+/* General Layout */
+.bkx-divi-admin {
+	max-width: 1200px;
+}
+
+.bkx-divi-admin h1 {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.bkx-divi-logo {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background: linear-gradient(135deg, #7c3aed, #5b21b6);
+	border-radius: 4px;
+}
+
+.bkx-divi-content {
+	margin-top: 20px;
+}
+
+/* Toggle Switch */
+.bkx-toggle {
+	position: relative;
+	display: inline-block;
+	width: 44px;
+	height: 24px;
+}
+
+.bkx-toggle input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.bkx-toggle-slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	transition: 0.3s;
+	border-radius: 24px;
+}
+
+.bkx-toggle-slider:before {
+	position: absolute;
+	content: "";
+	height: 18px;
+	width: 18px;
+	left: 3px;
+	bottom: 3px;
+	background-color: white;
+	transition: 0.3s;
+	border-radius: 50%;
+}
+
+.bkx-toggle input:checked + .bkx-toggle-slider {
+	background-color: #7c3aed;
+}
+
+.bkx-toggle input:checked + .bkx-toggle-slider:before {
+	transform: translateX(20px);
+}
+
+/* Settings Section */
+.bkx-settings-section {
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+.bkx-settings-section h2 {
+	margin-top: 0;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+/* Modules Section */
+.bkx-modules-section {
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+.bkx-modules-section h2 {
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.bkx-modules-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+}
+
+.bkx-module-card {
+	display: flex;
+	gap: 15px;
+	padding: 20px;
+	background: #f9f9f9;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	transition: all 0.2s ease;
+}
+
+.bkx-module-card:hover {
+	background: #fff;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bkx-module-icon {
+	flex-shrink: 0;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(135deg, #7c3aed, #5b21b6);
+	border-radius: 8px;
+}
+
+.bkx-module-icon .et-pb-icon {
+	color: #fff;
+	font-size: 24px;
+}
+
+.bkx-module-content h3 {
+	margin: 0 0 5px;
+	font-size: 16px;
+}
+
+.bkx-module-content p {
+	margin: 0 0 10px;
+	color: #666;
+	font-size: 13px;
+}
+
+.bkx-module-content code {
+	font-size: 11px;
+	background: #e0e0e0;
+	padding: 2px 6px;
+	border-radius: 3px;
+}
+
+/* Styling Section */
+.bkx-styling-section {
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+.bkx-styling-section h2 {
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+#bkx-custom-css {
+	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+.bkx-css-example {
+	background: #1e1e1e;
+	color: #d4d4d4;
+	padding: 15px;
+	border-radius: 4px;
+	font-size: 12px;
+	overflow-x: auto;
+}
+
+/* Status */
+.bkx-status-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	padding: 5px 10px;
+	border-radius: 3px;
+	font-size: 12px;
+}
+
+.bkx-status-active {
+	background: #e7ffe7;
+	color: #0a9b00;
+}
+
+.bkx-status-inactive {
+	background: #f0f0f1;
+	color: #666;
+}
+
+/* Form */
+.submit .spinner {
+	float: none;
+	vertical-align: middle;
+	margin-top: -2px;
+}
+
+.button .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+	vertical-align: text-bottom;
+	margin-right: 4px;
+}
+
+/* Settings Tab */
+.bkx-divi-settings-tab ul {
+	margin: 0;
+	list-style: none;
+}
+
+.bkx-divi-settings-tab ul li {
+	margin-bottom: 5px;
+}

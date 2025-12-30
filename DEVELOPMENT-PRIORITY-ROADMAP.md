@@ -329,7 +329,6 @@ Each add-on is scored across five dimensions:
 | Add-on | Price | Timeline | Defer Reason |
 |--------|-------|----------|--------------|
 | **Apple Siri Integration** | $149 | 12 weeks | Smaller market than Google/Alexa, iOS-only |
-| **Microsoft Cortana Integration** | $119 | 9 weeks | Declining platform relevance |
 | **WeChat Integration** | $129 | 10 weeks | China market specialization required |
 | **IFTTT Integration** | $99 | 10 weeks | Zapier covers 90% of use cases |
 | **MYOB Integration** | $89 | 5 weeks | Regional (AU) accounting, smaller market |

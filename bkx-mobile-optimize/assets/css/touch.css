@@ -1,0 +1,205 @@
+/**
+ * Touch-Friendly Styles
+ *
+ * @package BookingX\MobileOptimize
+ */
+
+/* Touch Target Sizes (minimum 44px) */
+.bkx-touch-friendly button,
+.bkx-touch-friendly .button,
+.bkx-touch-friendly input[type="submit"],
+.bkx-touch-friendly input[type="button"],
+.bkx-touch-friendly a.button {
+	min-height: 44px;
+	min-width: 44px;
+	padding: 12px 20px;
+	touch-action: manipulation;
+}
+
+.bkx-touch-friendly input[type="text"],
+.bkx-touch-friendly input[type="email"],
+.bkx-touch-friendly input[type="tel"],
+.bkx-touch-friendly input[type="number"],
+.bkx-touch-friendly input[type="date"],
+.bkx-touch-friendly input[type="time"],
+.bkx-touch-friendly select,
+.bkx-touch-friendly textarea {
+	min-height: 44px;
+	font-size: 16px; /* Prevents iOS zoom */
+	touch-action: manipulation;
+}
+
+.bkx-touch-friendly input[type="checkbox"],
+.bkx-touch-friendly input[type="radio"] {
+	min-width: 24px;
+	min-height: 24px;
+}
+
+/* Increase checkbox/radio touch target */
+.bkx-touch-friendly label:has(input[type="checkbox"]),
+.bkx-touch-friendly label:has(input[type="radio"]) {
+	display: flex;
+	align-items: center;
+	min-height: 44px;
+	padding: 8px 0;
+	gap: 12px;
+}
+
+/* Tap highlight */
+.bkx-touch-friendly * {
+	-webkit-tap-highlight-color: rgba(37, 99, 235, 0.1);
+}
+
+/* Remove hover states on touch devices */
+@media (hover: none) and (pointer: coarse) {
+	.bkx-touch-friendly button:hover,
+	.bkx-touch-friendly .button:hover,
+	.bkx-touch-friendly a:hover {
+		/* Disable hover effects on touch */
+	}
+}
+
+/* Active states for touch feedback */
+.bkx-touch-friendly button:active,
+.bkx-touch-friendly .button:active,
+.bkx-touch-friendly .bkx-service-card:active,
+.bkx-touch-friendly .bkx-time-slot:active {
+	transform: scale(0.98);
+	opacity: 0.9;
+}
+
+/* Touch-friendly calendar */
+.bkx-touch-friendly .bkx-calendar-day {
+	min-width: 44px;
+	min-height: 44px;
+	font-size: 14px;
+}
+
+/* Swipe hint */
+.bkx-swipe-hint {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 12px;
+	color: #9ca3af;
+	animation: bkx-swipe-hint 2s ease-in-out infinite;
+}
+
+@keyframes bkx-swipe-hint {
+	0%, 100% {
+		transform: translateX(-50%);
+	}
+	50% {
+		transform: translateX(-60%);
+	}
+}
+
+/* Pull to refresh indicator */
+.bkx-pull-indicator {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+	transform: translateY(-100%);
+	transition: transform 0.2s;
+	z-index: 9999;
+}
+
+.bkx-pull-indicator.pulling {
+	transform: translateY(0);
+}
+
+.bkx-pull-indicator .bkx-spinner {
+	width: 24px;
+	height: 24px;
+}
+
+/* Ripple effect */
+.bkx-ripple {
+	position: relative;
+	overflow: hidden;
+}
+
+.bkx-ripple::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+
+.bkx-ripple:active::after {
+	width: 200%;
+	height: 200%;
+	opacity: 1;
+	transition: width 0.3s, height 0.3s, opacity 0.5s;
+}
+
+/* Disable text selection on interactive elements */
+.bkx-touch-friendly button,
+.bkx-touch-friendly .button,
+.bkx-touch-friendly .bkx-service-card,
+.bkx-touch-friendly .bkx-time-slot {
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+/* Smooth scrolling on touch */
+.bkx-touch-friendly .bkx-scroll-container {
+	-webkit-overflow-scrolling: touch;
+	scroll-behavior: smooth;
+	overscroll-behavior: contain;
+}
+
+/* Horizontal scroll snap */
+.bkx-touch-friendly .bkx-scroll-snap {
+	scroll-snap-type: x mandatory;
+	-webkit-overflow-scrolling: touch;
+}
+
+.bkx-touch-friendly .bkx-scroll-snap > * {
+	scroll-snap-align: start;
+}
+
+/* Safe area padding for notched devices */
+@supports (padding: env(safe-area-inset-bottom)) {
+	.bkx-touch-friendly .bkx-form-nav,
+	.bkx-touch-friendly .bkx-floating-cta {
+		padding-bottom: calc(16px + env(safe-area-inset-bottom));
+	}
+
+	.bkx-touch-friendly .bkx-bottom-sheet-container {
+		padding-bottom: env(safe-area-inset-bottom);
+	}
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+	.bkx-touch-friendly button:active,
+	.bkx-touch-friendly .button:active,
+	.bkx-touch-friendly .bkx-service-card:active {
+		transform: none;
+	}
+
+	.bkx-ripple::after {
+		transition: none;
+	}
+
+	.bkx-swipe-hint {
+		animation: none;
+	}
+}
