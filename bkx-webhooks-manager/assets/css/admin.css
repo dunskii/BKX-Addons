@@ -1,0 +1,704 @@
+/**
+ * Webhooks Manager Admin Styles
+ *
+ * @package BookingX\WebhooksManager
+ */
+
+/* Page Header */
+.bkx-webhooks-manager .wp-heading-inline {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+/* Navigation Tabs */
+.bkx-nav-tabs {
+	margin-bottom: 20px;
+}
+
+/* Tab Content */
+.bkx-tab-content {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-top: none;
+	padding: 20px;
+}
+
+/* Webhooks Header */
+.bkx-webhooks-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 20px;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.bkx-webhooks-filters {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	flex-wrap: wrap;
+}
+
+.bkx-webhooks-filters .subsubsub {
+	margin: 0;
+	float: none;
+}
+
+.bkx-webhooks-filters .search-box {
+	margin: 0;
+}
+
+/* Status Badges */
+.bkx-status {
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.bkx-status-active {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-status-paused {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.bkx-status-pending {
+	background: #cce5ff;
+	color: #004085;
+}
+
+.bkx-status-delivered {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-status-failed {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+.bkx-status-delivering {
+	background: #cce5ff;
+	color: #004085;
+}
+
+/* Response Codes */
+.bkx-response-code {
+	display: inline-block;
+	padding: 1px 6px;
+	border-radius: 3px;
+	font-size: 11px;
+	font-family: monospace;
+}
+
+.bkx-response-success {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-response-error {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+/* Stats */
+.bkx-stat-success {
+	color: #28a745;
+}
+
+.bkx-stat-fail {
+	color: #dc3545;
+}
+
+.bkx-never {
+	color: #6c757d;
+	font-style: italic;
+}
+
+/* Table Columns */
+.bkx-webhooks-table .column-name {
+	width: 15%;
+}
+
+.bkx-webhooks-table .column-url {
+	width: 25%;
+}
+
+.bkx-webhooks-table .column-events {
+	width: 15%;
+}
+
+.bkx-webhooks-table .column-status {
+	width: 8%;
+}
+
+.bkx-webhooks-table .column-stats {
+	width: 10%;
+}
+
+.bkx-webhooks-table .column-last-triggered {
+	width: 12%;
+}
+
+.bkx-webhooks-table .column-actions {
+	width: 15%;
+}
+
+.bkx-webhooks-table .column-actions button {
+	margin-right: 3px;
+}
+
+.bkx-webhooks-table .column-actions .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+	vertical-align: text-bottom;
+}
+
+/* Empty State */
+.bkx-empty-state {
+	text-align: center;
+	padding: 60px 20px;
+	background: #f9f9f9;
+	border-radius: 5px;
+}
+
+.bkx-empty-state .dashicons {
+	font-size: 64px;
+	width: 64px;
+	height: 64px;
+	color: #c3c4c7;
+	margin-bottom: 20px;
+}
+
+.bkx-empty-state h2 {
+	margin: 0 0 10px;
+	color: #23282d;
+}
+
+.bkx-empty-state p {
+	margin: 0 0 20px;
+	color: #666;
+}
+
+/* Modal */
+.bkx-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bkx-modal-content {
+	background: #fff;
+	border-radius: 5px;
+	width: 600px;
+	max-width: 90%;
+	max-height: 90vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.bkx-modal-large {
+	width: 900px;
+}
+
+.bkx-modal-small {
+	width: 400px;
+}
+
+.bkx-modal-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+	border-bottom: 1px solid #ddd;
+}
+
+.bkx-modal-header h2 {
+	margin: 0;
+	font-size: 18px;
+}
+
+.bkx-modal-close {
+	background: none;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+	color: #666;
+	line-height: 1;
+}
+
+.bkx-modal-close:hover {
+	color: #000;
+}
+
+.bkx-modal-body {
+	padding: 20px;
+	overflow-y: auto;
+	flex: 1;
+}
+
+.bkx-modal-footer {
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+	padding: 15px 20px;
+	border-top: 1px solid #ddd;
+}
+
+/* Form Tabs */
+.bkx-form-tabs {
+	display: flex;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+
+.bkx-form-tab {
+	background: none;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	font-size: 14px;
+	color: #666;
+	border-bottom: 2px solid transparent;
+	margin-bottom: -1px;
+}
+
+.bkx-form-tab:hover {
+	color: #0073aa;
+}
+
+.bkx-form-tab.active {
+	color: #0073aa;
+	border-bottom-color: #0073aa;
+}
+
+.bkx-form-tab-content {
+	display: none;
+}
+
+.bkx-form-tab-content.active {
+	display: block;
+}
+
+/* Event Selection */
+.bkx-event-category {
+	margin-bottom: 20px;
+}
+
+.bkx-event-category h4 {
+	margin: 0 0 10px;
+	padding: 10px;
+	background: #f5f5f5;
+	border-radius: 3px;
+}
+
+.bkx-event-category h4 label {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	cursor: pointer;
+}
+
+.bkx-event-list {
+	padding-left: 20px;
+}
+
+.bkx-event-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+	padding: 8px 0;
+	border-bottom: 1px solid #eee;
+	cursor: pointer;
+}
+
+.bkx-event-item:last-child {
+	border-bottom: none;
+}
+
+.bkx-event-item input {
+	margin-top: 2px;
+}
+
+.bkx-event-label {
+	font-weight: 500;
+	min-width: 150px;
+}
+
+.bkx-event-desc {
+	color: #666;
+	font-size: 13px;
+}
+
+/* Custom Headers */
+.bkx-header-row {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+
+.bkx-header-row input {
+	flex: 1;
+}
+
+.bkx-header-row .button {
+	flex-shrink: 0;
+}
+
+/* Day Checkboxes */
+.bkx-day-checkbox {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	margin-right: 15px;
+}
+
+/* Secret Row */
+.bkx-secret-row code {
+	background: #f5f5f5;
+	padding: 5px 10px;
+	margin-right: 10px;
+}
+
+/* Test Modal */
+.bkx-test-loading {
+	text-align: center;
+	padding: 40px;
+}
+
+.bkx-test-loading .spinner {
+	float: none;
+}
+
+.bkx-test-status {
+	text-align: center;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+.bkx-test-status.success {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-test-status.error {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+.bkx-test-details {
+	width: 100%;
+}
+
+.bkx-test-details th {
+	text-align: left;
+	padding: 8px 0;
+	width: 40%;
+}
+
+.bkx-test-details td {
+	padding: 8px 0;
+}
+
+/* Deliveries Page */
+.bkx-deliveries-header {
+	margin-bottom: 20px;
+}
+
+.bkx-stats-cards {
+	display: flex;
+	gap: 15px;
+	margin-bottom: 20px;
+	flex-wrap: wrap;
+}
+
+.bkx-stat-card {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 15px 25px;
+	text-align: center;
+	min-width: 120px;
+}
+
+.bkx-stat-card .bkx-stat-value {
+	display: block;
+	font-size: 24px;
+	font-weight: 600;
+	color: #23282d;
+}
+
+.bkx-stat-card .bkx-stat-label {
+	display: block;
+	font-size: 12px;
+	color: #666;
+	margin-top: 5px;
+}
+
+.bkx-stat-card.bkx-stat-success .bkx-stat-value {
+	color: #28a745;
+}
+
+.bkx-stat-card.bkx-stat-error .bkx-stat-value {
+	color: #dc3545;
+}
+
+.bkx-stat-card.bkx-stat-pending .bkx-stat-value {
+	color: #007bff;
+}
+
+/* Deliveries Filters */
+.bkx-deliveries-filters {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.bkx-deliveries-filters select,
+.bkx-deliveries-filters input[type="date"] {
+	min-width: 150px;
+}
+
+/* Deliveries Table */
+.bkx-deliveries-table .column-id {
+	width: 6%;
+}
+
+.bkx-deliveries-table .column-webhook {
+	width: 12%;
+}
+
+.bkx-deliveries-table .column-event {
+	width: 15%;
+}
+
+.bkx-deliveries-table .column-status {
+	width: 8%;
+}
+
+.bkx-deliveries-table .column-response {
+	width: 12%;
+}
+
+.bkx-deliveries-table .column-attempts {
+	width: 7%;
+}
+
+.bkx-deliveries-table .column-time {
+	width: 10%;
+}
+
+.bkx-deliveries-table .column-date {
+	width: 15%;
+}
+
+.bkx-deliveries-table .column-actions {
+	width: 10%;
+}
+
+.bkx-error-message {
+	color: #721c24;
+	font-size: 12px;
+}
+
+/* Delivery Detail Modal */
+.bkx-delivery-tabs {
+	display: flex;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+
+.bkx-delivery-tab {
+	background: none;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	font-size: 14px;
+	color: #666;
+	border-bottom: 2px solid transparent;
+	margin-bottom: -1px;
+}
+
+.bkx-delivery-tab:hover {
+	color: #0073aa;
+}
+
+.bkx-delivery-tab.active {
+	color: #0073aa;
+	border-bottom-color: #0073aa;
+}
+
+.bkx-delivery-tab-content {
+	display: none;
+}
+
+.bkx-delivery-tab-content.active {
+	display: block;
+}
+
+.bkx-delivery-tab-content h4 {
+	margin: 0 0 10px;
+	font-size: 14px;
+}
+
+.bkx-delivery-tab-content pre {
+	background: #f5f5f5;
+	padding: 15px;
+	border-radius: 3px;
+	overflow-x: auto;
+	font-size: 12px;
+	max-height: 200px;
+	margin-bottom: 20px;
+}
+
+/* Loading */
+.bkx-loading {
+	text-align: center;
+	padding: 40px;
+}
+
+.bkx-loading .spinner {
+	float: none;
+}
+
+/* Settings Page */
+.bkx-verification-guide {
+	background: #f9f9f9;
+	padding: 20px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+.bkx-code-tabs {
+	display: flex;
+	gap: 5px;
+	margin-bottom: 15px;
+}
+
+.bkx-code-tab {
+	background: #e0e0e0;
+	border: none;
+	padding: 8px 16px;
+	cursor: pointer;
+	font-size: 13px;
+	border-radius: 3px 3px 0 0;
+}
+
+.bkx-code-tab:hover {
+	background: #d0d0d0;
+}
+
+.bkx-code-tab.active {
+	background: #23282d;
+	color: #fff;
+}
+
+.bkx-code-example {
+	background: #23282d;
+	color: #f1f1f1;
+	padding: 20px;
+	border-radius: 0 5px 5px 5px;
+	overflow-x: auto;
+	font-size: 12px;
+	line-height: 1.5;
+	margin: 0;
+}
+
+/* Settings Tab Integration */
+.bkx-settings-webhooks-tab .bkx-webhooks-status {
+	display: flex;
+	gap: 20px;
+	margin-bottom: 20px;
+	flex-wrap: wrap;
+}
+
+.bkx-settings-webhooks-tab .bkx-status-item {
+	background: #f5f5f5;
+	padding: 15px 25px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.bkx-settings-webhooks-tab .bkx-status-item .value {
+	display: block;
+	font-size: 24px;
+	font-weight: 600;
+	color: #23282d;
+}
+
+.bkx-settings-webhooks-tab .bkx-status-item .label {
+	display: block;
+	font-size: 12px;
+	color: #666;
+	margin-top: 5px;
+}
+
+.bkx-badge {
+	display: inline-block;
+	padding: 3px 10px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.bkx-badge-success {
+	background: #d4edda;
+	color: #155724;
+}
+
+.bkx-badge-warning {
+	background: #fff3cd;
+	color: #856404;
+}
+
+/* Required Field */
+.required {
+	color: #dc3545;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+	.bkx-webhooks-header {
+		flex-direction: column;
+	}
+
+	.bkx-modal-content {
+		width: 95%;
+		max-height: 95vh;
+	}
+
+	.bkx-stats-cards {
+		flex-direction: column;
+	}
+
+	.bkx-stat-card {
+		min-width: 100%;
+	}
+
+	.bkx-deliveries-filters {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.bkx-deliveries-filters select,
+	.bkx-deliveries-filters input[type="date"] {
+		width: 100%;
+	}
+}

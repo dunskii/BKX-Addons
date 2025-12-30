@@ -1,0 +1,485 @@
+/**
+ * BKX API Builder Admin Styles
+ *
+ * @package BookingX\APIBuilder
+ */
+
+/* Page Header */
+.bkx-page-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.bkx-page-header h2 {
+	margin: 0;
+}
+
+.bkx-header-actions {
+	display: flex;
+	gap: 10px;
+}
+
+/* Info Box */
+.bkx-info-box {
+	background: #f0f6fc;
+	border: 1px solid #c3d9ed;
+	border-radius: 4px;
+	padding: 10px 15px;
+	margin-bottom: 20px;
+}
+
+.bkx-info-box code {
+	background: #fff;
+	padding: 2px 6px;
+}
+
+/* Empty State */
+.bkx-empty-state {
+	text-align: center;
+	padding: 60px 20px;
+	background: #f9f9f9;
+	border: 1px dashed #dcdcde;
+	border-radius: 4px;
+}
+
+.bkx-empty-state .dashicons {
+	font-size: 48px;
+	width: 48px;
+	height: 48px;
+	color: #c3c4c7;
+}
+
+.bkx-empty-state h3 {
+	margin: 15px 0 5px;
+}
+
+.bkx-empty-state p {
+	color: #666;
+}
+
+/* Method Badges */
+.bkx-method {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.bkx-method-get { background: #61affe; }
+.bkx-method-post { background: #49cc90; }
+.bkx-method-put { background: #fca130; }
+.bkx-method-patch { background: #50e3c2; }
+.bkx-method-delete { background: #f93e3e; }
+
+/* Status Badges */
+.bkx-status {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.bkx-status-active { background: #ecf7ed; color: #1e7e34; }
+.bkx-status-draft { background: #f0f0f1; color: #646970; }
+.bkx-status-disabled { background: #fce4e4; color: #cc0000; }
+.bkx-status-revoked { background: #fce4e4; color: #cc0000; }
+.bkx-status-expired { background: #fff8e5; color: #946300; }
+
+/* Status Codes */
+.bkx-status-code {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.bkx-status-code.bkx-success,
+.bkx-response-code.bkx-success { background: #ecf7ed; color: #1e7e34; }
+.bkx-status-code.bkx-error,
+.bkx-response-code.bkx-error { background: #fce4e4; color: #cc0000; }
+.bkx-status-code.bkx-info { background: #f0f6fc; color: #0073aa; }
+
+.bkx-failure-badge {
+	display: inline-block;
+	padding: 2px 6px;
+	background: #fce4e4;
+	color: #cc0000;
+	border-radius: 3px;
+	font-size: 10px;
+	margin-left: 5px;
+}
+
+/* Stats Grid */
+.bkx-stats-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 15px;
+	margin: 20px 0;
+}
+
+.bkx-stat-card {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	padding: 20px;
+	text-align: center;
+}
+
+.bkx-stat-card.bkx-success { border-left: 4px solid #46b450; }
+.bkx-stat-card.bkx-error { border-left: 4px solid #dc3232; }
+
+.bkx-stat-value {
+	display: block;
+	font-size: 28px;
+	font-weight: 700;
+	color: #1d2327;
+}
+
+.bkx-stat-label {
+	display: block;
+	font-size: 12px;
+	color: #646970;
+	margin-top: 5px;
+}
+
+/* Filters */
+.bkx-logs-filters {
+	background: #f9f9f9;
+	padding: 15px;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+.bkx-logs-filters form {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	align-items: center;
+}
+
+.bkx-logs-filters input[type="text"],
+.bkx-logs-filters input[type="date"],
+.bkx-logs-filters select {
+	min-width: 120px;
+}
+
+/* Modal */
+.bkx-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bkx-modal-content {
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+	max-width: 500px;
+	width: 90%;
+	max-height: 90vh;
+	overflow: auto;
+}
+
+.bkx-modal-large {
+	max-width: 800px;
+}
+
+.bkx-modal-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+	border-bottom: 1px solid #dcdcde;
+	background: #f0f0f1;
+}
+
+.bkx-modal-header h3 {
+	margin: 0;
+}
+
+.bkx-modal-close {
+	background: none;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+	color: #646970;
+	padding: 0;
+	line-height: 1;
+}
+
+.bkx-modal-body {
+	padding: 20px;
+}
+
+.bkx-modal-footer {
+	padding: 15px 20px;
+	border-top: 1px solid #dcdcde;
+	background: #f6f7f7;
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+}
+
+/* Form Rows */
+.bkx-form-row {
+	margin-bottom: 15px;
+}
+
+.bkx-form-row label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.bkx-form-row input[type="text"],
+.bkx-form-row input[type="url"],
+.bkx-form-row input[type="number"],
+.bkx-form-row input[type="date"],
+.bkx-form-row select,
+.bkx-form-row textarea {
+	width: 100%;
+}
+
+.bkx-form-row textarea.code {
+	font-family: Consolas, Monaco, monospace;
+	font-size: 12px;
+}
+
+.bkx-form-row small {
+	display: block;
+	color: #666;
+	margin-top: 5px;
+}
+
+.bkx-form-row-inline {
+	display: flex;
+	gap: 15px;
+}
+
+.bkx-form-row-inline > div {
+	flex: 1;
+}
+
+/* Checkbox Group */
+.bkx-checkbox-group {
+	max-height: 200px;
+	overflow-y: auto;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	padding: 10px;
+}
+
+.bkx-checkbox-group label {
+	display: block;
+	padding: 5px 0;
+	font-weight: normal;
+}
+
+/* Credential Display */
+.bkx-credential-display {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	background: #f0f0f1;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+.bkx-credential-display code {
+	flex: 1;
+	word-break: break-all;
+	background: none;
+}
+
+/* API Key Display */
+.bkx-api-key {
+	font-size: 12px;
+}
+
+/* Documentation Page */
+.bkx-docs-info {
+	background: #f0f6fc;
+	border: 1px solid #c3d9ed;
+	border-radius: 4px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.bkx-docs-info h3 {
+	margin-top: 0;
+}
+
+.bkx-docs-section {
+	margin: 30px 0;
+}
+
+.bkx-docs-section h3 {
+	border-bottom: 1px solid #dcdcde;
+	padding-bottom: 10px;
+}
+
+.bkx-auth-methods {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 15px;
+}
+
+.bkx-auth-method {
+	background: #f9f9f9;
+	padding: 15px;
+	border-radius: 4px;
+}
+
+.bkx-auth-method h4 {
+	margin-top: 0;
+}
+
+.bkx-auth-method p {
+	margin: 5px 0;
+}
+
+/* Endpoint Documentation */
+.bkx-endpoint-doc {
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.bkx-endpoint-header {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 15px;
+	background: #f9f9f9;
+	border-bottom: 1px solid #dcdcde;
+}
+
+.bkx-endpoint-summary {
+	color: #666;
+	margin-left: auto;
+}
+
+.bkx-endpoint-description {
+	padding: 15px;
+	margin: 0;
+	border-bottom: 1px solid #eee;
+}
+
+.bkx-endpoint-params,
+.bkx-endpoint-responses {
+	padding: 15px;
+}
+
+.bkx-endpoint-params h5,
+.bkx-endpoint-responses h5 {
+	margin-top: 0;
+}
+
+.bkx-endpoint-params table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.bkx-endpoint-params th,
+.bkx-endpoint-params td {
+	padding: 8px;
+	text-align: left;
+	border: 1px solid #dcdcde;
+}
+
+.bkx-endpoint-params th {
+	background: #f9f9f9;
+}
+
+.bkx-endpoint-responses ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.bkx-endpoint-responses li {
+	padding: 5px 0;
+}
+
+.bkx-response-code {
+	display: inline-block;
+	padding: 2px 8px;
+	background: #f0f0f1;
+	border-radius: 3px;
+	font-family: monospace;
+	margin-right: 10px;
+}
+
+/* Schemas */
+.bkx-schemas {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 15px;
+}
+
+.bkx-schema {
+	background: #f9f9f9;
+	padding: 15px;
+	border-radius: 4px;
+}
+
+.bkx-schema h4 {
+	margin-top: 0;
+}
+
+.bkx-schema pre {
+	background: #1d2327;
+	color: #f0f0f1;
+	padding: 15px;
+	border-radius: 4px;
+	overflow-x: auto;
+	font-size: 12px;
+	margin: 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+	.bkx-page-header {
+		flex-direction: column;
+		gap: 15px;
+		align-items: flex-start;
+	}
+
+	.bkx-stats-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.bkx-form-row-inline {
+		flex-direction: column;
+	}
+
+	.bkx-modal-content {
+		width: 95%;
+		max-height: 95vh;
+	}
+
+	.bkx-logs-filters form {
+		flex-direction: column;
+	}
+
+	.bkx-logs-filters input,
+	.bkx-logs-filters select {
+		width: 100%;
+	}
+}
