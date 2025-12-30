@@ -310,11 +310,11 @@ class StripeGateway extends AbstractPaymentGateway {
 	 * Handle webhook callback.
 	 *
 	 * @since 1.0.0
-	 * @param array $payload Webhook payload.
+	 * @param string $raw_payload Raw webhook payload (JSON string).
 	 * @return array Result array.
 	 */
-	public function handle_webhook( array $payload ): array {
-		return $this->addon->get_webhook_service()->handle_webhook( $payload );
+	public function handle_webhook( string $raw_payload ): array {
+		return $this->addon->get_webhook_service()->handle_webhook( $raw_payload );
 	}
 
 	/**

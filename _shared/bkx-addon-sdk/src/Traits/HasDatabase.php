@@ -171,7 +171,7 @@ trait HasDatabase {
      * @param string $table Table name without prefix.
      * @return string Full table name.
      */
-    protected function get_table_name( string $table ): string {
+    public function get_table_name( string $table ): string {
         global $wpdb;
         return $wpdb->prefix . 'bkx_' . $table;
     }
