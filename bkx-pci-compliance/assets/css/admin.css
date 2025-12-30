@@ -1,0 +1,511 @@
+/**
+ * BKX PCI Compliance Admin Styles
+ *
+ * @package BookingX\PCICompliance
+ */
+
+/* Dashboard Grid */
+.bkx-dashboard-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
+	margin-top: 20px;
+}
+
+/* Cards */
+.bkx-card {
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.bkx-card-large {
+	grid-column: span 2;
+}
+
+.bkx-card-full {
+	grid-column: 1 / -1;
+}
+
+.bkx-card-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+	border-bottom: 1px solid #eee;
+	background: #f9f9f9;
+}
+
+.bkx-card-header h2 {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.bkx-card-body {
+	padding: 20px;
+}
+
+/* Score Display */
+.bkx-score-display {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.bkx-score-circle {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 8px solid;
+}
+
+.bkx-score-good { border-color: #46b450; }
+.bkx-score-warning { border-color: #ffb900; }
+.bkx-score-poor { border-color: #dc3232; }
+
+.bkx-score-value {
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.bkx-score-details {
+	flex: 1;
+}
+
+.bkx-score-item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 8px;
+}
+
+.bkx-score-item.bkx-passed .dashicons { color: #46b450; }
+.bkx-score-item.bkx-failed .dashicons { color: #dc3232; }
+
+/* Score Banner */
+.bkx-score-banner {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 20px;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+.bkx-score-banner.bkx-good { background: #ecf7ed; }
+.bkx-score-banner.bkx-warning { background: #fff8e5; }
+.bkx-score-banner.bkx-poor { background: #fce4e4; }
+
+.bkx-score-banner .bkx-score {
+	font-size: 48px;
+	font-weight: 700;
+}
+
+/* Vulnerability Summary */
+.bkx-vuln-summary,
+.bkx-vuln-summary-bar {
+	display: flex;
+	gap: 15px;
+}
+
+.bkx-vuln-count,
+.bkx-vuln-stat {
+	flex: 1;
+	text-align: center;
+	padding: 15px;
+	border-radius: 4px;
+}
+
+.bkx-vuln-critical { background: #fce4e4; }
+.bkx-vuln-high { background: #fff0e5; }
+.bkx-vuln-medium { background: #fff8e5; }
+.bkx-vuln-low { background: #e5f5fa; }
+
+.bkx-vuln-count .count,
+.bkx-vuln-stat .count {
+	display: block;
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.bkx-vuln-count .label,
+.bkx-vuln-stat .label {
+	display: block;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #666;
+}
+
+/* Audit Stats */
+.bkx-audit-stats {
+	display: flex;
+	gap: 20px;
+}
+
+.bkx-stat {
+	flex: 1;
+	text-align: center;
+}
+
+.bkx-stat .value {
+	display: block;
+	font-size: 28px;
+	font-weight: 700;
+	color: #0073aa;
+}
+
+.bkx-stat.bkx-warning .value { color: #ffb900; }
+.bkx-stat.bkx-critical .value { color: #dc3232; }
+
+.bkx-stat .label {
+	display: block;
+	font-size: 12px;
+	color: #666;
+}
+
+/* Key Status Table */
+.bkx-key-status {
+	width: 100%;
+}
+
+.bkx-key-status td {
+	padding: 8px 0;
+	border-bottom: 1px solid #eee;
+}
+
+.bkx-key-status .key-type {
+	font-weight: 500;
+}
+
+/* Requirements Grid */
+.bkx-requirements-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 10px;
+}
+
+.bkx-requirement {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px;
+	background: #f9f9f9;
+	border-radius: 4px;
+}
+
+.bkx-requirement .req-number {
+	width: 30px;
+	height: 30px;
+	background: #0073aa;
+	color: #fff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+}
+
+.bkx-requirement .req-title {
+	font-size: 12px;
+}
+
+/* Badges */
+.bkx-badge,
+.bkx-status-badge,
+.bkx-severity-badge,
+.bkx-category-badge {
+	display: inline-block;
+	padding: 3px 10px;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.bkx-badge-success { background: #ecf7ed; color: #1e7e34; }
+.bkx-badge-warning { background: #fff8e5; color: #946300; }
+.bkx-badge-error { background: #fce4e4; color: #cc0000; }
+
+.bkx-status-completed { background: #ecf7ed; color: #1e7e34; }
+.bkx-status-running { background: #fff8e5; color: #946300; }
+.bkx-status-failed { background: #fce4e4; color: #cc0000; }
+.bkx-status-pending { background: #f0f0f1; color: #646970; }
+.bkx-status-open { background: #fce4e4; color: #cc0000; }
+.bkx-status-in_progress { background: #fff8e5; color: #946300; }
+.bkx-status-resolved { background: #ecf7ed; color: #1e7e34; }
+
+.bkx-severity-critical { background: #dc3232; color: #fff; }
+.bkx-severity-high { background: #ff7b00; color: #fff; }
+.bkx-severity-medium { background: #ffb900; color: #000; }
+.bkx-severity-low { background: #00a0d2; color: #fff; }
+.bkx-severity-info { background: #72aee6; color: #fff; }
+
+.bkx-category-authentication { background: #e7f3ff; color: #0073aa; }
+.bkx-category-data_access { background: #f0e7ff; color: #6c2eb9; }
+.bkx-category-configuration { background: #fff3e7; color: #b95b00; }
+.bkx-category-payment { background: #e7fff0; color: #00a32a; }
+.bkx-category-security { background: #ffe7e7; color: #a30000; }
+
+/* Scan Section */
+.bkx-scan-types {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+	margin: 20px 0;
+}
+
+.bkx-scan-type {
+	padding: 20px;
+	background: #f9f9f9;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+}
+
+.bkx-scan-type h3 {
+	margin-top: 0;
+}
+
+/* Reports Grid */
+.bkx-reports-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
+	margin: 20px 0;
+}
+
+.bkx-report-card {
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.bkx-report-icon .dashicons {
+	font-size: 48px;
+	width: 48px;
+	height: 48px;
+	color: #0073aa;
+}
+
+/* Filters */
+.bkx-audit-filters,
+.bkx-vuln-filters {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin: 20px 0;
+	padding: 15px;
+	background: #f9f9f9;
+	border-radius: 4px;
+}
+
+.bkx-audit-filters form,
+.bkx-vuln-filters form {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+/* Modal */
+.bkx-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bkx-modal-content {
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+	max-width: 500px;
+	width: 90%;
+	max-height: 90vh;
+	overflow: auto;
+}
+
+.bkx-modal-wide {
+	max-width: 700px;
+}
+
+.bkx-modal-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+	border-bottom: 1px solid #dcdcde;
+	background: #f0f0f1;
+}
+
+.bkx-modal-header h3 {
+	margin: 0;
+}
+
+.bkx-modal-close {
+	background: none;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+	color: #646970;
+}
+
+.bkx-modal-body {
+	padding: 20px;
+}
+
+.bkx-modal-footer {
+	padding: 15px 20px;
+	border-top: 1px solid #dcdcde;
+	background: #f6f7f7;
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+}
+
+/* Progress */
+.bkx-progress {
+	background: #e0e0e0;
+	border-radius: 4px;
+	height: 20px;
+	overflow: hidden;
+	margin: 20px 0;
+}
+
+.bkx-progress-bar {
+	background: #0073aa;
+	height: 100%;
+	width: 0;
+	transition: width 0.3s ease;
+}
+
+.bkx-progress-text {
+	text-align: center;
+	font-size: 13px;
+	color: #666;
+}
+
+/* Success/No Data States */
+.bkx-no-data {
+	text-align: center;
+	padding: 40px 20px;
+	color: #666;
+}
+
+.bkx-no-data .dashicons {
+	font-size: 48px;
+	width: 48px;
+	height: 48px;
+	color: #ccc;
+}
+
+.bkx-success-message {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 15px;
+	background: #ecf7ed;
+	border-radius: 4px;
+	color: #1e7e34;
+}
+
+.bkx-success-message .dashicons {
+	color: #46b450;
+}
+
+.bkx-success-box {
+	display: flex;
+	align-items: flex-start;
+	gap: 15px;
+	padding: 20px;
+	background: #ecf7ed;
+	border-left: 4px solid #46b450;
+	border-radius: 4px;
+	margin: 20px 0;
+}
+
+.bkx-success-box .dashicons {
+	color: #46b450;
+	font-size: 24px;
+}
+
+/* Checks Table */
+.bkx-checks-table {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.bkx-checks-table td {
+	padding: 8px 10px;
+	border-bottom: 1px solid #eee;
+}
+
+.bkx-checks-table .check-id {
+	width: 60px;
+	font-weight: 500;
+}
+
+.bkx-checks-table .check-status {
+	width: 40px;
+	text-align: center;
+}
+
+.bkx-checks-table .bkx-pass { color: #46b450; }
+.bkx-checks-table .bkx-fail { color: #dc3232; }
+
+.bkx-check-pass { background: #f7fff7; }
+.bkx-check-fail { background: #fff7f7; }
+
+/* PCI Requirement Badge */
+.bkx-pci-req {
+	display: inline-block;
+	padding: 2px 8px;
+	background: #e7f3ff;
+	color: #0073aa;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 500;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+	.bkx-dashboard-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.bkx-card-large,
+	.bkx-card-full {
+		grid-column: 1;
+	}
+
+	.bkx-score-display {
+		flex-direction: column;
+	}
+
+	.bkx-vuln-summary,
+	.bkx-audit-stats {
+		flex-wrap: wrap;
+	}
+
+	.bkx-audit-filters,
+	.bkx-vuln-filters {
+		flex-direction: column;
+	}
+
+	.bkx-requirements-grid {
+		grid-template-columns: 1fr;
+	}
+}

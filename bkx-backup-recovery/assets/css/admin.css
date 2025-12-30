@@ -1,0 +1,389 @@
+/**
+ * BKX Backup & Recovery Admin Styles
+ *
+ * @package BookingX\BackupRecovery
+ */
+
+/* Layout */
+.bkx-backup-recovery {
+	max-width: 1200px;
+}
+
+.bkx-backup-recovery .tab-content {
+	margin-top: 20px;
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #ccd0d4;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+/* Section Headers */
+.bkx-section-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #eee;
+}
+
+.bkx-section-header h2 {
+	margin: 0;
+	font-size: 1.3em;
+}
+
+.bkx-header-actions {
+	display: flex;
+	gap: 10px;
+}
+
+/* Info and Warning Boxes */
+.bkx-info-box,
+.bkx-warning-box,
+.bkx-success-box {
+	padding: 12px 15px;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.bkx-info-box {
+	background: #e5f5fa;
+	border-left: 4px solid #00a0d2;
+}
+
+.bkx-warning-box {
+	background: #fff8e5;
+	border-left: 4px solid #ffb900;
+}
+
+.bkx-success-box {
+	background: #ecf7ed;
+	border-left: 4px solid #46b450;
+}
+
+.bkx-info-box .dashicons,
+.bkx-warning-box .dashicons,
+.bkx-success-box .dashicons {
+	flex-shrink: 0;
+	margin-top: 2px;
+}
+
+.bkx-info-box .dashicons {
+	color: #00a0d2;
+}
+
+.bkx-warning-box .dashicons {
+	color: #ffb900;
+}
+
+.bkx-success-box .dashicons {
+	color: #46b450;
+}
+
+/* Status Badges */
+.bkx-status-badge {
+	display: inline-block;
+	padding: 3px 10px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.bkx-status-success {
+	background: #ecf7ed;
+	color: #1e7e34;
+}
+
+.bkx-status-warning {
+	background: #fff8e5;
+	color: #946300;
+}
+
+.bkx-status-error {
+	background: #fce4e4;
+	color: #cc0000;
+}
+
+.bkx-status-pending {
+	background: #f0f0f1;
+	color: #646970;
+}
+
+/* Type Badges */
+.bkx-type-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 500;
+}
+
+.bkx-type-full {
+	background: #e7f3ff;
+	color: #0073aa;
+}
+
+.bkx-type-incremental {
+	background: #f0e7ff;
+	color: #6c2eb9;
+}
+
+.bkx-type-manual {
+	background: #f0f0f1;
+	color: #50575e;
+}
+
+/* Tables */
+.bkx-backup-recovery .wp-list-table {
+	margin-top: 0;
+}
+
+.bkx-backup-recovery .wp-list-table .no-items {
+	text-align: center;
+	padding: 40px 20px;
+	color: #646970;
+}
+
+.bkx-backup-recovery .column-type {
+	width: 100px;
+}
+
+.bkx-backup-recovery .column-size,
+.bkx-backup-recovery .column-items {
+	width: 80px;
+}
+
+.bkx-backup-recovery .column-status {
+	width: 120px;
+}
+
+.bkx-backup-recovery .column-date {
+	width: 160px;
+}
+
+.bkx-backup-recovery .column-actions {
+	width: 120px;
+}
+
+.bkx-backup-recovery .column-actions .button {
+	padding: 0 6px;
+	min-height: 28px;
+}
+
+.bkx-backup-recovery .column-actions .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+
+/* Modal */
+.bkx-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bkx-modal-content {
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+	max-width: 600px;
+	width: 90%;
+	max-height: 90vh;
+	overflow: auto;
+}
+
+.bkx-modal-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+	border-bottom: 1px solid #dcdcde;
+	background: #f0f0f1;
+}
+
+.bkx-modal-header h3 {
+	margin: 0;
+	font-size: 1.2em;
+}
+
+.bkx-modal-close {
+	background: none;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+	color: #646970;
+	padding: 0;
+	line-height: 1;
+}
+
+.bkx-modal-close:hover {
+	color: #d63638;
+}
+
+.bkx-modal-body {
+	padding: 20px;
+}
+
+.bkx-modal-footer {
+	padding: 15px 20px;
+	border-top: 1px solid #dcdcde;
+	background: #f6f7f7;
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+}
+
+.bkx-modal-footer .spinner {
+	float: none;
+	margin: 0;
+}
+
+/* Forms */
+.bkx-form .form-table th {
+	padding-left: 0;
+	width: 180px;
+}
+
+.bkx-form fieldset label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+/* Export/Import */
+.bkx-export-options,
+.bkx-import-templates {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #eee;
+}
+
+.bkx-template-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.bkx-template-group {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.bkx-template-group strong {
+	margin-right: 5px;
+}
+
+/* Import Results */
+.bkx-import-result {
+	margin-top: 20px;
+}
+
+.bkx-result-summary {
+	background: #f6f7f7;
+	padding: 15px;
+	border-radius: 4px;
+}
+
+.bkx-result-summary .result-item {
+	margin-bottom: 10px;
+}
+
+.bkx-result-summary .result-item:last-child {
+	margin-bottom: 0;
+}
+
+.bkx-result-summary .success {
+	color: #1e7e34;
+}
+
+.bkx-result-summary .warning {
+	color: #946300;
+}
+
+.bkx-result-summary .error {
+	color: #d63638;
+}
+
+/* Error Messages */
+.bkx-error-message {
+	display: block;
+	color: #d63638;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+/* Progress Bar */
+.bkx-progress {
+	background: #e0e0e0;
+	border-radius: 4px;
+	height: 20px;
+	overflow: hidden;
+	margin: 20px 0;
+}
+
+.bkx-progress-bar {
+	background: #0073aa;
+	height: 100%;
+	width: 0;
+	transition: width 0.3s ease;
+}
+
+.bkx-progress-text {
+	text-align: center;
+	font-size: 12px;
+	color: #646970;
+	margin-top: 5px;
+}
+
+/* Settings Tab */
+.bkx-settings-backup-tab .notice {
+	margin: 15px 0;
+}
+
+.bkx-settings-backup-tab h3 {
+	margin-top: 25px;
+	padding-top: 20px;
+	border-top: 1px solid #dcdcde;
+}
+
+.bkx-settings-backup-tab h3:first-of-type {
+	margin-top: 20px;
+	padding-top: 0;
+	border-top: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+	.bkx-section-header {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 10px;
+	}
+
+	.bkx-modal-content {
+		margin: 10px;
+		width: calc(100% - 20px);
+	}
+
+	.bkx-template-buttons {
+		flex-direction: column;
+	}
+
+	.bkx-backup-recovery .column-date,
+	.bkx-backup-recovery .column-items {
+		display: none;
+	}
+}

@@ -1,0 +1,339 @@
+/**
+ * GDPR Compliance - Frontend Styles
+ *
+ * @package BookingX\GdprCompliance
+ */
+
+/* Cookie Banner */
+.bkx-cookie-banner {
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 999999;
+	background: #fff;
+	box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.bkx-cookie-banner-bottom {
+	bottom: 0;
+}
+
+.bkx-cookie-banner-top {
+	top: 0;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bkx-cookie-banner-content {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.bkx-cookie-banner-text {
+	flex: 1;
+	min-width: 300px;
+}
+
+.bkx-cookie-banner-text p {
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #333;
+}
+
+.bkx-cookie-banner-text a {
+	color: #0073aa;
+}
+
+.bkx-cookie-banner-actions {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+/* Cookie Buttons */
+.bkx-cookie-btn {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	font-size: 14px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background 0.2s, transform 0.1s;
+}
+
+.bkx-cookie-btn:hover {
+	transform: translateY(-1px);
+}
+
+.bkx-cookie-btn-accept {
+	background: #0073aa;
+	color: #fff;
+}
+
+.bkx-cookie-btn-accept:hover {
+	background: #005a87;
+}
+
+.bkx-cookie-btn-secondary {
+	background: #f0f0f0;
+	color: #333;
+}
+
+.bkx-cookie-btn-secondary:hover {
+	background: #e0e0e0;
+}
+
+.bkx-cookie-btn-link {
+	background: transparent;
+	color: #0073aa;
+	text-decoration: underline;
+	padding: 10px;
+}
+
+.bkx-cookie-btn-link:hover {
+	color: #005a87;
+}
+
+/* Cookie Preferences */
+.bkx-cookie-preferences {
+	max-width: 1200px;
+	margin: 20px auto 0;
+	padding-top: 20px;
+	border-top: 1px solid #eee;
+}
+
+.bkx-cookie-preferences h3 {
+	margin: 0 0 15px;
+	font-size: 16px;
+	color: #333;
+}
+
+.bkx-cookie-category {
+	margin-bottom: 15px;
+	padding: 10px;
+	background: #f9f9f9;
+	border-radius: 4px;
+}
+
+.bkx-cookie-category-label {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+}
+
+.bkx-cookie-category-label input {
+	width: 18px;
+	height: 18px;
+}
+
+.bkx-cookie-category-label input:disabled {
+	cursor: not-allowed;
+}
+
+.bkx-cookie-category-name {
+	font-weight: 500;
+	color: #333;
+}
+
+.bkx-cookie-required {
+	font-size: 12px;
+	color: #666;
+	font-weight: normal;
+}
+
+.bkx-cookie-category-desc {
+	margin: 5px 0 0 28px;
+	font-size: 13px;
+	color: #666;
+}
+
+.bkx-cookie-preferences-actions {
+	margin-top: 15px;
+}
+
+/* Consent Checkboxes */
+.bkx-gdpr-consents {
+	margin: 15px 0;
+}
+
+.bkx-gdpr-consent-field {
+	margin-bottom: 10px;
+}
+
+.bkx-gdpr-consent-field label {
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+.bkx-gdpr-consent-field input {
+	margin-top: 3px;
+	flex-shrink: 0;
+}
+
+.bkx-gdpr-consent-required label {
+	font-weight: 500;
+}
+
+/* Request Form */
+.bkx-gdpr-request-form {
+	max-width: 500px;
+	padding: 25px;
+	background: #f9f9f9;
+	border-radius: 8px;
+}
+
+.bkx-gdpr-request-form h3 {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.bkx-gdpr-form-field {
+	margin-bottom: 15px;
+}
+
+.bkx-gdpr-form-field label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: 600;
+}
+
+.bkx-gdpr-form-field input,
+.bkx-gdpr-form-field select,
+.bkx-gdpr-form-field textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+.bkx-gdpr-form-field input:focus,
+.bkx-gdpr-form-field select:focus,
+.bkx-gdpr-form-field textarea:focus {
+	border-color: #0073aa;
+	outline: none;
+	box-shadow: 0 0 0 2px rgba(0, 115, 170, 0.2);
+}
+
+.bkx-gdpr-submit-btn {
+	background: #0073aa;
+	color: #fff;
+	border: none;
+	padding: 12px 24px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background 0.2s;
+}
+
+.bkx-gdpr-submit-btn:hover {
+	background: #005a87;
+}
+
+.bkx-gdpr-submit-btn:disabled {
+	background: #ccc;
+	cursor: not-allowed;
+}
+
+.bkx-gdpr-form-message {
+	margin-top: 15px;
+	padding: 12px;
+	border-radius: 4px;
+}
+
+.bkx-gdpr-form-message.success {
+	background: #d4edda;
+	color: #155724;
+	border: 1px solid #c3e6cb;
+}
+
+.bkx-gdpr-form-message.error {
+	background: #f8d7da;
+	color: #721c24;
+	border: 1px solid #f5c6cb;
+}
+
+/* CCPA Opt-Out */
+.bkx-ccpa-opt-out {
+	padding: 20px;
+	background: #f9f9f9;
+	border-radius: 8px;
+	max-width: 500px;
+}
+
+.bkx-ccpa-opt-out h3 {
+	margin-top: 0;
+}
+
+/* Animations */
+@keyframes bkx-slide-up {
+	from {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes bkx-slide-down {
+	from {
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.bkx-cookie-banner-bottom {
+	animation: bkx-slide-up 0.3s ease-out;
+}
+
+.bkx-cookie-banner-top {
+	animation: bkx-slide-down 0.3s ease-out;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+	.bkx-cookie-banner {
+		padding: 15px;
+	}
+
+	.bkx-cookie-banner-content {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.bkx-cookie-banner-text {
+		min-width: auto;
+	}
+
+	.bkx-cookie-banner-actions {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.bkx-cookie-btn {
+		flex: 1;
+		min-width: auto;
+	}
+
+	.bkx-cookie-preferences {
+		text-align: left;
+	}
+}
